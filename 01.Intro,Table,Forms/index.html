@@ -5,29 +5,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    </style>
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <!-- Hamisi: start tag, content ve end tag adlanir Element -->
-    <!-- start tag -->
-    <p>
-        <!-- tag-in content-i -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptatibus accusantium aut deleniti inventore quisquam modi? Voluptatibus deleniti ea reprehenderit magni temporibus nobis, nulla consequuntur animi sit pariatur doloribus earum.
-        <!-- end tag -->
-    </p>
-
-    <img src="https://picsum.photos/id/237/400/300" alt="" title="Shekil" />
-
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <h3>Header 3</h3>
-    <h4>Header 4</h4>
-    <h5>Header 5</h5>
-    <h6>Header 6</h6>
-
-    <pre>
+    <div class="container">
+        <!-- Hamisi: start tag, content ve end tag adlanir Element <span class="arrow">--></span>
+        <!-- start tag <span class="arrow">--></span>
+        <p class="text_a_c">
+            <!-- tag-in content-i <span class="arrow">--></span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Br-den evvel. <br> Br-den sonra. Repellendus, voluptatibus accusantium aut deleniti inventore quisquam modi? Voluptatibus deleniti ea reprehenderit magni temporibus nobis, nulla consequuntur
+            animi sit pariatur doloribus earum.
+            <!-- end tag <span class="arrow">--></span>
+        </p>
+        <hr>
+        <img class="resize" src="https://picsum.photos/id/237/536/354" alt="" title="Shekil" />
+        <hr>
+        <h1 class="text_a_c" style="font-size: 44px;">&#167 Headers 🤓 </h1>
+        <h1 class="text_a_c">&#60;<span class="tag">h1</span>&#62;Header 1&#60;&#47;<span class="tag">h1</span>&#62; <span><span class="arrow">--></span></span> Header 1</h1>
+        <h2 class="text_a_c">&#60;<span class="tag">h2</span>&#62;Header 1&#60;&#47;<span class="tag">h2</span>&#62; <span class="arrow">--></span> Header 2</h2>
+        <h3 class="text_a_c">&#60;<span class="tag">h3</span>&#62;Header 1&#60;&#47;<span class="tag">h3</span>&#62; <span class="arrow">--></span> Header 3</h3>
+        <h4 class="text_a_c">&#60;<span class="tag">h4</span>&#62;Header 1&#60;&#47;<span class="tag">h4</span>&#62; <span class="arrow">--></span> Header 4</h4>
+        <h5 class="text_a_c">&#60;<span class="tag">h5</span>&#62;Header 1&#60;&#47;<span class="tag">h5</span>&#62; <span class="arrow">--></span> Header 5</h5>
+        <h6 class="text_a_c">&#60;<span class="tag">h6</span>&#62;Header 1&#60;&#47;<span class="tag">h6</span>&#62; <span class="arrow">--></span> Header 6</h6>
+        <hr>
+        <pre class="text_a_c">
 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
     Nostrum consequatur soluta voluptatem laudantium tempore.
@@ -38,6 +41,111 @@
     Dolores sit, ratione repellat ab voluptatum quia earum provident.
 
     </pre>
+
+        <hr>
+        <ul class="disp_f just_c_c flex_d_c align_i_c">
+            <!-- isaresine ballt deyilir yumru qara daireler -->
+            <li>Unordered-list-item-1</li>
+            <li>Unordered-list-item-2</li>
+            <li>Unordered-list-item-3</li>
+            <li>List-In-List-Item:
+                <ul>
+                    <li>Nestet-list-item-1</li>
+                    <li>Nestet-list-item-2</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr>
+        <ol>
+            <li>Ordered-list-item-1</li>
+            <li>Ordered-list-item-2</li>
+            <li>Ordered-list-item-3</li>
+        </ol>
+        <hr>
+
+        <ol type="a">
+            <li>
+                <p>Type:I-ordered-list-item-in-p-tag-1</p>
+            </li>
+            <li>
+                <p>Type:I-ordered-list-item-in-p-tag-2</p>
+            </li>
+            <li>
+                <p>Type:I-ordered-list-item-in-p-tag-3</p>
+            </li>
+        </ol>
+
+        <hr>
+
+        <img class="resize" width="780" height="580" src="./imgs/image-1.jpg" alt="image-1">
+
+        <hr>
+
+        <a class="btn btn-link" href="https://google.com" target="_blank">Google</a>
+
+        <hr>
+
+        <a class="btn btn-link" href="about.html" target="_blank">About Page</a>
+
+        <hr>
+
+        <a class="btn btn-link" href="mailto:gabilgg07@google.com" target="_blank">Mail To</a>
+
+        <hr>
+
+        <table>
+            <caption>Table Description</caption>
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>E-mail</th>
+                    <th>Tel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Qabil</td>
+                    <td rowspan="2">gabilgg07@gmail.com</td>
+                    <td>+994103199616</td>
+                </tr>
+                <tr>
+                    <td>Qabil</td>
+                    <td>+994103199616</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center;">Colspan 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <table>
+            <caption>Table Description</caption>
+            <tr>
+                <th>Ad</th>
+                <th>E-mail</th>
+                <th>Tel</th>
+            </tr>
+            <tr>
+                <td>Qabil</td>
+                <td>gabilgg07@gmail.com</td>
+                <td>+994103199616</td>
+            </tr>
+            <tr>
+                <td>Qabil</td>
+                <td>gabilgg07@gmail.com</td>
+                <td>+994103199616</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <iframe src="about.html" width="300" height="400" style="border:2px solid red;" title="Iframe Example">
+            
+        </iframe>
+    </div>
 </body>
 
 </html>
