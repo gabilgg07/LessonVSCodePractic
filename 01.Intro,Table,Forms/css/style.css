@@ -9,27 +9,35 @@ body {
 }
 
 .text_a_c {
-    text-align: center;
+    text-align: center!important;
 }
 
-.disp_i_b {
-    display: inline-block;
+.display_n {
+    display: none!important;
 }
 
-.disp_f {
-    display: flex;
+.display_b {
+    display: block!important;
 }
 
-.just_c_c {
-    justify-content: center;
+.display_i_b {
+    display: inline-block!important;
+}
+
+.display_f {
+    display: flex!important;
+}
+
+.justify_c_c {
+    justify-content: center!important;
 }
 
 .flex_d_c {
-    flex-direction: column;
+    flex-direction: column!important;
 }
 
 .align_i_c {
-    align-items: center;
+    align-items: center!important;
 }
 
 .container {
@@ -81,4 +89,22 @@ td {
     border: 1px solid rgba(0, 0, 0, 0.614);
     border-collapse: collapse;
     padding: 10px;
+}
+
+form * {
+    margin: 0;
+}
+
+input {
+    padding: 4px;
+}
+
+.passBox input {
+    padding: 4px 30px 4px 4px;
+}
+
+.passBox i {
+    position: relative;
+    right: 30px;
+    top: 2px;
 }
