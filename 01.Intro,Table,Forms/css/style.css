@@ -1,6 +1,5 @@
 * {
     margin: 20px 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -95,8 +94,31 @@ form * {
     margin: 0;
 }
 
-input {
+form hr {
+    width: 50%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-shadow: 3px 2px 4px #0e7ed673;
+}
+
+.choosingLbl {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-shadow: none;
+}
+
+input,
+button {
     padding: 4px;
+}
+
+input[type="file"] {
+    padding-left: 0;
 }
 
 .passBox input {
@@ -107,4 +129,16 @@ input {
     position: relative;
     right: 30px;
     top: 2px;
+}
+
+.myVideo {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    width: 720px;
+    height: 406px;
+    box-shadow: 0px 0px 8px #00000073;
+}
+
+hr {
+    box-shadow: 0px 0px 8px #00000073;
 }
