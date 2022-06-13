@@ -237,3 +237,18 @@ ve ya - isaresi ile ayrilmis kimi */
     color: rgb(134, 12, 130);
     background-color: rgba(244, 206, 243, 0.762);
 }
+
+
+/* =================================================== */
+
+
+/* =============== Background ======================== */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container:not(:first-child) {
+    margin: 150px auto;
+}
