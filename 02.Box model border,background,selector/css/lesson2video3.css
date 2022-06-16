@@ -1,0 +1,217 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container:first-child {
+    margin-top: 30px;
+}
+
+.container:not(:first-child) {
+    margin: 150px auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(114, 54, 44);
+}
+
+.border {
+    /* ------- border width -------- */
+    border-width: 8px;
+    /* ------- border color -------- */
+    /* default olaraq black olur */
+    border-color: gray;
+    width: 100%;
+    height: 70px;
+    margin: 10px;
+}
+
+.display-f {
+    display: flex;
+}
+
+
+/* ------- border styles -------- */
+
+.border-solid {
+    border-style: solid;
+}
+
+.border-double {
+    border-style: double;
+    border-color: rgb(203, 174, 139);
+}
+
+.border-dotted {
+    border-style: dotted;
+    border-color: rgb(114, 217, 136);
+}
+
+.border-dashed {
+    border-style: dashed;
+    border-color: rgb(203, 139, 183);
+}
+
+.border-inset {
+    border-style: inset;
+}
+
+.border-outset {
+    border-style: outset;
+}
+
+.border-ridge {
+    border-style: ridge;
+}
+
+.border-groove {
+    border-style: groove;
+}
+
+
+/* border colors */
+
+.border-coral {
+    border-color: coral!important;
+}
+
+.border-cornflowerblue {
+    border-color: cornflowerblue!important;
+}
+
+.border-aquamarine {
+    border-color: aquamarine!important;
+}
+
+.border-darkkhaki {
+    border-color: darkkhaki!important;
+}
+
+.border_multy_style {
+    margin-top: 100px!important;
+    /* border-style: top, right, bottom, left */
+    border-style: solid dotted dashed double;
+    /* border-style: (top, bottom) (right, left) */
+    /* border-style: dotted dashed;  */
+    border-width: 7px;
+    border-color: goldenrod;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+.border-circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 20px;
+}
+
+.margin-top-3 {
+    margin-top: 30px;
+}
+
+.box-sizing {
+    width: 200px;
+    height: 200px;
+    border: 6px solid rgb(25, 118, 161);
+}
+
+.inner-box {
+    width: 100%;
+    height: 50%;
+    border: 6px solid;
+    padding: 10px;
+}
+
+.items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    box-sizing: content-box!important;
+}
+
+.border-box {
+    box-sizing: border-box!important;
+}
+
+
+/* Width & Height */
+
+
+/*
+    Default olaraq deyeri : auto; olur.
+    px, cm, % ve sair ile deyer verile bilir.
+    Normalda static deyer verilmir.
+    :initial; -> auto deyeri qaytarir.
+    :inherit; -> parentdaa olan deyeri goturur
+*/
+
+
+/* Max-width, Max-height, Min-width, Min-height */
+
+
+/* Min-height */
+
+[class*="height"] {
+    width: 300px;
+    border: 3px solid;
+    margin: 10px;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+/* 
+bu zaman kontentin tutdugu yer 
+hundurluyu asarsa kontent
+elementden kenara dasir.
+
+*/
+
+.height {
+    height: 300px;
+    flex-direction: column;
+    padding: 15px;
+}
+
+
+/* 
+bu zaman minimum hundurluyu 300 olur,
+contentin tutdugu yer 300-u asarsa 
+elementin hundurluyu de content qeder artmaga baslayir.
+ */
+
+.min-height {
+    min-height: 300px;
+}
+
+
+/* 
+Bu zaman maximum hundurluk 300 olur,
+kontentin tutdugu yer 300 den asagidirsa 
+o qederde elementin hundurluyu olur,
+Eger 300-u asarsa bu zaman da 
+elementin hundurluyu 300 de qalar,
+kontent ise genar dasar.
+*/
+
+.max-height {
+    max-height: 300px;
+    display: inline-block;
+}
+
+.height-2 {
+    height: 300px;
+    display: inline-block;
+}

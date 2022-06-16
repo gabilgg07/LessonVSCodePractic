@@ -16,17 +16,18 @@ body {
 
 .bg_color {
     background-color: cadetblue;
-    margin-bottom: 20px;
+    margin-bottom: 250px;
 }
 
 p {
     padding: 50px;
     font-size: 22px;
+    margin-bottom: 20px;
 }
 
 .bg_image {
     height: 500px;
-    border: 10px solid rgba(35, 34, 34, 0.6);
+    border: 10px solid rgba(35, 34, 34, 0.871);
     border-radius: 15px;
     /* ------ bg-image ------- */
     /* fon sekli ucun: */
@@ -64,7 +65,7 @@ p {
 .bg_image div {
     width: calc(100%/4);
     height: 100%;
-    border-right: 10px solid rgba(35, 34, 34, 0.6);
+    border-right: 5px solid rgba(35, 34, 34, 0.871);
 }
 
 .bg_image div:last-child {
@@ -74,5 +75,5 @@ p {
 [class*="cercive"] .inner-line {
     width: 100%;
     height: 50%;
-    border-bottom: 10px solid rgba(35, 34, 34, 0.6);
+    border-bottom: 5px solid rgba(35, 34, 34, 0.871);
 }
