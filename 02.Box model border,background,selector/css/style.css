@@ -1,48 +1,3 @@
-/* Combinator Selectors */
-
-
-/* 1. Descendant selector(space) -bosluq */
-
-
-/* div icindeki p elementlerine bu style-i tedbiq ele. */
-
-div p {
-    color: darkgoldenrod;
-}
-
-
-/* 2. Child selector. */
-
-
-/* div icindeki bir basa ovladi olan p elementlerine bu style-i tedbiq ele. */
-
-div>p {
-    color: dodgerblue;
-}
-
-
-/* 3. General sibling selector */
-
-
-/* div-den sonra gelen butun qardas p elementlerine aid. */
-
-div~p {
-    color: rgb(98, 152, 16);
-}
-
-
-/* 4. Adjacent sibling selector */
-
-
-/* div-in ozunden sonra gelen birbasa qonsulugundaki qardasi olan p elementlerine aiddir */
-
-div+p {
-    color: rgb(11, 162, 112);
-}
-
-
-/* ======================================== */
-
 section {
     padding: 15px;
 }
@@ -71,177 +26,6 @@ header {
 }
 
 
-/* ================================== */
-
-
-/* Pseudo-class Selectors */
-
-
-/* Elementi muxtelif veziyyetine gore select etmek */
-
-
-/* : -> qosa noqte ile yazilir */
-
-
-/* :hover */
-
-section:hover {
-    background-color: cadetblue;
-}
-
-
-/* :focus */
-
-input:focus-visible {
-    background-color: rgb(158, 163, 168);
-    outline-color: red;
-}
-
-
-/* A :link, :visited, :hover, :active */
-
-a:link {
-    color: rgb(3, 151, 3);
-}
-
-a:visited {
-    color: yellow;
-}
-
-a:hover {
-    color: rgb(211, 55, 55);
-}
-
-a:active {
-    color: rgb(12, 182, 182);
-}
-
-
-/* :first-child */
-
-header p:first-child {
-    color: rgb(195, 75, 177);
-}
-
-
-/* :last-child */
-
-header p:last-child {
-    color: rgb(75, 191, 195);
-}
-
-
-/* ============================== */
-
-p.pseudo-elements {
-    padding: 10px;
-    width: 50%;
-}
-
-
-/* ============================== */
-
-
-/* Pseudo-elements */
-
-
-/* :: -> iki qosa noqte ile yazilir */
-
-
-/* ::first-letter */
-
-p.pseudo-elements::first-letter {
-    font-size: 44px;
-    color: rgb(27, 27, 144);
-}
-
-
-/* ::first-line */
-
-p.pseudo-elements::first-line {
-    background-color: rgba(167, 233, 211, 0.569);
-    font-size: 24px;
-}
-
-
-/* ::selection */
-
-p.selection::selection {
-    background-color: rgba(91, 87, 87, 0.312);
-    color: rgb(255, 255, 112);
-}
-
-
-/* ======================== */
-
-
-/* ======================== */
-
-
-/* Attribute selectors */
-
-
-/* JS inputlarda daha cox istifade olunur,
-name attr-na esasen goturulur
-*/
-
-
-/* elementin attribute-u ile secirsen */
-
-
-/* icindeki soz "attribute" beraberdirse */
-
-p[class="attribute"] {
-    color: rgb(83, 12, 134);
-    background-color: rgba(244, 206, 242, 0.762);
-}
-
-
-/* icinde "selector" yazisi varsa */
-
-p[class*="selector"] {
-    color: rgb(20, 12, 134);
-    background-color: rgba(206, 219, 244, 0.762);
-}
-
-
-/* icinde "attr" sozu varsa, hec bir yere birlesmeden,
- bosluqla ayrilmis kimi */
-
-p[class~="attr"] {
-    color: rgb(12, 134, 59);
-    background-color: rgba(206, 244, 224, 0.762);
-}
-
-
-/* icinde "top" sozu varsa, tek olaraq 
-ve ya - isaresi ile ayrilmis kimi */
-
-[class|="top"] {
-    color: rgb(134, 114, 12);
-    background-color: rgba(206, 209, 244, 0.762);
-}
-
-
-/* "left" yazisi ile baslayirtsa */
-
-[class^="left"] {
-    color: rgb(134, 12, 12);
-    background-color: rgba(244, 210, 206, 0.762);
-}
-
-
-/* "left" yazisi ile biterse */
-
-[class$="right"] {
-    color: rgb(134, 12, 130);
-    background-color: rgba(244, 206, 243, 0.762);
-}
-
-
-/* =================================================== */
-
-
 /* =============== Background ======================== */
 
 .container {
@@ -249,6 +33,53 @@ ve ya - isaresi ile ayrilmis kimi */
     margin: 0 auto;
 }
 
+.container:first-child {
+    margin-top: 30px;
+}
+
 .container:not(:first-child) {
     margin: 150px auto;
+}
+
+.container hr {
+    margin: 30px 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(114, 54, 44);
+}
+
+.border {
+    /* ------- border width -------- */
+    border-width: 8px;
+    /* ------- border color -------- */
+    /* default olaraq black olur */
+    border-color: gray;
+    width: 100%;
+    height: 70px;
+    margin: 10px;
+}
+
+.display-f {
+    display: flex;
+}
+
+.border-radius {
+    border-radius: 10px;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 20px;
+}
+
+.margin-top-3 {
+    margin-top: 30px;
+}
+
+.items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

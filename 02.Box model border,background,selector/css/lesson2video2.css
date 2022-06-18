@@ -5,15 +5,6 @@ body {
 
 /* =============== Background ======================== */
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.container:not(:first-child) {
-    margin: 150px auto;
-}
-
 .bg_color {
     background-color: cadetblue;
     margin-bottom: 250px;
