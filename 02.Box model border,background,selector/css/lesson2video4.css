@@ -46,12 +46,6 @@
     height: 200px;
 }
 
-span.symbol {
-    color: #141E30;
-    font-weight: bold;
-    font-style: normal;
-}
-
 
 /* Gradient */
 
@@ -63,7 +57,7 @@ span.symbol {
 }
 
 .l_gradient-to-top {
-    background-image: linear-gradient(to top, #C6FFDD, #FBD786, #f7797d);
+    background-image: linear-gradient(to top, #c6ffdd, #fbd786, #f7797d);
 }
 
 .l_gradient-to-right {
@@ -75,11 +69,11 @@ span.symbol {
 }
 
 .l_gradient-to-bottom-right {
-    background-image: linear-gradient(to bottom right, #00F260, #0575E6);
+    background-image: linear-gradient(to bottom right, #00f260, #0575e6);
 }
 
 .l_gradient-to-bottom-left {
-    background-image: linear-gradient(to bottom left, #03001e, #7303c0, #ec38bc, #fdeff9);
+    background-image: linear-gradient( to bottom left, #03001e, #7303c0, #ec38bc, #fdeff9);
 }
 
 .l_gradient-to-top-right {
@@ -87,7 +81,7 @@ span.symbol {
 }
 
 .l_gradient-to-top-left {
-    background-image: linear-gradient(to top left, #000046, #1CB5E0);
+    background-image: linear-gradient(to top left, #000046, #1cb5e0);
 }
 
 .l_gradient-145deg {
@@ -98,7 +92,7 @@ span.symbol {
 /* Radial Gradient */
 
 .r_gradient-default {
-    background-image: radial-gradient(darkcyan, #0B59B8, #302f6b 60%);
+    background-image: radial-gradient(darkcyan, #0b59b8, #302f6b 60%);
 }
 
 .r_gradient-circle {
