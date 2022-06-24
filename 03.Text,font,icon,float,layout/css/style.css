@@ -258,90 +258,90 @@ body {
 
 /*#region Min Height */
 
-.m_h-0 {
+.h_min-0 {
     min-height: 0 !important;
 }
 
 
 /* ----------- min-height 1_0=100px ----------- */
 
-.m_h-0_5 {
+.h_min-0_5 {
     min-height: 50px !important;
 }
 
-.m_h-1 {
+.h_min-1 {
     min-height: 100px !important;
 }
 
-.m_h-1_5 {
+.h_min-1_5 {
     min-height: 150px !important;
 }
 
-.m_h-2 {
+.h_min-2 {
     min-height: 200px !important;
 }
 
-.m_h-2_5 {
+.h_min-2_5 {
     min-height: 250px !important;
 }
 
-.m_h-3 {
+.h_min-3 {
     min-height: 300px !important;
 }
 
-.m_h-3_5 {
+.h_min-3_5 {
     min-height: 350px !important;
 }
 
-.m_h-4 {
+.h_min-4 {
     min-height: 400px !important;
 }
 
-.m_h-4_5 {
+.h_min-4_5 {
     min-height: 450px !important;
 }
 
-.m_h-5 {
+.h_min-5 {
     min-height: 500px !important;
 }
 
-.m_h-5_5 {
+.h_min-5_5 {
     min-height: 550px !important;
 }
 
-.m_h-6 {
+.h_min-6 {
     min-height: 600px !important;
 }
 
-.m_h-6_5 {
+.h_min-6_5 {
     min-height: 650px !important;
 }
 
-.m_h-7 {
+.h_min-7 {
     min-height: 700px !important;
 }
 
-.m_h-7_5 {
+.h_min-7_5 {
     min-height: 750px !important;
 }
 
-.m_h-8 {
+.h_min-8 {
     min-height: 800px !important;
 }
 
-.m_h-8_5 {
+.h_min-8_5 {
     min-height: 850px !important;
 }
 
-.m_h-9 {
+.h_min-9 {
     min-height: 900px !important;
 }
 
-.m_h-9_5 {
+.h_min-9_5 {
     min-height: 950px !important;
 }
 
-.m_h-10 {
+.h_min-10 {
     min-height: 1000px !important;
 }
 
@@ -827,6 +827,228 @@ body {
 /*#endregion */
 
 
+/*#region margin-x */
+
+.m_x-0 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.m_x-0_5 {
+    margin-left: 5 !important;
+    margin-right: 5 !important;
+}
+
+.m_x-1 {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.m_x-1_5 {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+.m_x-2 {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+
+.m_x-2_5 {
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+}
+
+.m_x-3 {
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+.m_x-3_5 {
+    margin-left: 35px !important;
+    margin-right: 35px !important;
+}
+
+.m_x-4 {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
+}
+
+.m_x-4_5 {
+    margin-left: 45px !important;
+    margin-right: 45px !important;
+}
+
+.m_x-5 {
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+}
+
+.m_x-5_5 {
+    margin-left: 55px !important;
+    margin-right: 55px !important;
+}
+
+.m_x-6 {
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+}
+
+.m_x-6_5 {
+    margin-left: 65px !important;
+    margin-right: 65px !important;
+}
+
+.m_x-7 {
+    margin-left: 70px !important;
+    margin-right: 70px !important;
+}
+
+.m_x-7_5 {
+    margin-left: 75px !important;
+    margin-right: 75px !important;
+}
+
+.m_x-8 {
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+}
+
+.m_x-8_5 {
+    margin-left: 85px !important;
+    margin-right: 85px !important;
+}
+
+.m_x-9 {
+    margin-left: 90px !important;
+    margin-right: 90px !important;
+}
+
+.m_x-9_5 {
+    margin-left: 95px !important;
+    margin-right: 95px !important;
+}
+
+.m_x-10 {
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+}
+
+
+/*#endregion */
+
+
+/*#region margin-y */
+
+.m_y-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.m_y-0_5 {
+    margin-top: 5 !important;
+    margin-bottom: 5 !important;
+}
+
+.m_y-1 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.m_y-1_5 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.m_y-2 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.m_y-2_5 {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
+
+.m_y-3 {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.m_y-3_5 {
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+}
+
+.m_y-4 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.m_y-4_5 {
+    margin-top: 45px !important;
+    margin-bottom: 45px !important;
+}
+
+.m_y-5 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.m_y-5_5 {
+    margin-top: 55px !important;
+    margin-bottom: 55px !important;
+}
+
+.m_y-6 {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+}
+
+.m_y-6_5 {
+    margin-top: 65px !important;
+    margin-bottom: 65px !important;
+}
+
+.m_y-7 {
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+}
+
+.m_y-7_5 {
+    margin-top: 75px !important;
+    margin-bottom: 75px !important;
+}
+
+.m_y-8 {
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+}
+
+.m_y-8_5 {
+    margin-top: 85px !important;
+    margin-bottom: 85px !important;
+}
+
+.m_y-9 {
+    margin-top: 90px !important;
+    margin-bottom: 90px !important;
+}
+
+.m_y-9_5 {
+    margin-top: 95px !important;
+    margin-bottom: 95px !important;
+}
+
+.m_y-10 {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+
+/*#endregion */
+
+
 /* ------------------------------- */
 
 
@@ -1290,6 +1512,228 @@ body {
 
 .p_l-10 {
     padding-left: 100px !important;
+}
+
+
+/*#endregion */
+
+
+/*#region padding-x */
+
+.p_x-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.p_x-0_5 {
+    padding-left: 5 !important;
+    padding-right: 5 !important;
+}
+
+.p_x-1 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.p_x-1_5 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.p_x-2 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.p_x-2_5 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+
+.p_x-3 {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.p_x-3_5 {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+.p_x-4 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.p_x-4_5 {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+}
+
+.p_x-5 {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.p_x-5_5 {
+    padding-left: 55px !important;
+    padding-right: 55px !important;
+}
+
+.p_x-6 {
+    padding-left: 60px !important;
+    padding-right: 60px !important;
+}
+
+.p_x-6_5 {
+    padding-left: 65px !important;
+    padding-right: 65px !important;
+}
+
+.p_x-7 {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+
+.p_x-7_5 {
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+}
+
+.p_x-8 {
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+}
+
+.p_x-8_5 {
+    padding-left: 85px !important;
+    padding-right: 85px !important;
+}
+
+.p_x-9 {
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+}
+
+.p_x-9_5 {
+    padding-left: 95px !important;
+    padding-right: 95px !important;
+}
+
+.p_x-10 {
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+}
+
+
+/*#endregion */
+
+
+/*#region padding-y */
+
+.p_y-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.p_y-0_5 {
+    padding-top: 5 !important;
+    padding-bottom: 5 !important;
+}
+
+.p_y-1 {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.p_y-1_5 {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.p_y-2 {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.p_y-2_5 {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+
+.p_y-3 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.p_y-3_5 {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+}
+
+.p_y-4 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.p_y-4_5 {
+    padding-top: 45px !important;
+    padding-bottom: 45px !important;
+}
+
+.p_y-5 {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.p_y-5_5 {
+    padding-top: 55px !important;
+    padding-bottom: 55px !important;
+}
+
+.p_y-6 {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+.p_y-6_5 {
+    padding-top: 65px !important;
+    padding-bottom: 65px !important;
+}
+
+.p_y-7 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+
+.p_y-7_5 {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+}
+
+.p_y-8 {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.p_y-8_5 {
+    padding-top: 85px !important;
+    padding-bottom: 85px !important;
+}
+
+.p_y-9 {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+}
+
+.p_y-9_5 {
+    padding-top: 95px !important;
+    padding-bottom: 95px !important;
+}
+
+.p_y-10 {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
 }
 
 
@@ -1825,6 +2269,18 @@ body {
 
 .bg_c-nero {
     background-color: #1e1e1e !important;
+}
+
+.bg_c-pearl_bush {
+    background-color: #dcd0c0 !important;
+}
+
+.bg_c-chablis {
+    background-color: #fde8e1 !important;
+}
+
+.bg_c-provincial_pink {
+    background-color: #f5e5d6 !important;
 }
 
 

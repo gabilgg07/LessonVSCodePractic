@@ -1,0 +1,98 @@
+/* Ve ya bele import-la google fontdan
+ goturduyumuz font-u istifade ede bilerik */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+body {
+    background-image: url(../images/13783.jpg);
+    background-size: 20%;
+}
+
+.font>h3 {
+    font-size: 22px;
+    color: rgb(57, 59, 185);
+}
+
+.font .box-s p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.font .box-s p span {
+    color: cadetblue;
+}
+
+
+/* Font qruplar */
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.serif {
+    font-family: serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+
+/* Font Weight */
+
+.font-weight {
+    /* Google font-un bize verdiyi propertiden bele istifade edirik */
+    font-family: "Montserrat", sans-serif;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.light {
+    font-weight: 200;
+}
+
+.book {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.demibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extrabold {
+    font-weight: 800;
+}
+
+.heavy {
+    font-weight: 900;
+}
+
+
+/* Font variant */
+
+.font-variant .small-caps {
+    font-variant: small-caps;
+}
