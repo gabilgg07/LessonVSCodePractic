@@ -2320,12 +2320,24 @@ body {
     color: #b8ead9 !important;
 }
 
+.t_c-baby_blue {
+    color: #6DF0FA !important;
+}
+
 .t_c-lavender_grey {
     color: #b9b0cf !important;
 }
 
+.t_c-gallery {
+    color: #DED9D5 !important;
+}
+
 .t_c-tacao {
     color: #faa978 !important;
+}
+
+.t_c-mai_tai {
+    color: #A3682E !important;
 }
 
 .t_c-sapphire {
@@ -2350,6 +2362,35 @@ body {
 
 .t_c-dark_cerulean {
     color: #075571 !important;
+}
+
+.t_c-crimson {
+    color: crimson !important;
+}
+
+.t_c-darkviolet {
+    color: darkviolet !important;
+}
+
+.t_c-deeppink {
+    color: deeppink !important;
+}
+
+
+/*#endregion */
+
+
+/* =============== Text Shodows =============== */
+
+
+/*#region text-shadows */
+
+.t_sh-dark {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.873);
+}
+
+.t_sh-light {
+    text-shadow: 0px 0px 1px white, 2px 1px 2px rgb(0 0 0 / 55%);
 }
 
 
