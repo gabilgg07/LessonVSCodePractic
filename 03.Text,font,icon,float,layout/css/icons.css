@@ -397,3 +397,30 @@
 
 
 /*#endregion */
+
+
+/*#region Icons-L3V5 */
+
+@font-face {
+    font-family: "icon-l3v5";
+    src: url("../icons/icomoon-l3v5.woff");
+}
+
+[class^="icon--l3v5_"] {
+    font-family: "icon-l3v5"!important;
+}
+
+.icon--l3v5_check:before {
+    content: "\e900"!important;
+}
+
+.icon--l3v5_check_box:before {
+    content: "\e901"!important;
+}
+
+.icon--l3v5_check_box_outline_blank:before {
+    content: "\e902"!important;
+}
+
+
+/*#endregion */

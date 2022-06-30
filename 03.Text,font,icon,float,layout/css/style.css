@@ -2464,6 +2464,9 @@ body {
 
 /*#region Others */
 
+
+/*#region Nav Links */
+
 .nav-links {
     position: fixed;
     width: 100%;
@@ -2512,6 +2515,68 @@ body {
 .nav-links li a:active {
     color: rgb(27, 188, 212);
     box-shadow: none;
+}
+
+
+/*#endregion */
+
+#nav_links_control {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+#nav_links_control ul {
+    padding: 10px;
+    box-shadow: 0 0 3px #72440e;
+    border-radius: 5px;
+    background-color: #faebd77d;
+}
+
+#nav_links_control ul li {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+#nav_links_control ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#nav_links_control ul li:hover {
+    box-shadow: 0 0 3px #7d6868b8;
+}
+
+#nav_links_control ul li:active {
+    background-color: antiquewhite;
+    box-shadow: 0 0 5px #6e5c5cf0;
+}
+
+#nav_links_control a {
+    color: #72440e;
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_links_control a span.check {
+    width: 20px;
+    display: flex;
+    height: 20px;
+    border: 1px solid #72440e;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_links_control a span.check span {
+    transition: all 0.6s;
+    background-color: #e5ffebc4;
+}
+
+#nav_links_control a span i {
+    color: rgb(23, 183, 47);
 }
 
 .items_center {
