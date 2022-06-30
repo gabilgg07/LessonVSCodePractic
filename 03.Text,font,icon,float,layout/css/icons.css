@@ -260,7 +260,7 @@
     content: '\a004';
 }
 
-.icon-star:before {
+.fontello-custom .icon-star:before {
     content: '\a005';
 }
 
@@ -366,6 +366,33 @@
 
 .icon-emo_thumbsup:before {
     content: '\e80c';
+}
+
+
+/*#endregion */
+
+
+/*#region Icomoon Travel Site */
+
+@font-face {
+    font-family: "icomoon-travel";
+    src: url("../icons/icomoon-travel.ttf");
+}
+
+[class^="icon-"] {
+    font-family: icomoon-travel;
+}
+
+.icon-loc:before {
+    content: "\e900";
+}
+
+.icon-time:before {
+    content: "\e901";
+}
+
+.icon-star:before {
+    content: "\e902";
 }
 
 

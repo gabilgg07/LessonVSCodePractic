@@ -2472,10 +2472,15 @@ body {
     display: flex;
     list-style: none;
     justify-content: center;
+    transition: all .5s;
+}
+
+.nav-links.hide {
+    transform: translateY(-100%);
 }
 
 .nav-links li:not(:first-child) {
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .nav-links li a {
