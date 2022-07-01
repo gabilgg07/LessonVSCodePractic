@@ -34,7 +34,7 @@ body {
 }
 
 .container:first-child {
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .container:not(:first-child) {
@@ -2281,6 +2281,22 @@ body {
 
 .bg_c-provincial_pink {
     background-color: #f5e5d6 !important;
+}
+
+.bg_c-turquoise_blue {
+    background-color: #7BDFF2 !important;
+}
+
+.bg_c-pale_turquoise {
+    background-color: #B2F7EF !important;
+}
+
+.bg_c-azure {
+    background-color: azure !important;
+}
+
+.bg_c-pig_pink {
+    background-color: #F7D6E0 !important;
 }
 
 

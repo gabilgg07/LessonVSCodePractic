@@ -28,8 +28,73 @@ body {
     font-family: "Break Fill";
 }
 
-.test {
-    width: 100%;
-    height: 100vh;
+.box-s {
     background-color: antiquewhite;
+}
+
+
+/* Layout */
+
+.box-s h3 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 5px;
+    color: darkblue;
+}
+
+.float-left:not(:first-child) {
+    margin-left: 10px;
+}
+
+.float-left p {
+    color: tomato;
+    font-weight: bold;
+}
+
+.float-right:not(:first-child) {
+    margin-right: 10px;
+}
+
+.float-right p {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+
+/* Float */
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+/* ya bele */
+
+.clearfix {
+    clear: both;
+}
+
+
+/* ya da bele yaza bilerik */
+
+.row::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.grid-12 p {
+    color: darkolivegreen;
+    font-weight: bold;
+}
+
+[class*="box-s"] {
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.319);
+    margin-top: 10px;
 }

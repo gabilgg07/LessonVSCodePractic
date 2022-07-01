@@ -11,47 +11,191 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/icons.css">
+    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/lesson3video5.css">
 </head>
 
 <body>
-    <ul class="nav-links">
-        <li>
-            <a href="./lesson3video1.html">
-                Video 1
-            </a>
-        </li>
-        <li>
-            <a href="./lesson3video2.html">
-                Video 2
-            </a>
-        </li>
-        <li>
-            <a href="./lesson3video3.html">
-                Video 3
-            </a>
-        </li>
-        <li>
-            <a href="./lesson3video4.html">
-                Video 4
-            </a>
-        </li>
-    </ul>
-    <div id="nav_links_control">
-        <ul>
-            <li id="nav_show_toggle">
-                <a>show toggle <span class="check">
-                        <span class="box_icon_toggle"><i class="icon--l3v5_check"></i>
-                        </span></span></a>
-            </li>
-            <li id="nav_show">
-                <a><span class="text">show</span> <span class="check">
-                        <span class="box_icon_show"><i class="icon--l3v5_check"></i></span></span></a>
-            </li>
-        </ul>
+    <div class="container">
+        <h2>Layout</h2>
+        <!-- Float -->
+        <div class="float box-s w-100 m_t-2">
+            <h3>Float</h3>
+            <!-- float-left -->
+            <div class="row">
+                <div class="float-left box-s-3 items_center bg_c-water_leaf">
+                    <p class="f_s-22">Float Left</p>
+                </div>
+                <div class="float-left box-s-3 items_center bg_c-misty_rose">
+                    <p class="f_s-22">Float Left</p>
+                </div>
+                <div class="float-left box-s-3 items_center bg_c-porcelain">
+                    <p class="f_s-22">Float Left</p>
+                </div>
+                <!-- <div class="clearfix"></div> -->
+            </div>
+            <!-- float-right -->
+            <div class="row m_t-2">
+                <div class="float-right box-s-3 items_center bg_c-water_leaf">
+                    <p class="f_s-22">Float Right</p>
+                </div>
+                <div class="float-right box-s-3 items_center bg_c-misty_rose">
+                    <p class="f_s-22">Float Right</p>
+                </div>
+                <div class="float-right box-s-3 items_center bg_c-porcelain">
+                    <p class="f_s-22">Float Right</p>
+                </div>
+                <!-- <div class="clearfix"></div> -->
+            </div>
+        </div>
+        <!-- ------------------ -->
+        <!-- 12-lik grid sistemi -->
+        <div class="grid-12 box-s w-100 m_t-2">
+            <h3>Grid 12-lik</h3>
+            <div class="row">
+                <!-- 12 -->
+                <div class="col-12 box-s-1 items_center bg_c-chablis">
+                    <p class="f_s-22">Col-12</p>
+                </div>
+                <!-- 1-11 -->
+                <div class="col-1 box-s-1 items_center bg_c-pearl_bush">
+                    <p class="f_s-22">Col-1</p>
+                </div>
+                <div class="col-11 box-s-1 items_center bg_c-school_bus_yellow">
+                    <p class="f_s-22">Col-11</p>
+                </div>
+                <!-- 2-10 -->
+                <div class="col-2 box-s-1 items_center bg_c-viking">
+                    <p class="f_s-22">Col-2</p>
+                </div>
+                <div class="col-10 box-s-1 items_center bg_c-water_leaf">
+                    <p class="f_s-22">Col-10</p>
+                </div>
+                <!-- 3-9 -->
+                <div class="col-3 box-s-1 items_center bg_c-white">
+                    <p class="f_s-22">Col-3</p>
+                </div>
+                <div class="col-9 box-s-1 items_center bg_c-provincial_pink">
+                    <p class="f_s-22">Col-9</p>
+                </div>
+                <!-- 4-8 -->
+                <div class="col-4 box-s-1 items_center bg_c-lavender_grey">
+                    <p class="f_s-22">Col-4</p>
+                </div>
+                <div class="col-8 box-s-1 items_center bg_c-turquoise_blue">
+                    <p class="f_s-22">Col-8</p>
+                </div>
+                <!-- 5-7 -->
+                <div class="col-5 box-s-1 items_center bg_c-pale_turquoise">
+                    <p class="f_s-22">Col-5</p>
+                </div>
+                <div class="col-7 box-s-1 items_center bg_c-azure">
+                    <p class="f_s-22">Col-7</p>
+                </div>
+                <!-- 6-6 -->
+                <div class="col-6 box-s-1 items_center bg_c-pig_pink">
+                    <p class="f_s-22">Col-6</p>
+                </div>
+                <div class="col-6 box-s-1 items_center bg_c-pig_pink">
+                    <p class="f_s-22">Col-6</p>
+                </div>
+                <!-- 7-5 -->
+                <div class="col-7 box-s-1 items_center bg_c-azure">
+                    <p class="f_s-22">Col-7</p>
+                </div>
+                <div class="col-5 box-s-1 items_center bg_c-pale_turquoise">
+                    <p class="f_s-22">Col-5</p>
+                </div>
+                <!-- 8-4 -->
+                <div class="col-8 box-s-1 items_center bg_c-turquoise_blue">
+                    <p class="f_s-22">Col-8</p>
+                </div>
+                <div class="col-4 box-s-1 items_center bg_c-lavender_grey">
+                    <p class="f_s-22">Col-4</p>
+                </div>
+                <!-- 9-3 -->
+                <div class="col-9 box-s-1 items_center bg_c-provincial_pink">
+                    <p class="f_s-22">Col-9</p>
+                </div>
+                <div class="col-3 box-s-1 items_center bg_c-white">
+                    <p class="f_s-22">Col-3</p>
+                </div>
+                <!-- 10-2 -->
+                <div class="col-10 box-s-1 items_center bg_c-water_leaf">
+                    <p class="f_s-22">Col-10</p>
+                </div>
+                <div class="col-2 box-s-1 items_center bg_c-viking">
+                    <p class="f_s-22">Col-2</p>
+                </div>
+                <!-- 11-1 -->
+                <div class="col-11 box-s-1 items_center bg_c-school_bus_yellow">
+                    <p class="f_s-22">Col-11</p>
+                </div>
+                <div class="col-1 box-s-1 items_center bg_c-pearl_bush">
+                    <p class="f_s-22">Col-1</p>
+                </div>
+                <!-- 12 -->
+                <div class="col-12 box-s-1 items_center bg_c-chablis">
+                    <p class="f_s-22">Col-12</p>
+                </div>
+                <!-- 9-3 -->
+                <div class="col-9 m_t-1 box-s bg_c-provincial_pink">
+                    <!-- <p class="f_s-22">Col-9</p> -->
+                    <div class="row">
+                        <!-- 4 in 9 - 8 in 9 -->
+                        <div class="col-4 box-s-1 items_center bg_c-lavender_grey">
+                            <p class="f_s-22">Col-4 in col-9</p>
+                        </div>
+                        <div class="col-8 box-s-1 items_center bg_c-turquoise_blue">
+                            <p class="f_s-22">Col-8 in col-9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 box-s-1 items_center bg_c-white">
+                    <p class="f_s-22">Col-3</p>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------ -->
     </div>
 
-
+    <div>
+        <ul class="nav-links">
+            <li>
+                <a href="./lesson3video1.html">
+                    Video 1
+                </a>
+            </li>
+            <li>
+                <a href="./lesson3video2.html">
+                    Video 2
+                </a>
+            </li>
+            <li>
+                <a href="./lesson3video3.html">
+                    Video 3
+                </a>
+            </li>
+            <li>
+                <a href="./lesson3video4.html">
+                    Video 4
+                </a>
+            </li>
+        </ul>
+        <div id="nav_links_control">
+            <ul>
+                <li id="nav_show_toggle">
+                    <a>show toggle <span class="check">
+                            <span class="box_icon_toggle"><i class="icon--l3v5_check"></i>
+                            </span></span></a>
+                </li>
+                <li id="nav_show">
+                    <a><span class="text">show</span> <span class="check">
+                            <span class="box_icon_show"><i class="icon--l3v5_check"></i></span></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 

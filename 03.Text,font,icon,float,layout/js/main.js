@@ -15,19 +15,19 @@ window.addEventListener("load", function(e) {
 
 });
 window.addEventListener("scroll", function(e) {
-    HeaderToggle()
+    HeaderToggle();
 });
 
 window.addEventListener("mousemove", function(e) {
-    HeaderToggle()
+    HeaderToggle();
 });
 
 window.addEventListener("click", function(e) {
-    HeaderToggle()
+    HeaderToggle();
 });
 
 window.addEventListener("keypress", function(e) {
-    HeaderToggle()
+    HeaderToggle();
 });
 
 function HeaderToggle() {
