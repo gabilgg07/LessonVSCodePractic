@@ -1,0 +1,12 @@
+@font-face {
+    font-family: icomoon;
+    src: url(../icons/icomoon.woff);
+}
+
+[class^="icon-"] {
+    font-family: icomoon!important;
+}
+
+.icon-check:before {
+    content: "\e000";
+}

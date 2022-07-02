@@ -1,0 +1,563 @@
+/* ==================== Default ==================== */
+
+
+/*#region default: body */
+
+body {
+    padding-bottom: 100px;
+}
+
+
+/*#endregion */
+
+
+/* ==================== Container ==================== */
+
+
+/*#region container h2 */
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.container:first-child {
+    margin-top: 70px;
+}
+
+.container:not(:first-child) {
+    margin: 150px auto;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 36px;
+    color: rgb(114, 54, 44);
+    border-top: 1px dashed rgba(50, 21, 21, 0.868);
+    border-bottom: 1px dashed rgba(50, 21, 21, 0.868);
+    padding: 20px 0;
+    margin: 10px 0;
+}
+
+
+/*#endregion */
+
+
+/* ==================== Display ==================== */
+
+
+/*#region displays */
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-inline {
+    display: inline !important;
+}
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.d-inline-flex {
+    display: inline-flex !important;
+}
+
+
+/*#endregion */
+
+
+/* ==================== Display Flex ==================== */
+
+
+/*#region display-flex: j_c, f_d, a_i */
+
+
+/* ----------- justify content ----------- */
+
+.j_c-center {
+    justify-content: center !important;
+}
+
+.j_c-space-around {
+    justify-content: space-around !important;
+}
+
+.j_c-space-between {
+    justify-content: space-between !important;
+}
+
+.j_c-start {
+    justify-content: start !important;
+}
+
+.j_c-end {
+    justify-content: end !important;
+}
+
+.j_c-flex-start {
+    justify-content: flex-start !important;
+}
+
+.j_c-flex-end {
+    justify-content: flex-end !important;
+}
+
+
+/* ------------------------------- */
+
+
+/* ----------- flex direction ----------- */
+
+.f_d-column {
+    flex-direction: column !important;
+}
+
+.f_d-row {
+    flex-direction: row !important;
+}
+
+.f_d-column_reverse {
+    flex-direction: column-reverse !important;
+}
+
+.f_d-row_reverse {
+    flex-direction: row-reverse !important;
+}
+
+
+/* ------------------------------- */
+
+
+/* ----------- align items ----------- */
+
+.a_i-center {
+    align-items: center !important;
+}
+
+.a_i-flex-start {
+    align-items: flex-start !important;
+}
+
+.a_i-flex-end {
+    align-items: flex-end !important;
+}
+
+
+/* ------------------------------- */
+
+
+/*#endregion */
+
+
+/* ==================== Text Align ==================== */
+
+
+/*#region text-align */
+
+.t_a-center {
+    text-align: center !important;
+}
+
+.t_a-justify {
+    text-align: justify !important;
+}
+
+.t_a-start {
+    text-align: start !important;
+}
+
+.t_a-end {
+    text-align: end !important;
+}
+
+
+/*#endregion */
+
+
+/* ==================== Border Style ==================== */
+
+
+/*#region border-style */
+
+.b_s-solid {
+    border-style: solid!important;
+}
+
+.b_s-dotted {
+    border-style: dotted!important;
+}
+
+.b_s-dashed {
+    border-style: dashed!important;
+}
+
+.b_s-double {
+    border-style: double!important;
+}
+
+.b_s-inset {
+    border-style: inset!important;
+}
+
+.b_s-outset {
+    border-style: outset!important;
+}
+
+.b_s-ridge {
+    border-style: ridge!important;
+}
+
+.b_s-groove {
+    border-style: groove!important;
+}
+
+
+/*#endregion */
+
+
+/* =============== Text Shodows =============== */
+
+
+/*#region text-shadows:none,dark,light */
+
+.t_sh-none {
+    text-shadow: none!important;
+}
+
+.t_sh-dark {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.873)!important;
+}
+
+.t_sh-light {
+    text-shadow: 0px 0px 1px white, 2px 1px 2px rgb(0 0 0 / 55%)!important;
+}
+
+
+/*#endregion */
+
+
+/* =============== Box Shodows =============== */
+
+
+/*#region box-shadows:none,dark,light */
+
+.b_sh-none {
+    box-shadow: none!important;
+}
+
+.b_sh-dark {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.873)!important;
+}
+
+.b_sh-light {
+    box-shadow: 0px 0px 1px white, 2px 1px 2px rgb(0 0 0 / 55%)!important;
+}
+
+
+/*#endregion */
+
+
+/* =============== Opacity =============== */
+
+
+/*#region opacity 2=0.2 0.2-1 */
+
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.opacity-2 {
+    opacity: 0.2 !important;
+}
+
+.opacity-4 {
+    opacity: 0.4 !important;
+}
+
+.opacity-6 {
+    opacity: 0.6 !important;
+}
+
+.opacity-8 {
+    opacity: 0.8 !important;
+}
+
+.opacity-half {
+    opacity: 0.5 !important;
+}
+
+.opacity-full {
+    opacity: 1 !important;
+}
+
+
+/*#endregion */
+
+
+/* =============== Overflow =============== */
+
+
+/*#region overflow */
+
+.o-visible {
+    overflow: visible !important;
+}
+
+.o-hidden {
+    overflow: hidden !important;
+}
+
+.o-auto {
+    overflow: auto !important;
+}
+
+.o-scroll {
+    overflow: scroll !important;
+}
+
+
+/*#endregion */
+
+
+/* ==================== Others ==================== */
+
+
+/*#region others */
+
+
+/*#region Nav Links */
+
+.nav-links {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.nav-links.hide {
+    transform: translateY(-100%);
+}
+
+.nav-links li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.nav-links li a {
+    padding: 10px 30px;
+    font-size: 22px;
+    background-color: rgb(149, 143, 143);
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    border: 1px solid rgb(92, 83, 83);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black, 2px 2px 3px rgb(70, 68, 68), 3px 3px 4px rgb(255, 255, 255);
+}
+
+.nav-links li a:link {
+    color: white;
+    text-shadow: 3px 2px 4px #000000, 0 0 3px rgb(255 253 253);
+}
+
+.nav-links li a:visited {
+    color: yellow;
+}
+
+.nav-links li a:hover {
+    color: rgb(131 255 156);
+    text-shadow: 1px 1px 1px black, 2px 3px 3px rgb(59, 56, 56);
+}
+
+.nav-links li a:active {
+    color: rgb(27, 188, 212);
+    box-shadow: none;
+}
+
+
+/*#endregion */
+
+
+/*#region Nav Links Control */
+
+#nav_links_control {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+#nav_links_control ul {
+    padding: 10px;
+    box-shadow: 0 0 3px #72440e;
+    border-radius: 5px;
+    background-color: #faebd77d;
+}
+
+#nav_links_control ul li {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+#nav_links_control ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#nav_links_control ul li:hover {
+    box-shadow: 0 0 3px #7d6868b8;
+}
+
+#nav_links_control ul li:active {
+    background-color: antiquewhite;
+    box-shadow: 0 0 5px #6e5c5cf0;
+}
+
+#nav_links_control a {
+    color: #72440e;
+    width: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_links_control a span.check {
+    width: 20px;
+    display: flex;
+    height: 20px;
+    border: 1px solid #72440e;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_links_control a span.check span {
+    transition: all 0.6s;
+    background-color: #e5ffebc4;
+}
+
+#nav_links_control a span i {
+    color: rgb(23, 183, 47);
+}
+
+
+/*#endregion */
+
+.items_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-circle {
+    border-radius: 50% !important;
+}
+
+.box-info .text {
+    font-style: italic;
+    color: darkgoldenrod;
+}
+
+.box-info .text span.header {
+    font-style: bold;
+    color: lightseagreen;
+}
+
+.box-info .text span.symbol {
+    color: #141e30;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* ----------- box square 1=100px ----------- */
+
+.box-s {
+    min-height: 100px;
+}
+
+.box-s h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+
+/*#region box-square 1=100px 100-1000px */
+
+[class*="box-s"] {
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.box-s-1 {
+    width: 100px;
+    height: 100px;
+}
+
+.box-s-2 {
+    width: 200px;
+    height: 200px;
+}
+
+.box-s-3 {
+    width: 300px;
+    height: 300px;
+}
+
+.box-s-4 {
+    width: 400px;
+    height: 400px;
+}
+
+.box-s-5 {
+    width: 500px;
+    height: 500px;
+}
+
+.box-s-6 {
+    width: 600px;
+    height: 600px;
+}
+
+.box-s-7 {
+    width: 700px;
+    height: 700px;
+}
+
+.box-s-8 {
+    width: 800px;
+    height: 800px;
+}
+
+.box-s-9 {
+    width: 900px;
+    height: 900px;
+}
+
+.box-s-10 {
+    width: 1000px;
+    height: 1000px;
+}
+
+
+/*#endregion */
+
+
+/* ------------------------------- */
+
+
+/*#endregion */
