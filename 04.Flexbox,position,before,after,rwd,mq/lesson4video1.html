@@ -22,26 +22,639 @@
         <h2>
             Flex Box
         </h2>
+        <!--#region ===== Display ===== -->
+
+        <!-- display: flex -->
         <div class="box-s w-100 m_t-2">
             <h3>Display Flex</h3>
-            <div class="display_flex box-s w-100 bg_c-school_bus_yellow">
-                <div class="display_flex-item box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+            <div class="display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
                     Item 1
                 </div>
-                <div class="display_flex-item box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
                     Item 2
                 </div>
-                <div class="display_flex-item box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
                     Item 3
                 </div>
-                <div class="display_flex-item box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
                     Item 4
                 </div>
-                <div class="display_flex-item box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
                     Item 5
                 </div>
             </div>
         </div>
+        <!-- display: inline-flex -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Display Inline Flex</h3>
+            <div class="display_inline_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+
+        <!--#endregion -->
+
+        <!--#region ===== Flex Direction ===== -->
+
+        <!-- display: flex; flex-direction: row-reverse -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Display Flex - Flex Direction Row Reverse</h3>
+            <div class="flex_direction-row-reverse display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- display: inline-flex; flex-direction: row-reverse -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Display Inline Flex - Flex Direction Row Reverse</h3>
+            <div class="flex_direction-row-reverse display_inline_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- display: flex; flex-direction: column -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Display Flex - Flex Direction Column</h3>
+            <div class="flex_direction-column h_min-6 display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- display: inline-flex; flex-direction: column -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Display Inline Flex - Flex Direction Column</h3>
+            <div class="flex_direction-column h_min-6 display_inline_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- display: flex; flex-direction: column-reverse -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Display Flex - Flex Direction Column Reverse</h3>
+            <div class="flex_direction-column-reverse h_min-6 display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- display: inline-flex; flex-direction: column-reverse -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Display Inline Flex - Flex Direction Column Reverse</h3>
+            <div class="flex_direction-column-reverse h_min-6 display_inline_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+
+        <!--#endregion -->
+
+        <!--#region ===== Flex Wrap ===== -->
+
+        <!-- display: flex; flex-wrap: nowrap -->
+        <div class="box-s w-100 m_t-2 o-auto">
+            <h3>Display Flex - Flex Wrap NoWrap</h3>
+            <div class="display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 6
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 7
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 8
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 9
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 10
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 11
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 12
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 13
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 14
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 15
+                </div>
+            </div>
+        </div>
+        <!-- display: inline-flex; flex-wrap: nowrap -->
+        <div class="box-s w-100 m_t-2 o-auto">
+            <h3>Display Inline Flex - Flex Wrap NoWrap</h3>
+            <div class="display_inline_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 6
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 7
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 8
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 9
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 10
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 11
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 12
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 13
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 14
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 15
+                </div>
+            </div>
+        </div>
+        <!-- flex-wrap: wrap -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Flex Wrap - Wrap</h3>
+            <div class="flex_wrap-wrap h_min-3  display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 6
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 7
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 8
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 9
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 10
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 11
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 12
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 13
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 14
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 15
+                </div>
+            </div>
+        </div>
+        <!-- flex-wrap: wrap-reverse -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Flex Wrap - Wrap Reverse</h3>
+            <div class="flex_wrap-wrap_reverse h_min-3 display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 6
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 7
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 8
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 9
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 10
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 11
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 12
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 13
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 14
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 15
+                </div>
+            </div>
+        </div>
+
+        <!--#endregion -->
+
+        <!--#region ===== Justify Content ===== -->
+
+        <!-- justify-content: center -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Justify Content - Center</h3>
+            <div class="justify_content-center display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- justify-content: flex-end -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Justify Content - Flex End</h3>
+            <div class="justify_content-flex-end display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- justify-content: space-between -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Justify Content - Space Between</h3>
+            <div class="justify_content-space-between display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- justify-content: space-around -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Justify Content - Space Around</h3>
+            <div class="justify_content-space-around display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- justify-content: space-evenly -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Justify Content - Space Evenly</h3>
+            <div class="justify_content-space-evenly display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+
+        <!--#endregion -->
+
+        <!--#region ===== Align Items ===== -->
+
+        <!-- align-items: default(stretch) -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Align Items - Stretch (Default)</h3>
+            <div class="h_min-4 align_items display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- align-items: flex-start -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Align Items - Flex Start</h3>
+            <div class="h_min-4 align_items align_items-flex-start display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- align-items: center -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Align Items - Center</h3>
+            <div class="h_min-4 align_items-center display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- align-items: flex-end -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Align Items - Flex End</h3>
+            <div class="h_min-4 align_items-flex-end display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+        <!-- align-items: baseline -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Align Items - Baseline</h3>
+            <div class="h_min-4 align_items-baseline display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+
+        <!--#endregion -->
+
+        <!--#region ===== Flex Direction | Align Items | Justify Content ===== -->
+
+        <!-- flex-direction: column; align-items: center; justify-content: flex-end -->
+        <div class="box-s w-100 m_t-2">
+            <h3>Flex-direction-Column, Align-items-Center, Justify-content-Flex-end</h3>
+            <div class="h_min-5 flex_direction-column align_items-center justify_content-flex-end align_items display_flex box-s bg_c-school_bus_yellow">
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-22 bg_c-misty_rose">
+                    Item 1
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-26 bg_c-misty_rose">
+                    Item 2
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-20 bg_c-misty_rose p_t-3">
+                    Item 3
+                </div>
+                <div class="box-s-2 b_sh-none b_s-solid b_w-1 items_center f_s-18 bg_c-misty_rose p-2">
+                    Item 4
+                </div>
+                <div class="box-s-1 b_sh-none b_s-solid b_w-1 items_center f_s-24 bg_c-misty_rose">
+                    Item 5
+                </div>
+            </div>
+        </div>
+
+        <!--#endregion -->
+
     </div>
 
     <div>
