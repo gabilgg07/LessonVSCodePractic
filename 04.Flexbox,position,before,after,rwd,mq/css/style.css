@@ -343,6 +343,7 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
     transition: all .5s;

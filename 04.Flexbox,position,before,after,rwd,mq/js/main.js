@@ -70,3 +70,10 @@ navShow.addEventListener("click", function(e) {
         boxIconShow.classList.add("d-none");
     }
 });
+
+window.addEventListener('resize', function(e) {
+    navLinks.classList.remove("hide");
+    boxIconToggle.classList.add("d-none");
+    boxIconShow.classList.remove("d-none");
+    this.clearTimeout(myTimeOut);
+});
