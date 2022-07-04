@@ -102,6 +102,10 @@
 
 /*#region Height % 5-100% */
 
+.h-inherit {
+    height: inherit !important;
+}
+
 .h-0 {
     height: 0 !important;
 }
