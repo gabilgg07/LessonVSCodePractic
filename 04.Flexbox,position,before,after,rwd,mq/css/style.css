@@ -1,4 +1,4 @@
-/* ==================== Default ==================== */
+/* ========== Default ========== */
 
 
 /*#region default: body */
@@ -11,7 +11,7 @@ body {
 /*#endregion */
 
 
-/* ==================== Container ==================== */
+/* ========== Container ========== */
 
 
 /*#region container h2 */
@@ -29,21 +29,21 @@ body {
     margin: 150px auto;
 }
 
-.container h2 {
+.container>h2 {
     text-align: center;
     font-size: 36px;
     color: rgb(114, 54, 44);
     border-top: 1px dashed rgba(50, 21, 21, 0.868);
     border-bottom: 1px dashed rgba(50, 21, 21, 0.868);
     padding: 20px 0;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 
 /*#endregion */
 
 
-/* ==================== Display ==================== */
+/* ========== Display ========== */
 
 
 /*#region displays */
@@ -76,7 +76,7 @@ body {
 /*#endregion */
 
 
-/* ==================== Display Flex ==================== */
+/* ========== Display Flex ========== */
 
 
 /*#region display-flex: j_c, f_d, a_i */
@@ -159,7 +159,7 @@ body {
 /*#endregion */
 
 
-/* ==================== Text Align ==================== */
+/* ========== Text Align ========== */
 
 
 /*#region text-align */
@@ -184,7 +184,7 @@ body {
 /*#endregion */
 
 
-/* ==================== Border Style ==================== */
+/* ========== Border Style ========== */
 
 
 /*#region border-style */
@@ -225,7 +225,7 @@ body {
 /*#endregion */
 
 
-/* =============== Text Shodows =============== */
+/* ========== Text Shodows ========== */
 
 
 /*#region text-shadows:none,dark,light */
@@ -246,7 +246,7 @@ body {
 /*#endregion */
 
 
-/* =============== Box Shodows =============== */
+/* ========== Box Shodows ========== */
 
 
 /*#region box-shadows:none,dark,light */
@@ -267,7 +267,7 @@ body {
 /*#endregion */
 
 
-/* =============== Opacity =============== */
+/* ========== Opacity ========== */
 
 
 /*#region opacity 2=0.2 0.2-1 */
@@ -304,7 +304,7 @@ body {
 /*#endregion */
 
 
-/* =============== Overflow =============== */
+/* ========== Overflow ========== */
 
 
 /*#region overflow */
@@ -329,7 +329,7 @@ body {
 /*#endregion */
 
 
-/* ==================== Others ==================== */
+/* ========== Others ========== */
 
 
 /*#region others */
@@ -343,7 +343,6 @@ body {
     top: 0;
     left: 0;
     display: flex;
-    flex-wrap: wrap;
     list-style: none;
     justify-content: center;
     transition: all .5s;
@@ -396,8 +395,8 @@ body {
 
 #nav_links_control {
     position: fixed;
-    right: 40px;
-    bottom: 40px;
+    right: 5%;
+    top: 6%;
 }
 
 #nav_links_control ul {
@@ -456,6 +455,9 @@ body {
 
 /*#endregion */
 
+
+/*#region Additions */
+
 .items_center {
     display: flex;
     justify-content: center;
@@ -483,7 +485,10 @@ body {
 }
 
 
-/* ----------- box square 1=100px ----------- */
+/*#endregion */
+
+
+/*#region box-square 1=100px 100-1000px */
 
 .box-s {
     min-height: 100px;
@@ -494,9 +499,6 @@ body {
     font-size: 26px;
     margin-bottom: 10px;
 }
-
-
-/*#region box-square 1=100px 100-1000px */
 
 [class*="box-s"] {
     border-radius: 10px;
@@ -556,9 +558,6 @@ body {
 
 
 /*#endregion */
-
-
-/* ------------------------------- */
 
 
 /*#endregion */

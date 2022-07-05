@@ -1,10 +1,26 @@
 @font-face {
-    font-family: icomoon;
-    src: url(../icons/icomoon.woff);
+    font-family: 'icomoon';
+    src: url('../icons/icomoon.eot');
+    src: url('../icons/icomoon.eot?dvffib#iefix') format('embedded-opentype'), url('../icons/icomoon.ttf?dvffib') format('truetype'), url('../icons/icomoon.woff?dvffib') format('woff'), url('../icons/icomoon.svg?dvffib#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
 }
 
-[class^="icon-"] {
-    font-family: icomoon!important;
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_up:before {
+    content: "\e001";
 }
 
 .icon-check:before {
