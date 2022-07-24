@@ -1,0 +1,44 @@
+.brder {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 8px;
+}
+a.brder {
+  display: block;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.map-item {
+  height: 400px;
+}
+
+.feature-card {
+  height: 300px;
+}
+
+.news {
+  height: 300px;
+}
+.img {
+  height: 125px;
+}
+
+.other-new {
+  height: 70px;
+}
+
+#top-footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.foot {
+  height: 250px;
+}

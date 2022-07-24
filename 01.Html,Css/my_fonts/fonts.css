@@ -1,0 +1,2021 @@
+/*#region ==== Aldo ==== */
+
+@font-face {
+    font-family: aldo;
+    src: url(./fonts/Aldo.ttf);
+    font-weight: 400;
+}
+
+.aldo {
+    font-family: aldo!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Allura ==== */
+
+@font-face {
+    font-family: allura;
+    src: url(./fonts/Allura-Regular.ttf);
+    font-weight: 400;
+}
+
+.allura {
+    font-family: allura!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Anglecia Pro Display ==== */
+
+@font-face {
+    font-family: anglecia;
+    src: url(./fonts/Anglecia-Pro-Display.otf);
+    font-weight: 400;
+}
+
+.anglecia {
+    font-family: anglecia!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Aphrodite Slim Pro ==== */
+
+@font-face {
+    font-family: aphrodite;
+    src: url(./fonts/AphroditeSlimPro.otf);
+    font-weight: 400;
+}
+
+.aphrodite {
+    font-family: aphrodite!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Arima ==== */
+
+@font-face {
+    font-family: arima;
+    src: url(./fonts/Arima/Arima-Thin.ttf);
+    font-weight: 100;
+}
+
+.arima-100 {
+    font-family: arima!important;
+    font-weight: 100!important;
+}
+
+@font-face {
+    font-family: arima;
+    src: url(./fonts/Arima/Arima-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+.arima-200 {
+    font-family: arima!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: arima;
+    src: url(./fonts/Arima/Arima-Light.ttf);
+    font-weight: 300;
+}
+
+.arima-300 {
+    font-family: arima!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: arima;
+    src: url(./fonts/Arima/Arima-Regular.ttf);
+    font-weight: 400;
+}
+
+.arima-400 {
+    font-family: arima!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: arima;
+    src: url(./fonts/Arima/Arima-Medium.ttf);
+    font-weight: 500;
+}
+
+.arima-500 {
+    font-family: arima!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: arima;
+    src: url(./fonts/Arima/Arima-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.arima-600 {
+    font-family: arima!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: arima;
+    src: url(./fonts/Arima/Arima-Bold.ttf);
+    font-weight: 700;
+}
+
+.arima-700 {
+    font-family: arima!important;
+    font-weight: 700!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Atlantica ==== */
+
+@font-face {
+    font-family: atlantica;
+    src: url(./fonts/Atlantica.otf);
+    font-weight: 400;
+}
+
+.atlantica {
+    font-family: atlantica!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Balcon a Lisbonne ==== */
+
+@font-face {
+    font-family: balcon;
+    src: url(./fonts/Balcon\ a\ lisbonne.otf);
+    font-weight: 400;
+}
+
+.balcon {
+    font-family: balcon!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Banjax Notched ==== */
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ ExtraLight.otf);
+    font-weight: 200;
+}
+
+.banjax-200 {
+    font-family: banjax!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ ExtraLight\ Italic.otf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+.banjax-200_italic {
+    font-family: banjax!important;
+    font-weight: 200!important;
+    font-style: italic!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Light.otf);
+    font-weight: 300;
+}
+
+.banjax-300 {
+    font-family: banjax!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Light\ Italic.otf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.banjax-300_italic {
+    font-family: banjax!important;
+    font-weight: 300!important;
+    font-style: italic!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Regular.otf);
+    font-weight: 400;
+}
+
+.banjax-400 {
+    font-family: banjax!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Italic.otf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.banjax-400_italic {
+    font-family: banjax!important;
+    font-weight: 400!important;
+    font-style: italic!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Medium.otf);
+    font-weight: 500;
+}
+
+.banjax-500 {
+    font-family: banjax!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Medium\ Italic.otf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.banjax-500_italic {
+    font-family: banjax!important;
+    font-weight: 500!important;
+    font-style: italic!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ ExtraBold.otf);
+    font-weight: 600;
+}
+
+.banjax-600 {
+    font-family: banjax!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ ExtraBold\ Italic.otf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.banjax-600_italic {
+    font-family: banjax!important;
+    font-weight: 600!important;
+    font-style: italic!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Bold.otf);
+    font-weight: 700;
+}
+
+.banjax-700 {
+    font-family: banjax!important;
+    font-weight: 700!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ Bold\ Italic.otf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.banjax-700_italic {
+    font-family: banjax!important;
+    font-weight: 700!important;
+    font-style: italic!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ UltraBlack.otf);
+    font-weight: 800;
+}
+
+.banjax-800 {
+    font-family: banjax!important;
+    font-weight: 800!important;
+}
+
+@font-face {
+    font-family: banjax;
+    src: url(./fonts/BanjaxNotched/Paulo\ Goode\ -\ Banjax\ Notched\ UltraBlack\ Italic.otf);
+    font-weight: 800;
+    font-style: italic;
+}
+
+.banjax-800_italic {
+    font-family: banjax!important;
+    font-weight: 800!important;
+    font-style: italic!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Beradon Script ==== */
+
+@font-face {
+    font-family: beradon;
+    src: url(./fonts/Beradon-Script.otf);
+    font-weight: 400;
+}
+
+.beradon {
+    font-family: beradon!important;
+}
+
+
+/*#endregion */
+
+
+/*#endregion */
+
+
+/*#region ==== Bickham Script ==== */
+
+@font-face {
+    font-family: bickham;
+    src: url(./fonts/BickhamScriptPro3/Bickham\ Script\ Pro\ 3\ Regular.otf);
+    font-weight: 400;
+}
+
+.bickham-400 {
+    font-family: bickham!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: bickham;
+    src: url(./fonts/BickhamScriptPro3/Bickham\ Script\ Pro\ 3\ Semiold.otf);
+    font-weight: 600;
+}
+
+.bickham-600 {
+    font-family: bickham!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: bickham;
+    src: url(./fonts/BickhamScriptPro3/Bickham\ Script\ Pro\ 3\ Bold.otf);
+    font-weight: 700;
+}
+
+.bickham-700 {
+    font-family: bickham!important;
+    font-weight: 700!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Break Fill ==== */
+
+@font-face {
+    font-family: break;
+    src: url(./fonts/BreakFill/Break-Fill\ Extralight.otf);
+    font-weight: 200;
+}
+
+.break-200 {
+    font-family: break!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: break;
+    src: url(./fonts/BreakFill/Break-Fill\ Light.otf);
+    font-weight: 300;
+}
+
+.break-300 {
+    font-family: break!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: break;
+    src: url(./fonts/BreakFill/Break-Fill\ Regular.otf);
+    font-weight: 400;
+}
+
+.break-400 {
+    font-family: break!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: break;
+    src: url(./fonts/BreakFill/Break-Fill\ Semibold.otf);
+    font-weight: 600;
+}
+
+.break-600 {
+    font-family: break!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: break;
+    src: url(./fonts/BreakFill/Break-Fill\ Bold.otf);
+    font-weight: 700;
+}
+
+.break-700 {
+    font-family: break!important;
+    font-weight: 700!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Chalk Marks ==== */
+
+@font-face {
+    font-family: chalk;
+    src: url(./fonts/Chalk\ Marks.otf);
+    font-weight: 400;
+}
+
+.chalk {
+    font-family: chalk!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Chelsea ==== */
+
+@font-face {
+    font-family: chelsea;
+    src: url(./fonts/Chelsea/Chelsea200.otf);
+    font-weight: 200;
+}
+
+.chelsea-200 {
+    font-family: chelsea!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: chelsea;
+    src: url(./fonts/Chelsea/Chelsea300.otf);
+    font-weight: 300;
+}
+
+.chelsea-300 {
+    font-family: chelsea!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: chelsea;
+    src: url("./fonts/Chelsea/Chelsea500.otf");
+    font-weight: 500;
+}
+
+.chelsea-500 {
+    font-family: chelsea!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: chelsea;
+    src: url(./fonts/Chelsea/Chelsea600.otf);
+    font-weight: 600;
+}
+
+.chelsea-600 {
+    font-family: chelsea!important;
+    font-weight: 600!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Cicek ==== */
+
+@font-face {
+    font-family: cicek;
+    src: url(./fonts/Cicek.otf);
+    font-weight: 400;
+}
+
+.cicek {
+    font-family: cicek!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Cinzel ==== */
+
+@font-face {
+    font-family: cinzel;
+    src: url(./fonts/Cinzel/Cinzel-Regular.otf);
+    font-weight: 400;
+}
+
+.cinzel-400 {
+    font-family: cinzel!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(./fonts/Cinzel/CinzelDecorative-Regular.otf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.cinzel-400_italic {
+    font-family: cinzel!important;
+    font-weight: 400!important;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(./fonts/Cinzel/Cinzel-Bold.otf);
+    font-weight: 700;
+}
+
+.cinzel-700 {
+    font-family: cinzel!important;
+    font-weight: 700!important;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(./fonts/Cinzel/CinzelDecorative-Bold.otf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.cinzel-700_italic {
+    font-family: cinzel!important;
+    font-weight: 700!important;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(./fonts/Cinzel/Cinzel-Black.otf);
+    font-weight: 900;
+}
+
+.cinzel-900 {
+    font-family: cinzel!important;
+    font-weight: 900!important;
+}
+
+@font-face {
+    font-family: cinzel;
+    src: url(./fonts/Cinzel/CinzelDecorative-Black.otf);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.cinzel-900_italic {
+    font-family: cinzel!important;
+    font-weight: 900!important;
+    font-style: italic;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Cocomat ==== */
+
+@font-face {
+    font-family: cocomat;
+    src: url(./fonts/Cocomat/Cocomat\ Ultralight.otf);
+    font-weight: 200;
+}
+
+.cocomat-200 {
+    font-family: cocomat!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: cocomat;
+    src: url(./fonts/Cocomat/Cocomat\ Light.otf);
+    font-weight: 300;
+}
+
+.cocomat-300 {
+    font-family: cocomat!important;
+    font-weight: 300!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Dancing Script ==== */
+
+@font-face {
+    font-family: dancing;
+    src: url(./fonts/Dancing_Script/DancingScript-Regular.ttf);
+    font-weight: 400;
+}
+
+.dancing-400 {
+    font-family: dancing!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: dancing;
+    src: url(./fonts/Dancing_Script/DancingScript-Medium.ttf);
+    font-weight: 500;
+}
+
+.dancing-500 {
+    font-family: dancing!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: dancing;
+    src: url(./fonts/Dancing_Script/DancingScript-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.dancing-600 {
+    font-family: dancing!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: dancing;
+    src: url(./fonts/Dancing_Script/DancingScript-Bold.ttf);
+    font-weight: 700;
+}
+
+.dancing-700 {
+    font-family: dancing!important;
+    font-weight: 700!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Dekorativ ==== */
+
+@font-face {
+    font-family: dekorativ;
+    src: url(./fonts/Dekorativ.otf);
+    font-weight: 400;
+}
+
+.dekorativ {
+    font-family: dekorativ!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Digit ==== */
+
+@font-face {
+    font-family: digit;
+    src: url(./fonts/Digit.ttf);
+    font-weight: 400;
+}
+
+.digit {
+    font-family: digit!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Fabada ==== */
+
+@font-face {
+    font-family: fabada;
+    src: url(./fonts/Fabada.ttf);
+    font-weight: 400;
+}
+
+.fabada {
+    font-family: fabada!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Foglihten ==== */
+
+@font-face {
+    font-family: foglihten;
+    src: url(./fonts/Foglihten.otf);
+    font-weight: 400;
+}
+
+.foglihten {
+    font-family: foglihten!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Fontleroy ==== */
+
+@font-face {
+    font-family: fontleroy;
+    src: url(./fonts/Fontleroy/Fontleroy\ Brown.otf);
+    font-weight: 400;
+}
+
+.fontleroy {
+    font-family: fontleroy!important;
+}
+
+@font-face {
+    font-family: fontleroy;
+    src: url(./fonts/Fontleroy/Fontleroy\ Little\ Lord.otf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fontleroy_italic {
+    font-family: fontleroy!important;
+    font-style: italic!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Geogrotesque Stencil ==== */
+
+@font-face {
+    font-family: geogrotesque;
+    src: url(./fonts/Geogrotesque_stencil.ttf);
+    font-weight: 400;
+}
+
+.geogrotesque {
+    font-family: geogrotesque!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Giger ==== */
+
+@font-face {
+    font-family: giger;
+    src: url(./fonts/Giger.otf);
+    font-weight: 400;
+}
+
+.giger {
+    font-family: giger!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== GreatVibes ==== */
+
+@font-face {
+    font-family: greatVibes;
+    src: url(./fonts/GreatVibes.otf);
+    font-weight: 400;
+}
+
+.greatVibes {
+    font-family: greatVibes!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Histeria Script ==== */
+
+@font-face {
+    font-family: histeria;
+    src: url(./fonts/Histeria\ Script.otf);
+    font-weight: 400;
+}
+
+.histeria {
+    font-family: histeria!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Imperiya ==== */
+
+@font-face {
+    font-family: imperiya;
+    src: url(./fonts/Imperiya.otf);
+    font-weight: 400;
+}
+
+.imperiya {
+    font-family: imperiya!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Khodijah ==== */
+
+@font-face {
+    font-family: khodijah;
+    src: url(./fonts/Khodijah.otf);
+    font-weight: 400;
+}
+
+.khodijah {
+    font-family: khodijah!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Kingthings Calligraphica ==== */
+
+@font-face {
+    font-family: kingthings;
+    src: url(./fonts/Kingthings\ Calligraphica.otf);
+    font-weight: 400;
+}
+
+.kingthings {
+    font-family: kingthings!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Larisa Script ==== */
+
+@font-face {
+    font-family: larisa;
+    src: url(./fonts/Larisa-Script.otf);
+    font-weight: 400;
+}
+
+.larisa {
+    font-family: larisa!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Latino ==== */
+
+@font-face {
+    font-family: latino;
+    src: url(./fonts/Latino.ttf);
+    font-weight: 400;
+}
+
+.latino {
+    font-family: latino!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Lora ==== */
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-Regular.ttf);
+    font-weight: 400;
+}
+
+.lora-400 {
+    font-family: lora!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lora-400_italic {
+    font-family: lora!important;
+    font-weight: 400!important;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-Medium.ttf);
+    font-weight: 500;
+}
+
+.lora-500 {
+    font-family: lora!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.lora-500_italic {
+    font-family: lora!important;
+    font-weight: 500!important;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.lora-600 {
+    font-family: lora!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.lora-600_italic {
+    font-family: lora!important;
+    font-weight: 600!important;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-Bold.ttf);
+    font-weight: 700;
+}
+
+.lora-700 {
+    font-family: lora!important;
+    font-weight: 700!important;
+}
+
+@font-face {
+    font-family: lora;
+    src: url(./fonts/Lora/Lora-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.lora-700_italic {
+    font-family: lora!important;
+    font-weight: 700!important;
+    font-style: italic;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== MonAmour Script Pro ==== */
+
+@font-face {
+    font-family: monAmour;
+    src: url(./fonts/MonAmourScriptPro.otf);
+    font-weight: 400;
+}
+
+.monAmour {
+    font-family: monAmour!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Montserrat ==== */
+
+
+/* ----- Thin ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-Thin.ttf);
+    font-weight: 100;
+}
+
+.montserrat-100 {
+    font-family: montserrat!important;
+    font-weight: 100!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-ThinItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+.montserrat-100_italic {
+    font-family: montserrat!important;
+    font-weight: 100!important;
+    font-style: italic;
+}
+
+
+/* ----- ExtraLight ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+.montserrat-200 {
+    font-family: montserrat!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-ExtraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+.montserrat-200_italic {
+    font-family: montserrat!important;
+    font-weight: 200!important;
+    font-style: italic;
+}
+
+
+/* ----- Light ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-Light.ttf);
+    font-weight: 300;
+}
+
+.montserrat-300 {
+    font-family: montserrat!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.montserrat-300_italic {
+    font-family: montserrat!important;
+    font-weight: 300!important;
+    font-style: italic;
+}
+
+
+/* ----- Regular ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+.montserrat-400 {
+    font-family: montserrat!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.montserrat-400_italic {
+    font-family: montserrat!important;
+    font-weight: 400!important;
+    font-style: italic;
+}
+
+
+/* ----- Medium ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-Medium.ttf);
+    font-weight: 500;
+}
+
+.montserrat-500 {
+    font-family: montserrat!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.montserrat-500_italic {
+    font-family: montserrat!important;
+    font-weight: 500!important;
+    font-style: italic;
+}
+
+
+/* ----- SemiBold ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.montserrat-600 {
+    font-family: montserrat!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.montserrat-600_italic {
+    font-family: montserrat!important;
+    font-weight: 600!important;
+    font-style: italic;
+}
+
+
+/* ----- Bold ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+.montserrat-700 {
+    font-family: montserrat!important;
+    font-weight: 700!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.montserrat-700_italic {
+    font-family: montserrat!important;
+    font-weight: 700!important;
+    font-style: italic;
+}
+
+
+/* ----- ExtraBold ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+.montserrat-800 {
+    font-family: montserrat!important;
+    font-weight: 800!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf);
+    font-weight: 800;
+    font-style: italic;
+}
+
+.montserrat-800_italic {
+    font-family: montserrat!important;
+    font-weight: 800!important;
+    font-style: italic;
+}
+
+
+/* ----- Black ----- */
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-Black.ttf);
+    font-weight: 900;
+}
+
+.montserrat-900 {
+    font-family: montserrat!important;
+    font-weight: 900!important;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat/Montserrat-BlackItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.montserrat-900_italic {
+    font-family: montserrat!important;
+    font-weight: 900!important;
+    font-style: italic;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Museo ==== */
+
+@font-face {
+    font-family: museo;
+    src: url(./fonts/Museo/Museo100.otf);
+    font-weight: 100;
+}
+
+.museo-100 {
+    font-family: museo!important;
+    font-weight: 100!important;
+}
+
+@font-face {
+    font-family: museo;
+    src: url(./fonts/Museo/Museo300.otf);
+    font-weight: 300;
+}
+
+.museo-300 {
+    font-family: museo!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: museo;
+    src: url(./fonts/Museo/Museo500.otf);
+    font-weight: 500;
+}
+
+.museo-500 {
+    font-family: museo!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: museo;
+    src: url(./fonts/Museo/Museo700.otf);
+    font-weight: 700;
+}
+
+.museo-700 {
+    font-family: museo!important;
+    font-weight: 700!important;
+}
+
+@font-face {
+    font-family: museo;
+    src: url(./fonts/Museo/Museo900.otf);
+    font-weight: 900;
+}
+
+.museo-900 {
+    font-family: museo!important;
+    font-weight: 900!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Mussica ==== */
+
+@font-face {
+    font-family: mussica;
+    src: url(./fonts/Mussica.otf);
+    font-weight: 400;
+}
+
+.mussica {
+    font-family: mussica!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Neuropol ==== */
+
+@font-face {
+    font-family: neuropol;
+    src: url(./fonts/Neuropol.otf);
+    font-weight: 400;
+}
+
+.neuropol {
+    font-family: neuropol!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Park Avenue ==== */
+
+@font-face {
+    font-family: parkAvenue;
+    src: url(./fonts/ParkAvenue.ttf);
+    font-weight: 400;
+}
+
+.parkAvenue {
+    font-family: parkAvenue!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Pista ==== */
+
+@font-face {
+    font-family: pista;
+    src: url(./fonts/Pista.otf);
+    font-weight: 400;
+}
+
+.pista {
+    font-family: pista!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== President ==== */
+
+@font-face {
+    font-family: president;
+    src: url(./fonts/President.ttf);
+    font-weight: 400;
+}
+
+.president {
+    font-family: president!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Snow ==== */
+
+@font-face {
+    font-family: snow;
+    src: url(./fonts/Snow.ttf);
+    font-weight: 400;
+}
+
+.snow {
+    font-family: snow!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Sweetly Broken ==== */
+
+@font-face {
+    font-family: sweetlyBroken;
+    src: url(./fonts/Sweetly-Broken/SweetlyBroken.otf);
+    font-weight: 400;
+}
+
+.sweetlyBroken-400 {
+    font-family: sweetlyBroken!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: sweetlyBroken;
+    src: url(./fonts/Sweetly-Broken/SweetlyBroken-SemiBold.otf);
+    font-weight: 600;
+}
+
+.sweetlyBroken-600 {
+    font-family: sweetlyBroken!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: sweetlyBroken;
+    src: url(./fonts/Sweetly-Broken/SweetlyBroken-Bold.otf);
+    font-weight: 700;
+}
+
+.sweetlyBroken-700 {
+    font-family: sweetlyBroken!important;
+    font-weight: 700!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Taviraj ==== */
+
+
+/* ----- Thin ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-Thin.ttf);
+    font-weight: 100;
+}
+
+.taviraj-100 {
+    font-family: taviraj!important;
+    font-weight: 100!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-ThinItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+.taviraj-100_italic {
+    font-family: taviraj!important;
+    font-weight: 100!important;
+    font-style: italic;
+}
+
+
+/* ----- ExtraLight ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+.taviraj-200 {
+    font-family: taviraj!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-ExtraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+.taviraj-200_italic {
+    font-family: taviraj!important;
+    font-weight: 200!important;
+    font-style: italic;
+}
+
+
+/* ----- Light ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-Light.ttf);
+    font-weight: 300;
+}
+
+.taviraj-300 {
+    font-family: taviraj!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.taviraj-300_italic {
+    font-family: taviraj!important;
+    font-weight: 300!important;
+    font-style: italic;
+}
+
+
+/* ----- Regular ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-Regular.ttf);
+    font-weight: 400;
+}
+
+.taviraj-400 {
+    font-family: taviraj!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.taviraj-400_italic {
+    font-family: taviraj!important;
+    font-weight: 400!important;
+    font-style: italic;
+}
+
+
+/* ----- Medium ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-Medium.ttf);
+    font-weight: 500;
+}
+
+.taviraj-500 {
+    font-family: taviraj!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.taviraj-500_italic {
+    font-family: taviraj!important;
+    font-weight: 500!important;
+    font-style: italic;
+}
+
+
+/* ----- SemiBold ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.taviraj-600 {
+    font-family: taviraj!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.taviraj-600_italic {
+    font-family: taviraj!important;
+    font-weight: 600!important;
+    font-style: italic;
+}
+
+
+/* ----- Bold ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-Bold.ttf);
+    font-weight: 700;
+}
+
+.taviraj-700 {
+    font-family: taviraj!important;
+    font-weight: 700!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.taviraj-700_italic {
+    font-family: taviraj!important;
+    font-weight: 700!important;
+    font-style: italic;
+}
+
+
+/* ----- ExtraBold ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+.taviraj-800 {
+    font-family: taviraj!important;
+    font-weight: 800!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-ExtraBoldItalic.ttf);
+    font-weight: 800;
+    font-style: italic;
+}
+
+.taviraj-800_italic {
+    font-family: taviraj!important;
+    font-weight: 800!important;
+    font-style: italic;
+}
+
+
+/* ----- Black ----- */
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-Black.ttf);
+    font-weight: 900;
+}
+
+.taviraj-900 {
+    font-family: taviraj!important;
+    font-weight: 900!important;
+}
+
+@font-face {
+    font-family: taviraj;
+    src: url(./fonts/Taviraj/Taviraj-BlackItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.taviraj-900_italic {
+    font-family: taviraj!important;
+    font-weight: 900!important;
+    font-style: italic;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Tertius ==== */
+
+@font-face {
+    font-family: tertius;
+    src: url(./fonts/Tertius.otf);
+    font-weight: 400;
+}
+
+.tertius {
+    font-family: tertius!important;
+}
+
+
+/*#endregion */
+
+
+/*#region ==== Work Sans ==== */
+
+
+/* ----- Thin ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-Thin.ttf);
+    font-weight: 100;
+}
+
+.workSans-100 {
+    font-family: workSans!important;
+    font-weight: 100!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-ThinItalic.ttf);
+    font-weight: 100;
+    font-style: italic;
+}
+
+.workSans-100_italic {
+    font-family: workSans!important;
+    font-weight: 100!important;
+    font-style: italic;
+}
+
+
+/* ----- ExtraLight ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+.workSans-200 {
+    font-family: workSans!important;
+    font-weight: 200!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-ExtraLightItalic.ttf);
+    font-weight: 200;
+    font-style: italic;
+}
+
+.workSans-200_italic {
+    font-family: workSans!important;
+    font-weight: 200!important;
+    font-style: italic;
+}
+
+
+/* ----- Light ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-Light.ttf);
+    font-weight: 300;
+}
+
+.workSans-300 {
+    font-family: workSans!important;
+    font-weight: 300!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.workSans-300_italic {
+    font-family: workSans!important;
+    font-weight: 300!important;
+    font-style: italic;
+}
+
+
+/* ----- Regular ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-Regular.ttf);
+    font-weight: 400;
+}
+
+.workSans-400 {
+    font-family: workSans!important;
+    font-weight: 400!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.workSans-400_italic {
+    font-family: workSans!important;
+    font-weight: 400!important;
+    font-style: italic;
+}
+
+
+/* ----- Medium ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-Medium.ttf);
+    font-weight: 500;
+}
+
+.workSans-500 {
+    font-family: workSans!important;
+    font-weight: 500!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+.workSans-500_italic {
+    font-family: workSans!important;
+    font-weight: 500!important;
+    font-style: italic;
+}
+
+
+/* ----- SemiBold ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+.workSans-600 {
+    font-family: workSans!important;
+    font-weight: 600!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.workSans-600_italic {
+    font-family: workSans!important;
+    font-weight: 600!important;
+    font-style: italic;
+}
+
+
+/* ----- Bold ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-Bold.ttf);
+    font-weight: 700;
+}
+
+.workSans-700 {
+    font-family: workSans!important;
+    font-weight: 700!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.workSans-700_italic {
+    font-family: workSans!important;
+    font-weight: 700!important;
+    font-style: italic;
+}
+
+
+/* ----- ExtraBold ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+.workSans-800 {
+    font-family: workSans!important;
+    font-weight: 800!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-ExtraBoldItalic.ttf);
+    font-weight: 800;
+    font-style: italic;
+}
+
+.workSans-800_italic {
+    font-family: workSans!important;
+    font-weight: 800!important;
+    font-style: italic;
+}
+
+
+/* ----- Black ----- */
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-Black.ttf);
+    font-weight: 900;
+}
+
+.workSans-900 {
+    font-family: workSans!important;
+    font-weight: 900!important;
+}
+
+@font-face {
+    font-family: workSans;
+    src: url(./fonts/Work_Sans/WorkSans-BlackItalic.ttf);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.workSans-900_italic {
+    font-family: workSans!important;
+    font-weight: 900!important;
+    font-style: italic;
+}
+
+
+/*#endregion */

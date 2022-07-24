@@ -1,0 +1,99 @@
+/* External style(css) */
+
+
+/* Syntax: */
+
+
+/* selector{
+    property: value;
+} */
+
+
+/* Bir nece cur selectorlar var: */
+
+
+/* 1. Simple */
+
+
+/* a) Tag name - tagin ozu, oz adi */
+
+p {
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    width: 500px;
+}
+
+
+/* b) Class-lar -> .clas-name seklinde yazilir.
+    qruplasdirmaq ucun istifade olunur,
+    kod tekrarinin qarsisini almaq ucun.
+    DRY - Dont Reaped Yourself
+ */
+
+.text-yellow {
+    color: yellow;
+}
+
+
+/* c) Id -> Unique olur(tekrarsiz), 
+xususilesdirmek ucun istifade olunur, 
+#idName seklinde yazilir. */
+
+#goldText {
+    background: linear-gradient(to bottom, #cfc09f 15%, #634f2c 20%, #cfc09f 30%, #cfc09f 30%, #ffecb3 40%, #3a2c0f 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 8vw;
+    margin: 0;
+    font-weight: 400;
+    width: 80%;
+    /* text-align: center; */
+    padding: 0;
+    border: none;
+}
+
+
+/* 2. Pseudo-class */
+
+
+/* 3. Pseudo-element */
+
+
+/* 4. With attribute */
+
+
+/* 5. Combine */
+
+p,
+a,
+h1 {
+    border: 2px solid rgb(120, 36, 36);
+}
+
+
+/* ======================================== */
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at center, #443501 0%, #000000 100%);
+    height: 200px;
+    width: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+#goldText:after {
+    background: none;
+    content: attr(data-heading);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    text-shadow: -1px 0 1px #c6bb9f, 0 1px 1px #c6bb9f, 5px 5px 10px rgba(0, 0, 0, 0.4), -5px -5px 10px rgba(0, 0, 0, 0.4);
+}

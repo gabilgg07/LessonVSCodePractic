@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 50px auto;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 44px;
+  color: rgb(118, 92, 59);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 2px dashed rgb(118, 92, 59);
+  border-bottom: 2px dashed rgb(118, 92, 59);
+}
+
+.box {
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 0 4px rgba(76, 72, 72, 0.605);
+}
+
+.box h2 {
+  font-size: 28px;
+  border-top: 2px dotted #bdbd3a;
+  border-bottom: 2px dotted #bdbd3a;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: burlywood;
+}
+
+.box h2:hover {
+  color: rgb(136, 109, 75);
+}
+
+.box h2:hover + div p {
+  box-shadow: inset -1px -1px 5px #847f7f;
+}
+
+.box p {
+  font-size: 26px;
+  color: #463e3e;
+  padding: 5px;
+  padding-left: 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.box p:hover {
+  box-shadow: inset -1px -1px 5px #847f7f;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 45px;
+  width: 100px;
+  /* height: 100vh; */
+  /* overflow: auto; */
+}
+
+#alphabet {
+  /* min-height: 100vh; */
+  /* padding-bottom: 50px; */
+}
+
+#alphabet li a {
+  display: block;
+  margin: 5px;
+  border: 1px solid rgb(89, 86, 86);
+  text-align: center;
+  color: darkorange;
+  background-color: antiquewhite;
+  margin-right: 15px;
+}
+
+#alphabet li a:hover {
+  color: darkorange;
+  background-color: blueviolet;
+}
+
+#alphabet li a:active {
+  box-shadow: 1px 1px 2px black;
+  background-color: rgb(185, 150, 217);
+  color: rgb(66, 20, 110);
+}
+
+[class^="bickham"],
+[class^="fontleroy"] {
+  font-size: 42px !important;
+}
+
+[class^="monAmour"] {
+  font-size: 18px !important;
+}
+
+#style {
+  position: fixed;
+  left: 85%;
+  top: 3%;
+}
+
+#style .style_copy {
+  font-size: 18px;
+  color: #d09f46;
+  max-width: 240px;
+  min-height: 100px;
+  border: 1px solid #d09f46;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.d-none {
+  display: none;
+}

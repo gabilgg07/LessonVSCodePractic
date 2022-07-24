@@ -1,0 +1,70 @@
+body {
+    height: 1600px;
+}
+
+
+/* =============== Background ======================== */
+
+.bg_color {
+    background-color: cadetblue;
+    margin-bottom: 250px;
+}
+
+p {
+    padding: 50px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.bg_image {
+    height: 500px;
+    border: 10px solid rgba(35, 34, 34, 0.871);
+    border-radius: 15px;
+    /* ------ bg-image ------- */
+    /* fon sekli ucun: */
+    background-image: url("../images/bg_img.jpg");
+    /* --------- bg-repeat --------- */
+    /* fon seklinin tekrarlanmamasi ucun: */
+    background-repeat: no-repeat;
+    /* x-oxu ve ya y-oxu uzre tekralnma: */
+    /* background-repeat:repeat-x; */
+    /* background-repeat:repeat-y; */
+    /* ---------- bg-size ---------- */
+    /* miqyasli sekilde fonu tam tutmasi ucun: */
+    background-size: cover;
+    /* miqyasli sekilde fonda tam yerlesmesi ucun: */
+    /* background-size: contain; */
+    /* ------------ bg-position ------------ */
+    /* seklin fontda hem top-dan, hem de left-den
+       merkezde yerlesmesi ucun:    
+    */
+    background-position: center center;
+    /* default olaraq top=0, left=0 olur */
+    /* background-position: 0 0; */
+    /* -------- bg-attachment -------- */
+    /* PARALAX EFFECTI yaradir,
+       sekil atxa fonda terpenmez dayanir,
+       scrool etsek bele.
+    */
+    background-attachment: fixed;
+    /* ------- Shorthand property */
+    /* background: color image repeat attachment position; */
+    /* background-size: cover; */
+    display: flex;
+}
+
+.bg_image div {
+    width: calc(100%/4);
+    height: 100%;
+    border-right: 5px solid rgba(35, 34, 34, 0.871);
+}
+
+.bg_image div:last-child {
+    border-right: none;
+}
+
+[class*="cercive"] .inner-line {
+    width: 100%;
+    height: 50%;
+    border-bottom: 5px solid rgba(35, 34, 34, 0.871);
+}
