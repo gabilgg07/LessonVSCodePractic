@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.example {
+  padding: 150px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(115, 88, 179, 0.444);
+  padding: 10px;
+}
+
+.item {
+  width: 200px;
+  height: 250px;
+  background-color: rgba(153, 153, 153, 0.501);
+  border: 1px solid rgba(31, 29, 29, 0.626);
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  transition: all 0.5s;
+}
+
+/* transform */
+.translate {
+  background-color: rgba(190, 107, 107, 0.543);
+  transform: translate(20px, 50px);
+}
+
+.translateY {
+  background-color: rgba(190, 179, 107, 0.543);
+  transform: translateY(30px);
+}
+
+.rotate {
+  background-color: rgba(107, 190, 107, 0.543);
+  transform: rotate(102deg);
+}
+
+.scale {
+  background-color: rgba(107, 190, 169, 0.543);
+  transform: scale(1.3);
+}
+
+.scaleXY {
+  background-color: rgba(107, 190, 169, 0.543);
+  transform: scale(0.9, 1.4);
+}
+
+.skew {
+  background-color: rgba(107, 175, 190, 0.543);
+  transform: skew(31deg, 172deg);
+}
+
+.skewY {
+  background-color: rgba(107, 143, 190, 0.543);
+  transform: skewY(25deg);
+}
+
+.matrix {
+  background-color: rgba(85, 73, 190, 0.543);
+  /* matrix(scaleX,skewY,skewX,scaleY,translateX,translateY) */
+  transform: matrix(1.2, -0.3, 1.3, 1.3, 2, 3);
+}
+
+.transform3d {
+  width: 200px;
+  height: 200px;
+  perspective: 400px;
+}
+
+.transform3d-item {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/pexels-israelzin-oliveira-12292899.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: all 1s;
+}
+
+.transform3d-item:hover {
+  /* X,Y,Z */
+  transform: rotate3d(1, 1, 0, 359deg) scale3d(1.5, 1.5, 1.5);
+  background-image: url(../images/pexels-aedrian-12555760.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.scale1:hover {
+  transform: scale(1.5);
+}
+
+.scale2:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.scale3:hover {
+  transform: scale3d(1.5, 1.5, 1.5);
+}
+
+/* transition */
+.transition-parent {
+  flex-direction: column;
+}
+.transition {
+  background-color: rgba(44, 222, 79, 0.596);
+  transition: background-color 1.5s;
+  padding: 8px;
+  width: 150px;
+  height: 100px;
+  position: relative;
+}
+.transition-parent:hover .transition {
+  background-color: rgba(21, 139, 189, 0.808);
+  color: white;
+}
+.transition-delay2s {
+  transition-delay: 2s;
+}
+
+.transition-parent:hover .transition-timing-function {
+  width: 400px;
+}
+.transition-timing-function.linear {
+  transition-timing-function: linear;
+  transition-duration: 2s;
+  transition-property: background-color, width;
+}
+
+.transition-timing-function.ease-in {
+  transition-timing-function: ease-in;
+  transition-duration: 2s;
+  transition-property: background-color, width;
+}
+.transition-timing-function.ease-out {
+  transition-timing-function: ease-out;
+  transition-duration: 2s;
+  transition-property: background-color, width;
+}
+.transition-timing-function.ease-in-out {
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+  transition-property: background-color, width;
+}
+.transition-timing-function.cubic-bezier {
+  transition-timing-function: cubic-bezier(0.56, -0.58, 0.44, 1.37);
+  transition-duration: 2s;
+  transition-property: background-color, width;
+}
