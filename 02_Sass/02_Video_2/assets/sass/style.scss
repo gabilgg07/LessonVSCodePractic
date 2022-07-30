@@ -1,13 +1,26 @@
+$primary-color:#84A59D;
+$secondary-color:#F28482;
+$primary-bg-color:#F7EDE2;
+$secondary-bg-color:#F5CAC3;
+$default-font: 'Roboto', sans-serif;
+$section-padding: 50px 0;
+
 header{
-    background-color: bisque;
     font-size: 24px;
+    padding: $section-padding;
     ul{
         display: flex;
         justify-content: space-between;
+        list-style-type: none;
+        background-color: $primary-bg-color;
+        padding: 30px 20px;
+        
         li{
             margin-right: 7px;
             a{
                 padding: 20px 30px;
+                color: $primary-color;
+                text-decoration: none;
                 span{
                     font-size: 26px;
                 }

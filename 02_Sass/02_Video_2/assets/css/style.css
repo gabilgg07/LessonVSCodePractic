@@ -1,16 +1,21 @@
 header {
-  background-color: bisque;
   font-size: 24px;
+  padding: 50px 0;
 }
 header ul {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+  background-color: #F7EDE2;
+  padding: 30px 20px;
 }
 header ul li {
   margin-right: 7px;
 }
 header ul li a {
   padding: 20px 30px;
+  color: #84A59D;
+  text-decoration: none;
 }
 header ul li a span {
   font-size: 26px;

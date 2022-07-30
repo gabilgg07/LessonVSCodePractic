@@ -1,0 +1,13 @@
+// partials
+
+@import "./variables";
+@import "./mixins";
+@import "./helpers";
+@import "./default";
+@import "./grid";
+@import "./responsibility";
+
+// Pages
+
+@import "./pages/index";
+@import "./pages/about";

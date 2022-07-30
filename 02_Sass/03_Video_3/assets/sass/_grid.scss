@@ -1,0 +1,10 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+@include Cols("sm");
