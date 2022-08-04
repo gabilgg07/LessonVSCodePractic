@@ -1,0 +1,111 @@
+#lessons {
+  padding: 50px 0;
+  .lesson {
+    .lesson-title {
+      text-align: center;
+      padding: 10px 0;
+      color: brown;
+      border: 2px double rgb(212, 171, 139);
+      margin: 30px 0 20px;
+    }
+    .lesson-content {
+      .lesson-info {
+        font-size: 20px;
+        color: rgb(9, 146, 146);
+        padding: 10px;
+        border: 2px dashed rgba(199, 61, 130, 0.511);
+        .info-header {
+          font-style: italic;
+          color: rgb(112, 25, 152);
+        }
+      }
+      .lesson-example {
+        padding: 20px 0;
+        margin: 30px 0;
+        border: 12px outset rgb(167, 106, 106);
+        border-radius: 5px;
+        background-color: rgb(213, 189, 189);
+        @extend %center;
+        .card-box {
+          @extend %center;
+          border: 3px outset gray;
+          width: 300px;
+          height: 300px;
+
+          .card-text {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// functions
+
+.sass-functions {
+  .card-item-1 {
+    width: 200px;
+    height: 200px;
+    box-shadow: -3px 0px 10px 1px #0000004d, -8px 0px 20px 0 #0000004d,
+      -10px 0px 10px 0px #0000004d, -12px 0px 20px 0 #0000004d,
+      -12px 2px 10px 0px #0000004d, -12px -2px 20px 0 #0000004d;
+    background-color: aqua;
+    // set text color fuction
+    color: set-text-color(aqua);
+    border-color: rgb(35, 176, 176);
+    margin-right: 5px;
+  }
+  .card-item-2 {
+    box-shadow: 3px 0px 10px 1px #0000004d, 8px 0px 20px 0 #0000004d,
+      10px 0px 10px 0px #0000004d, 12px 0px 20px 0 #0000004d,
+      12px 2px 10px 0px #0000004d, 12px -2px 20px 0 #0000004d;
+    background-color: indigo;
+    // set text color fuction
+    color: set-text-color(indigo);
+    border-color: rgb(135, 14, 222);
+  }
+}
+
+// extend
+
+.sass-extend {
+  .btn {
+    padding: 18px 25px;
+    font-size: 22px;
+    border: 1px solid rgb(13, 12, 12);
+    margin: 1rem;
+    transition: box-shadow 0.3s;
+    border-radius: 5px;
+    color: var(--dark);
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .btn-red {
+    background-color: rgb(240, 55, 55);
+    color: text-color-by-bg(rgb(240, 55, 55));
+  }
+  .btn-violet {
+    // extend .btn class
+    @extend .btn;
+    background-color: rgb(233, 91, 238);
+    color: text-color-by-bg(rgb(233, 91, 238));
+  }
+  .btn-blue {
+    @extend .btn;
+    background-color: rgb(49, 120, 242);
+    color: text-color-by-bg(rgb(49, 120, 242));
+  }
+  .btn-green {
+    // extend %btn
+    @extend %btn;
+    background-color: rgb(22, 184, 38);
+    color: text-color-by-bg(rgb(22, 184, 38));
+  }
+  .btn-yellow {
+    @extend %btn;
+    background-color: rgb(231, 248, 53);
+    color: text-color-by-bg(rgb(231, 248, 53));
+  }
+}

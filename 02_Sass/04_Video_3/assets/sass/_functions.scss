@@ -1,0 +1,15 @@
+@function set-text-color($bg-color) {
+  @if (lightness($bg-color) >49) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
+
+@function text-color-by-bg($bg-color) {
+  @if (lightness($bg-color) >49) {
+    @return hsl(hue($bg-color), saturation($bg-color), 25%);
+  } @else {
+    @return hsl(hue($bg-color), saturation($bg-color), 75%);
+  }
+}
