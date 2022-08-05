@@ -1,7 +1,13 @@
 #lessons .lesson .lesson-content .lesson-example .card-box, #lessons .lesson .lesson-content .lesson-example {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sass-extend .btn-yellow, .sass-extend .btn-green {
@@ -9,12 +15,16 @@
   font-size: 22px;
   border: 1px solid rgb(13, 12, 12);
   margin: 1rem;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   border-radius: 5px;
   color: var(--dark);
 }
 .sass-extend .btn-yellow:hover, .sass-extend .btn-green:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -71,14 +81,16 @@ ol {
 .sass-functions .card-item-1 {
   width: 200px;
   height: 200px;
-  box-shadow: -3px 0px 10px 1px rgba(0, 0, 0, 0.3019607843), -8px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), -10px 0px 10px 0px rgba(0, 0, 0, 0.3019607843), -12px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), -12px 2px 10px 0px rgba(0, 0, 0, 0.3019607843), -12px -2px 20px 0 rgba(0, 0, 0, 0.3019607843);
+  -webkit-box-shadow: -3px 0px 10px 1px rgba(0, 0, 0, 0.3019607843), -8px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), -10px 0px 10px 0px rgba(0, 0, 0, 0.3019607843), -12px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), -12px 2px 10px 0px rgba(0, 0, 0, 0.3019607843), -12px -2px 20px 0 rgba(0, 0, 0, 0.3019607843);
+          box-shadow: -3px 0px 10px 1px rgba(0, 0, 0, 0.3019607843), -8px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), -10px 0px 10px 0px rgba(0, 0, 0, 0.3019607843), -12px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), -12px 2px 10px 0px rgba(0, 0, 0, 0.3019607843), -12px -2px 20px 0 rgba(0, 0, 0, 0.3019607843);
   background-color: aqua;
   color: black;
   border-color: rgb(35, 176, 176);
   margin-right: 5px;
 }
 .sass-functions .card-item-2 {
-  box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.3019607843), 8px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), 10px 0px 10px 0px rgba(0, 0, 0, 0.3019607843), 12px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), 12px 2px 10px 0px rgba(0, 0, 0, 0.3019607843), 12px -2px 20px 0 rgba(0, 0, 0, 0.3019607843);
+  -webkit-box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.3019607843), 8px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), 10px 0px 10px 0px rgba(0, 0, 0, 0.3019607843), 12px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), 12px 2px 10px 0px rgba(0, 0, 0, 0.3019607843), 12px -2px 20px 0 rgba(0, 0, 0, 0.3019607843);
+          box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.3019607843), 8px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), 10px 0px 10px 0px rgba(0, 0, 0, 0.3019607843), 12px 0px 20px 0 rgba(0, 0, 0, 0.3019607843), 12px 2px 10px 0px rgba(0, 0, 0, 0.3019607843), 12px -2px 20px 0 rgba(0, 0, 0, 0.3019607843);
   background-color: indigo;
   color: white;
   border-color: rgb(135, 14, 222);
@@ -89,12 +101,16 @@ ol {
   font-size: 22px;
   border: 1px solid rgb(13, 12, 12);
   margin: 1rem;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   border-radius: 5px;
   color: var(--dark);
 }
 .sass-extend .btn:hover, .sass-extend .btn-blue:hover, .sass-extend .btn-violet:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .sass-extend .btn-red {
   background-color: rgb(240, 55, 55);

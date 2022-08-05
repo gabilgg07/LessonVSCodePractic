@@ -1,0 +1,368 @@
+/*#region ==== Work Sans ==== */
+/* ----- Thin ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-Thin.ttf);
+  font-weight: 100;
+}
+.workSans-100 {
+  font-family: workSans !important;
+  font-weight: 100 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-ThinItalic.ttf);
+  font-weight: 100;
+  font-style: italic;
+}
+.workSans-100_italic {
+  font-family: workSans !important;
+  font-weight: 100 !important;
+  font-style: italic;
+}
+
+/* ----- ExtraLight ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-ExtraLight.ttf);
+  font-weight: 200;
+}
+.workSans-200 {
+  font-family: workSans !important;
+  font-weight: 200 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-ExtraLightItalic.ttf);
+  font-weight: 200;
+  font-style: italic;
+}
+.workSans-200_italic {
+  font-family: workSans !important;
+  font-weight: 200 !important;
+  font-style: italic;
+}
+
+/* ----- Light ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-Light.ttf);
+  font-weight: 300;
+}
+.workSans-300 {
+  font-family: workSans !important;
+  font-weight: 300 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+.workSans-300_italic {
+  font-family: workSans !important;
+  font-weight: 300 !important;
+  font-style: italic;
+}
+
+/* ----- Regular ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-Regular.ttf);
+  font-weight: 400;
+}
+.workSans-400 {
+  font-family: workSans !important;
+  font-weight: 400 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+.workSans-400_italic {
+  font-family: workSans !important;
+  font-weight: 400 !important;
+  font-style: italic;
+}
+
+/* ----- Medium ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-Medium.ttf);
+  font-weight: 500;
+}
+.workSans-500 {
+  font-family: workSans !important;
+  font-weight: 500 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+.workSans-500_italic {
+  font-family: workSans !important;
+  font-weight: 500 !important;
+  font-style: italic;
+}
+
+/* ----- SemiBold ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-SemiBold.ttf);
+  font-weight: 600;
+}
+.workSans-600 {
+  font-family: workSans !important;
+  font-weight: 600 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+.workSans-600_italic {
+  font-family: workSans !important;
+  font-weight: 600 !important;
+  font-style: italic;
+}
+
+/* ----- Bold ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-Bold.ttf);
+  font-weight: 700;
+}
+.workSans-700 {
+  font-family: workSans !important;
+  font-weight: 700 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+.workSans-700_italic {
+  font-family: workSans !important;
+  font-weight: 700 !important;
+  font-style: italic;
+}
+
+/* ----- ExtraBold ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-ExtraBold.ttf);
+  font-weight: 800;
+}
+.workSans-800 {
+  font-family: workSans !important;
+  font-weight: 800 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-ExtraBoldItalic.ttf);
+  font-weight: 800;
+  font-style: italic;
+}
+.workSans-800_italic {
+  font-family: workSans !important;
+  font-weight: 800 !important;
+  font-style: italic;
+}
+
+/* ----- Black ----- */
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-Black.ttf);
+  font-weight: 900;
+}
+.workSans-900 {
+  font-family: workSans !important;
+  font-weight: 900 !important;
+}
+
+@font-face {
+  font-family: workSans;
+  src: url(../fonts/Work_Sans/WorkSans-BlackItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+.workSans-900_italic {
+  font-family: workSans !important;
+  font-weight: 900 !important;
+  font-style: italic;
+}
+
+/*#endregion */
+header nav .icons-box .card, header nav .icons-box .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html {
+  color: #252b42;
+  font-family: workSans, "sans-serif";
+}
+
+a {
+  text-decoration: none;
+  color: #252b42;
+  display: inline-block;
+}
+aa:hover {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 0;
+}
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 576px) {
+  header nav .logo {
+    margin-right: auto;
+  }
+}
+header nav .logo a {
+  font-size: 24px;
+  font-weight: 700;
+}
+header nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 576px) {
+  header nav .nav-list {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+header nav .nav-list li {
+  margin: 0 21px;
+}
+header nav .nav-list a {
+  color: #737373;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+header nav .nav-list a:hover {
+  color: #ff7b47;
+}
+@media (max-width: 576px) {
+  header nav .nav-list a {
+    padding: 15px 21px;
+  }
+}
+header nav .icons-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 40px;
+}
+header nav .icons-box svg {
+  width: 25px;
+  height: 25px;
+  fill: #737373;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+header nav .icons-box svg:hover {
+  fill: #ff7b47;
+}
+header nav .icons-box .search svg {
+  width: 30px;
+  height: 30px;
+}
+header nav .icons-box .card {
+  margin-left: 22px;
+}
+header nav .menu-bar-icon {
+  display: none;
+}
+@media (max-width: 576px) {
+  header nav .menu-bar-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    margin-left: 20px;
+  }
+}
+header nav .menu-bar-icon svg {
+  fill: #737373;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  width: 30px;
+  height: 30px;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+header nav .menu-bar-icon svg:hover {
+  fill: #ff7b47;
+}
