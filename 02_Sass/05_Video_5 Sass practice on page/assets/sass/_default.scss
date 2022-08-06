@@ -1,6 +1,21 @@
 html {
   color: $cl-text;
   font-family: $main-font;
+  @include mq-xl() {
+    font-size: 16px;
+  }
+  @include mq-lg() {
+    font-size: 15px;
+  }
+  @include mq-md() {
+    font-size: 14px;
+  }
+  @include mq-sm() {
+    font-size: 13px;
+  }
+  @include mq-xs() {
+    font-size: 12px;
+  }
 }
 
 a {
@@ -15,4 +30,8 @@ a {
 ul,
 ol {
   list-style-type: none;
+}
+
+img {
+  max-width: 100%;
 }
