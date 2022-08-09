@@ -1,0 +1,29 @@
+header {
+  width: 80%;
+  margin: 0 auto;
+}
+header .logo p {
+  font-size: 2rem;
+  color: darkslategrey;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  margin-bottom: 10px;
+}
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: chocolate;
+  border: 2px solid brown;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+header nav ul li a:hover {
+  background-color: brown;
+  color: white;
+}
