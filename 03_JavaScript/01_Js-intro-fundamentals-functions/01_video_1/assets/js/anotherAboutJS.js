@@ -146,7 +146,97 @@ console.log(" ");
 
 outloop: for (let i = 0; i < 10; i++) {
   for (let j = 0; j < 10; j++) {
-    if (i === 5) break outloop;
+    if (i === 5) {
+      console.log("Loop dayandi");
+      break outloop;
+    }
     console.log(`${i + 1} + ${j + 1} = ${i + 1 + j + 1}`);
   }
 }
+
+console.log(" ");
+
+// --------- swich-case
+let weekDay = 4;
+switch (weekDay) {
+  case 1:
+    console.log("Bazar ertesi");
+    break;
+
+  case 2:
+    console.log("Chershenbe axshami");
+    break;
+
+  case 3:
+    console.log("Chershenbe");
+    break;
+
+  case 4:
+    console.log("Cume axsami");
+    break;
+
+  case 5:
+    console.log("Cume");
+    break;
+  // case-lerin qruplasdirilmasi:
+  case 6:
+  case 7:
+    console.log("Hefte sonu");
+    break;
+
+  default:
+    console.log("1-7 arasi eded olmali idi.");
+    break;
+}
+console.log(" ");
+// --------- Functions
+// function funcName(argumens){bodu function}
+function sayHi() {
+  console.log("Hi, Everybody...");
+}
+
+sayHi();
+sayHi();
+
+function sayMessage(name, message) {
+  console.log(`${name} say: ${message}`);
+}
+
+sayMessage("Qabil", "I'm so happy ^_^ ");
+// eger parametir isteyen functiona parametr gondermesek undefined qaytarir:
+sayMessage("Elvin");
+// parametre default deyerde menimsede bilerik:
+function tellSomething(name, text = "Salam") {
+  console.log(`${name} say: ${text}`);
+}
+tellSomething("Samir");
+
+// Global variableler ver, local variableler var:
+let name1 = "Eli"; // global variable
+// globali function daaxilinde istifade ede bilerik.
+function tolking(nameSb, text) {
+  let name2 = "Elchin"; // local variable
+  console.log(`${nameSb} and ${name1} say: ${text}`);
+}
+tolking("Sabir", "Necesiz?");
+// local variableni ancaq oldugu skopka daxilinde istifade edile biler.
+
+// globalla local eyni adda olduqda skopkada istifade etdikde localdaki deyeri goturur:
+function tallking(nameSb, text) {
+  let name1 = "Elchin"; // local variable
+  console.log(`${nameSb} and ${name1} say: ${text}`);
+}
+tallking("Hesen", "Salam");
+
+// function yuxaridakilar kimi hec ne qaytarmirsa Void function-du.
+// return keyword-u ile qaytardigi type-a esasen deyisir.
+function numReturn() {
+  return 8;
+}
+console.log(numReturn());
+function hi() {
+  return "Salam";
+}
+
+console.log(hi());
+console.log(" ");
