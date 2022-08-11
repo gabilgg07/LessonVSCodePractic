@@ -1,6 +1,8 @@
-// OOP
+"use strict";
 
-// Object
+// ============= OOP
+
+// ---------- Object
 
 let user = {};
 
@@ -203,7 +205,7 @@ let userE = {};
 Object.assign(userE, userD, { isMarried: false });
 
 console.log(userE);
-
+console.log(" ");
 // Js de garbic collection-a erishhmek olmur. Eger bir varibale null-dursa ve biz ona erise bilmirikse, bu zaman automatik silinir.
 
 let user1 = {
@@ -223,3 +225,126 @@ user2 = null;
 
 // bu zaman silinmir, cunki admin variableden ona olasa bilirik.
 //  gerek admin de null olsun ki, silinsin.
+
+// Kod tekrari olmamasi ucun, eyni parametrlere sahib obyektleri yaratmaq ucun usullar var:
+
+// -------- Factory functions
+
+function createStudent(name, age) {
+  return {
+    name: name,
+    age: age,
+  };
+}
+
+// muasir js de eyni argument eyni key olaraq qayidirsa:
+
+function createUser(name, age) {
+  return {
+    name,
+    age,
+  };
+}
+
+let stn1 = createStudent("Elsever", 31);
+let stn2 = createStudent("Qasim", 23);
+
+console.log(stn1, "stn1");
+console.log(stn2, "stn2");
+
+let usr1 = createUser("User1", 34);
+let usr2 = createUser("User2", 37);
+
+console.log(usr1, "usr1");
+console.log(usr2, "usr2");
+console.log(" ");
+
+// Ikinci usul Constructor functions
+
+// Constructor funcs Paskal case-le yazilirlar.
+
+function Student(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// bu usulla object yaradanda new keyword-unden istifade edirik
+
+let std1 = new Student("Huseyn", 3);
+let std2 = new Student("Hikmet", 3);
+
+console.log(std1);
+console.log(std2);
+
+console.log(" ");
+
+// Globalda this yazib cagirsaq Browserin Window obyektini qaytarir:
+
+console.log(this);
+console.log(" ");
+
+// this keywordu function skopdur,
+// her zaman icinde bulundugu methodun cagrildiginda noqteden (.) sola baxir.
+
+function SayHi() {
+  console.log(`${this.name}, salam.`);
+}
+
+let std3 = {
+  name: "Sofi",
+  age: 22,
+};
+
+std3.SayFromHi = SayHi;
+
+std3.SayFromHi();
+
+let std4 = {
+  name: "Syam",
+  age: 31,
+  sayHi: function () {
+    console.log(`${this.name}, salam`);
+  },
+};
+
+std4.sayHi();
+console.log(" ");
+
+// methodu bele de yazmaq olur:
+let std5 = {
+  name: "Xeyal",
+  age: 31,
+  sayHi() {
+    console.log(`${this.name}, salam`);
+  },
+};
+
+// eger biz obyektde func icince func yazsaq ve this.name cagirsaq error qaytaracaq, cunki this func skopdur.
+
+let std6 = {
+  name: "Ehdi",
+  age: 31,
+  sayHi: function () {
+    function funcIntoFunc() {
+      console.log(`${this.name}, salam`);
+    }
+    funcIntoFunc();
+  },
+};
+
+// std6.sayHi(); => error qaytarir.
+// bunun qarsisini almaq ucun arrow func-dan istifade edirik,
+// cunki arrow func-da this leksikal skop oldugundan esas functionu tniyir:
+
+let std7 = {
+  name: "Ehtibar",
+  age: 31,
+  sayHi: function () {
+    let funcIntoFunc = () => {
+      console.log(`${this.name}, salam`);
+    };
+    funcIntoFunc();
+  },
+};
+
+std7.sayHi();
