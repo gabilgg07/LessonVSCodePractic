@@ -240,3 +240,144 @@ function hi() {
 
 console.log(hi());
 console.log(" ");
+
+// ------- Function Declaration
+
+//  function-u yaratmaq ucun 2 cur metoddan istifade edirik.
+
+//  1. function declaration:
+
+function sum(a, b = 4) {
+  if (!a) {
+    return;
+  }
+  console.log(a + b);
+}
+
+sum(); // hec ne gondermedikde sadece funksiyani saxlayir.
+sum(7);
+
+// js faylimiz ise dusende, birinci butun kodlari oxuyan global() methodu ise dusur. Birinci butun function-lari oxuyub yaddasa atir. Buna gore functionlasri kodun evvelinde de cagirsaq isleyir.
+
+funcDeclaration();
+
+function funcDeclaration() {
+  console.log("function declaration");
+}
+
+// 2. function expression
+
+let funcExpression = function () {
+  console.log("function expression");
+};
+
+// ozunu variable kimi aparir. ona gore ozunden evvel cagirmaq olmur.
+funcExpression();
+
+// functionlarin adlarini Console.log-a gonderdikde  functionu gosterir:
+console.log(funcExpression);
+console.log(funcDeclaration);
+console.log(" ");
+
+// ------------ Callback functions
+
+// Bir funksia icinde basqa funksiyani cagirmaq:
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+function showOk() {
+  console.log("Get ellerini yu, yemek yemeye gel.");
+}
+
+function showCancel() {
+  console.log("O zaman derslerini oxu.");
+}
+
+// showOk, showCancel function-lari ask funksiyasina parametr(argument) kimi oturulur.
+// ask("Acmisanmi?", showOk, showCancel);
+
+// --------- Arrow functions
+
+let hesabla = function () {
+  return 5 + 6;
+};
+// arrow function kimi:
+
+hesabla = () => {
+  return 5 + 6;
+};
+
+// ve ya bele:
+
+hesabla = () => 5 + 6;
+
+// bir nece parametr olanda:
+
+hesabla = function (a, b) {
+  return a + b;
+};
+
+// arrow kimi:
+
+hesabla = (a, b) => a + b;
+
+// tek parametrde ise:
+
+hesabla = function (a) {
+  return a + 7;
+};
+
+// arrow:
+
+// prettier-ignore
+hesabla = a => a + 7;
+
+console.log(hesabla(6));
+console.log(" ");
+// var, let ve const ferqi
+
+// kohne js de var keywordu ile variable yaradirdiq. Bu keyword problemlidir.
+// var variable-lar function skop-durlar.
+
+if (true) {
+  var yas = 31;
+}
+console.log(yas); // eslinde error qaytarmalidir.
+console.log(" ");
+
+// let ve const da diger proqramlasdirma dillerindeki kimi error qaytarir.
+
+// var loop
+for (var i = 0; i < 5; i++) {
+  console.log(i, "inside loop");
+}
+
+console.log(i, "outside loop");
+console.log(" ");
+
+// let loop
+for (let j = 0; j < 5; j++) {
+  console.log(j, "inside loop");
+}
+
+// console.log(j, "outside loop"); => error qaytarir.
+
+// Qlobalda var la variable yazsaq, onu window obyektine properti kimi menimsedir, bu da duzgun deyil.
+
+var aMyProperty = "New my property";
+
+console.log(window);
+
+// Eyni adli property olsa, bilmeden deyerini deyise bilersiz.
+// bu sebebden js deyir var-la variable yaratmiyin, muasir js-deki let ve constdan istifade edin.
+
+// function icinde yazilarsa amma bu zaman colde oxunmayacaq. Buna gore function skop deyilir:
+
+function forVar() {
+  var newVar = "New variable";
+}
+
+// console.log(newVar); => error verecek.
