@@ -348,3 +348,47 @@ let std7 = {
 };
 
 std7.sayHi();
+console.log(" ");
+// Eger bir constructor func daxilinde local variable yaratmisiqsa, onu colde cagirib istifade etmek olmur.
+// Bunun ucun ancaq setder ve getder methodlari yaradaraq tesir etmek olar:
+
+function User(name, age) {
+  this.name = name;
+  this.age = age;
+
+  let test = 165;
+
+  // en besit formasi bir funksiya yaradib onu return etmekdir:
+
+  // this.getTest = function () {
+  //   return test;
+  // };
+  // this.setTest = function (value) {
+  //   test = value;
+  //   return test;
+  // };
+
+  // ve ya bu usulla etmek olar ki, funksiya kimi cagirmaga ehtiyac olmasin:
+
+  Object.defineProperty(this, "test", {
+    get() {
+      return test;
+    },
+    set(value) {
+      test = value;
+      return test;
+    },
+  });
+}
+
+let userTest = new User("Qabil", 31);
+
+// console.log(userTest.getTest());
+// userTest.setTest(543);
+// console.log(userTest.getTest());
+
+console.log(userTest);
+console.log(userTest.test);
+userTest.test = 122;
+console.log(userTest.test);
+console.log(userTest);
