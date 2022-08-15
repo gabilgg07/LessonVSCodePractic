@@ -1,0 +1,32 @@
+header {
+  width: 80%;
+  margin: 0 auto;
+  .logo {
+    p {
+      font-size: 2rem;
+      color: darkslategrey;
+    }
+  }
+  nav {
+    ul {
+      list-style-type: none;
+      li {
+        margin-bottom: 10px;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 20px;
+          color: chocolate;
+          border: 2px solid brown;
+          transition: background-color 0.3s, color 0.3s;
+          padding: 10px 20px;
+          border-radius: 8px;
+          &:hover {
+            background-color: brown;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
