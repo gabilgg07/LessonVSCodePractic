@@ -200,3 +200,132 @@ console.log(" ");
 console.log(`names.includes("Gulnar") => ${names.includes("Gulnar")}`);
 console.log(`names.includes("Yaver") => ${names.includes("Yaver")}`);
 console.log(" ");
+
+// ------- Foreach loop
+// Diger for dongulerinden ferqli olaraq, icine callback function gonderirik.
+// bu function da 3 parametr qebul edir ve siralama onemlidir: 1 item, 2 index, 3 array ozu.
+
+names.forEach(function (item, index, array) {
+  console.log(item, "item");
+  console.log(index, "index");
+  if (index == names.length - 1) {
+    console.log(array, "array");
+  }
+});
+console.log(" ");
+// bu parametrler optionaldir,hamisini birini, ve ya her hansi gondermeye de bilerik:
+names.forEach(function (item, index) {
+  console.log(item, "- item");
+  console.log(index, "index");
+});
+console.log(" ");
+
+// forEach-i rahat oxumaq ucun arraw func-dan istifade edirik:
+
+names.forEach(item => console.log(item));
+console.log(" ");
+
+// Basqa dongu methodlari da var ki, onlar da callback func isteyir ve icine optional olan 3 parametri gondere bilirik: item, index, array
+
+let users = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Peter" },
+  { id: 3, name: "Mery" },
+];
+console.log(`let users = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Peter" },
+  { id: 3, name: "Mery" },
+];`);
+console.log(" ");
+
+// find & findIndex:
+
+// .find(callback func) => ilk tapdigi itemi qaytarir:
+
+let user = users.find(item => item.id === 2);
+
+console.log(`let user = users.find(item => item.id === 2);`);
+console.log(" ");
+
+console.log(`user.name:`);
+console.log(user.name);
+console.log(" ");
+
+// .findIndex(callback func) => ilk tapdigi index-i qaytarir:
+
+let index = users.findIndex(item => item.id === 2);
+
+console.log(`let index = users.findIndex(item => item.id === 2);`);
+console.log(" ");
+
+console.log(`index:`);
+console.log(index);
+console.log(" ");
+//  -----------------
+
+let products = [
+  { id: 1, name: "samsung galaxy note 10", category: "phone" },
+  { id: 3, name: "samsung 10 tv", category: "television" },
+  { id: 2, name: "iphone 10", category: "phone" },
+  { id: 4, name: "ipad 3", category: "tablet" },
+  { id: 5, name: "acer t543", category: "computer" },
+  { id: 6, name: "lg C321", category: "television" },
+  { id: 7, name: "honor P78", category: "phone" },
+];
+
+console.log(`let products = [
+  { id: 1, name: "samsung galaxy note 10", category: "phone" },
+  { id: 3, name: "samsung 10 tv", category: "television" },
+  { id: 2, name: "iphone 10", category: "phone" },
+  { id: 4, name: "ipad 3", category: "tablet" },
+  { id: 5, name: "acer t543", category: "computer" },
+  { id: 6, name: "lg C321", category: "television" },
+  { id: 7, name: "honor P78", category: "phone" },
+];`);
+console.log(" ");
+
+// .filter(callback func) => serti odeyen butun itemleri array seklinde qaytarir:
+
+let filtered_products = products.filter(item => item.category === "phone");
+console.log(
+  `let filtered_products = products.filter(item => item.category === "phone");`
+);
+console.log(" ");
+console.log(`filtered_products: `);
+console.log(filtered_products);
+console.log(" ");
+
+// .map(item => her bir item-e deyisiklik etmek olur) => kohne erreyde yeni ferqli array duzeltmek olur:
+
+let new_names = names.map(item => `<li>${item}</li>`);
+console.log(`let new_names = names.map(item => \`<li>\${item}</li>\`);`);
+console.log(" ");
+console.log(`new_names: `);
+console.log(new_names);
+
+const ulNames = document.getElementById("names");
+ulNames.innerHTML = new_names.join("");
+console.log(" ");
+
+// .sort() => stringleri elifba sirasi ile yigir:
+let sorted_names = names.sort();
+console.log(`let sorted_names = names.sort();`);
+console.log(`sorted_names: `);
+console.log(sorted_names);
+console.log(" ");
+// numberlerde artan sira ile yigmasi ucun, xususi callback func gondermek lazim:
+
+let unsorted_nums = [5, 23, 1, 76, 35, 234, 35, 675, 21, 8];
+console.log(`let unsorted_nums = [5,23,1,76,35,234,35,675,21,8];`);
+let sorted_nums = unsorted_nums.sort((a, b) => {
+  return a - b;
+});
+console.log(`let sorted_nums = unsorted_nums.sort((a, b) => {
+  return a - b;
+});`);
+
+console.log(`sorted_nums: `);
+console.log(sorted_nums);
+
+console.log(" ");
