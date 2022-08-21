@@ -36,6 +36,7 @@ header {
 
 main {
   .list-names {
+    display: flex;
     ul {
       display: flex;
       flex-direction: column;
@@ -47,6 +48,7 @@ main {
         border-radius: 8px;
         font-size: 20px;
         color: gray;
+        width: 150px;
       }
     }
   }

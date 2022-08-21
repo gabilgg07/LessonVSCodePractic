@@ -29,6 +29,11 @@ header nav ul li a:hover {
   color: white;
 }
 
+main .list-names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 main .list-names ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,4 +53,5 @@ main .list-names ul li {
   border-radius: 8px;
   font-size: 20px;
   color: gray;
+  width: 150px;
 }
