@@ -28,3 +28,38 @@ header nav ul li a:hover {
   background-color: brown;
   color: white;
 }
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-red {
+  color: rgba(245, 32, 64, 0.848);
+}
+
+ul.inner,
+ul.attr {
+  padding: 0;
+}
+ul.inner li,
+ul.attr li {
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 60%;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+form.value input {
+  margin-bottom: 10px;
+  padding: 8px 15px;
+  font-size: 20px;
+}
+
+.data p {
+  visibility: hidden;
+}

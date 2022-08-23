@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>DOM 1</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>DOM, BOM, getElement</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./01_try_catch_finally.html">Try Catch Finally</a></li>
+          <li>
+            <a href="./02_DOM_BOM_getElement.html">DOM, BOM, getElement</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper example">
+        <div class="example">
+          <p class="text">
+            Lorem ipsum dolor sit amet.
+            <span>Span tag</span>
+          </p>
+        </div>
+      </div>
+      <h1 class="example">
+        Header
+        <p class="text">text</p>
+      </h1>
+      <ul class="inner">
+        <li class="for_innerText_read">For innerText Read</li>
+        <li class="for_innerHTML_read">For innerHTML Read</li>
+        <li class="for_innerText_modified">For innerText Modified</li>
+        <li class="for_innerHTML_modified">for innerHTML Modified</li>
+        <li class="for_innerText_modified_with_elem">
+          For innerText Modified With Element
+        </li>
+        <li class="for_innerHTML_modified_with_elem">
+          For innerHTML Modified With Element
+        </li>
+      </ul>
+      <form class="value">
+        <!-- prettier-ignore -->
+        <input type="text" name="for_get_value" id="for_get_value" value="Qabil">
+        <br />
+        <!-- prettier-ignore -->
+        <input type="text" name="for_set_value" id="for_set_value" value="Samir">
+      </form>
+      <ul class="attr">
+        <li class="for_get_attr" title="Get Attr Title">Get Attribute</li>
+        <li class="for_set_attr" title="Set Attr Title">Set Attribute</li>
+        <li class="for_create_attr">For create Attribute</li>
+        <li class="for_delete_attr" title="Delete Attr Title">
+          For delete Attribute
+        </li>
+        <li class="for_has_attr" title="Has Attr Title">For has Attribute</li>
+      </ul>
+
+      <div class="data">
+        <button data-target="blog" data-id="34">Blog</button>
+        <button data-target="shop">Shop</button>
+        <p id="blog">
+          BLOG Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+        </p>
+        <p id="shop">
+          SHOP Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+          consectetur.
+        </p>
+      </div>
+    </main>
+
+    <script src="./assets/js/03_querySelector_content_attribute.js"></script>
+  </body>
+</html>
