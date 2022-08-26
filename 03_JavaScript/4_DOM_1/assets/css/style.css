@@ -1,5 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
 }
 
 header {
@@ -62,4 +74,169 @@ form.value input {
 
 .data p {
   visibility: hidden;
+}
+
+.my_list li {
+  margin-bottom: 20px;
+}
+.my_list li .tab {
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 150px;
+  padding: 6px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.31);
+  border-radius: 6px;
+  text-align: center;
+  background-color: rgb(139, 137, 137);
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.my_list li .tab:hover {
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+.my_list li .tab:active {
+  background-color: rgba(211, 186, 153, 0.8);
+  color: gray;
+  border-color: transparent;
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+}
+.my_list li .text-tab {
+  border-radius: 6px;
+  color: white;
+  background-color: rgb(211, 186, 153);
+  height: 0px;
+  overflow: hidden;
+  font-size: 18px;
+}
+.my_list li .show {
+  -webkit-animation: show 0.5s;
+          animation: show 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.my_list li .hide {
+  -webkit-animation: hide 0.5s;
+          animation: hide 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes show {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 60px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0 0 6px 3px gray;
+            box-shadow: 0 0 6px 3px gray;
+  }
+}
+
+@keyframes show {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 60px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0 0 6px 3px gray;
+            box-shadow: 0 0 6px 3px gray;
+  }
+}
+@-webkit-keyframes hide {
+  0% {
+    height: 60px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0 0 6px 3px gray;
+            box-shadow: 0 0 6px 3px gray;
+  }
+  100% {
+    height: 0px;
+    padding: none;
+    bottom: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@keyframes hide {
+  0% {
+    height: 60px;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0 0 6px 3px gray;
+            box-shadow: 0 0 6px 3px gray;
+  }
+  100% {
+    height: 0px;
+    padding: none;
+    bottom: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.travel {
+  padding-top: 30px;
+}
+.travel .travel-list li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  background-color: rgb(220, 197, 70);
+  width: 155px;
+}
+.travel .travel-list li.travel-item {
+  color: white;
+  width: 165px;
+  border-radius: 5px;
+}
+
+.creating {
+  padding-top: 30px;
+}
+.creating p {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  width: 350px;
+  text-align: center;
+}
+.creating p.before-text {
+  background-color: rgb(251, 149, 105);
+}
+.creating p.after-text {
+  background-color: rgb(201, 108, 245);
+}
+.creating .placeElement {
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 64, 64, 0.402)), color-stop(rgba(250, 194, 64, 0.402)), color-stop(rgba(238, 250, 64, 0.402)), color-stop(rgba(79, 250, 64, 0.402)), color-stop(rgba(64, 250, 244, 0.402)), color-stop(rgba(64, 76, 250, 0.402)), to(rgba(194, 64, 250, 0.402)));
+  background-image: linear-gradient(rgba(250, 64, 64, 0.402), rgba(250, 194, 64, 0.402), rgba(238, 250, 64, 0.402), rgba(79, 250, 64, 0.402), rgba(64, 250, 244, 0.402), rgba(64, 76, 250, 0.402), rgba(194, 64, 250, 0.402));
+}
+.creating .placeElement li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  background-color: rgb(70, 220, 143);
+  width: 200px;
+  color: white;
+  border-radius: 5px;
+}
+.creating .placeElement li.new-element-for-append {
+  background-color: rgb(159, 240, 235);
+  color: rgb(16, 101, 107);
+  width: 300px;
+}
+.creating .placeElement li.new-element-for-prepend {
+  background-color: rgb(119, 246, 130);
+  color: rgb(3, 88, 34);
+  width: 300px;
 }
