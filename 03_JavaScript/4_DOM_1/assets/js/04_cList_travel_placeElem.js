@@ -245,4 +245,99 @@ setTimeout(() => {
 
   placeElement.after(afterText);
   log(`placeElement.after(afterText);`);
+
+  // bir elementi basqa element, ve ya elementlerle deyismek ucun .replaceWith("ather element(s)"):
+  logHeaderSml(".replaceWith()");
+
+  let for_replace = document.querySelector(".for-replace");
+  logNewItem(
+    `let for_replace = document.querySelector(".for-replace");`,
+    "for_replace",
+    for_replace
+  );
+
+  let replacedElem = document.createElement("li");
+  replacedElem.classList.add("replaced-elem");
+  replacedElem.innerText = "Replaced Element";
+  log(`let replacedElem = document.createElement("li");
+  replacedElem.classList.add("replaced-elem");
+  replacedElem.innerText = "Replaced Element";`);
+
+  logCode("replacedElem", replacedElem);
+
+  for_replace.replaceWith(replacedElem);
+  log(`for_replace.replaceWith(replacedElem);`);
+
+  logCode("placeElement", placeElement);
+
+  // elementi silmek ucun .remove("element"):
+
+  logHeaderSml(".remove()");
+
+  let for_remove = document.querySelector(".for_remove");
+  logNewItem(
+    `let for_remove = document.querySelector(".for_remove");`,
+    "for_remove",
+    for_remove
+  );
+
+  for_remove.remove();
+
+  log(`for_remove.remove();`);
+  logCode("placeElement", placeElement);
+
+  // bir elementi klonlamak ucun .cloneNode("boolean"):
+  logHeaderSml(".cloneNode(bool)");
+  // bizden boolean deyer isteyir, eger false(ve ya hecne, default false qebul edir) verersek sadece elementin ozunu klonlayir:
+
+  const for_clone = document.querySelector(".for_clone");
+  logNewItem(
+    `const for_clone = document.querySelector(".for_clone");`,
+    "for_clone",
+    for_clone
+  );
+  const cloned_elems = document.querySelector(".cloned_elems");
+  logNewItem(
+    `const cloned_elems = document.querySelector(".cloned_elems");`,
+    "cloned_elems",
+    cloned_elems
+  );
+
+  const from_for_clone = for_clone.cloneNode();
+  from_for_clone.innerText = "From For Clone";
+  logNewItem(
+    `const from_for_clone = for_clone.cloneNode();
+    from_for_clone.innerText = "From For Clone";`,
+    "from_for_clone",
+    from_for_clone
+  );
+
+  cloned_elems.append(from_for_clone);
+  log(`cloned_elems.append(from_for_clone);`);
+
+  // true versek ise, child-leri ile birlikde clonnlayir:
+
+  const for_clone_with = document.querySelector(".for_clone_with");
+  logNewItem(
+    `const for_clone_with = document.querySelector(".for_clone_with");`,
+    "for_clone_with",
+    for_clone_with
+  );
+
+  const from_for_clone_with = for_clone_with.cloneNode(true);
+  from_for_clone_with.children[0].classList.add("cloned_span");
+  const bFrom = document.createElement("b");
+  bFrom.innerText = "From ";
+  from_for_clone_with.prepend(bFrom);
+  logNewItem(
+    `const from_for_clone_with = for_clone_with.cloneNode(true);
+    from_for_clone_with.children[0].classList.add("cloned_span");`,
+    "from_for_clone_with",
+    from_for_clone_with
+  );
+
+  cloned_elems.append(from_for_clone_with);
+  log(`cloned_elems.append(from_for_clone_with);`);
+
+  logCode("cloned_elems", cloned_elems);
 }, 100);
