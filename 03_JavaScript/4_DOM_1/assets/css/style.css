@@ -267,3 +267,12 @@ form.value input {
 .creating .placeElement li.for_cloned_elems .cloned_elems li span {
   border: 1px solid black;
 }
+
+.my_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.style {
+  margin: 40px 0;
+}

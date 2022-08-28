@@ -1,27 +1,5 @@
 "use strict";
-function log(str) {
-  console.log(`${str}`);
-  console.log(" ");
-}
-function logHeaderBig(header) {
-  console.log(`====== ${header} ======`);
-  console.log(" ");
-}
-function logHeaderSml(header) {
-  console.log(`------ ${header} ------`);
-  console.log(" ");
-}
-function logNewItem(assigning, itemName, item) {
-  console.log(`${assigning}`);
-  console.log(`${itemName}: `);
-  console.log(item);
-  console.log(" ");
-}
-function logCode(str, code) {
-  console.log(`${str}:`);
-  console.log(code);
-  console.log(" ");
-}
+
 // CLASS
 setTimeout(() => {
   // DOM-da bize class-lari idare elemek ucun ayrica property var:
@@ -340,4 +318,25 @@ setTimeout(() => {
   log(`cloned_elems.append(from_for_clone_with);`);
 
   logCode("cloned_elems", cloned_elems);
+
+  // STYLE
+  console.log(" ");
+
+  logHeaderBig("Style");
+
+  let for_style_change = document.querySelector(".for_style_change");
+
+  logNewItem(
+    `let for_style_change = document.querySelector(".for_style_change");`,
+    "for_style_change",
+    for_style_change
+  );
+  // Eger elementin style-ni deyismek isteyirikse .style-dan istifade edirik ve .propertileri de camel case-le yazib deyerleri ona menimsedirik:
+
+  for_style_change.style.color = "darkgreen";
+  for_style_change.style.display = "inline-block";
+  for_style_change.style.backgroundColor = "lightgreen";
+  for_style_change.style.padding = "10px 20px";
+  for_style_change.style.borderRadius = "6px";
+  for_style_change.style.boxShadow = "0 0 5px 2px gray";
 }, 100);
