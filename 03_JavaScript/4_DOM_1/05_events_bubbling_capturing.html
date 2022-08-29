@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>DOM 1</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Events. Bubbling. Capturing.</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./01_try_catch_finally.html">DOM, BOM, getElement</a>
+          </li>
+          <li>
+            <a href="./02_DOM_BOM_getElement.html">DOM, BOM, getElement</a>
+          </li>
+          <li>
+            <a href="./03_qSelector_content_attr.html"
+              >querySelector Content Attributes</a
+            >
+          </li>
+          <li>
+            <a href="./04_cList_travel_placeElem.html"
+              >Class List, Accordion, Travel, Place element</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="my_container">
+        <div class="events">
+          <ul class="for_event">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+          </ul>
+          <a href="#" class="link">Google</a>
+          <input type="text" id="nameInput" />
+          <div class="bubbling">
+            I am BubblingDiv
+            <ul class="ul">
+              I am BubblingUl
+              <li class="li">I am BubblingLi</li>
+            </ul>
+          </div>
+          <div class="stopBubbling">
+            I am StopBubblingDiv
+            <ul class="ul">
+              I am StopBubblingUl
+              <li class="li">I am StopBubblingLi</li>
+            </ul>
+          </div>
+          <div class="event_delegation">
+            <div class="row">
+              <div class="col-md-8">
+                <table class="table delTable">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="capturing">
+            I am capturing Div
+            <ul class="ul">
+              I am capturing Ul
+              <li class="li">I am capturing Li</li>
+            </ul>
+          </div>
+          <form id="for_submit">
+            <h3>Submit Form</h3>
+            <input type="text" name="firstname" id="firstname" />
+            <input type="submit" value="Send" />
+          </form>
+          <div class="mouse_events">
+            <div class="parent">
+              <div class="mouse_click">mouse_click</div>
+              <div class="mouse_move">mouse_move</div>
+              <div class="mouse_over_out">
+                mouse_over_out
+                <div class="in_over_out">in_over_out</div>
+              </div>
+              <div class="mouse_enter_leave">
+                mouse_enter_leave
+                <div class="in_enter_leave">in_enter_leave</div>
+              </div>
+              <div class="mouse_dblclick">mouse_dblclick</div>
+              <div class="mouse_contextmenu">mouse_contextmenu</div>
+            </div>
+          </div>
+          <div class="event_code">
+            <label for="for_code">For event code: </label> <br />
+            <input
+              type="text"
+              id="for_code"
+              placeholder="focus and any keydown"
+            />
+          </div>
+          <div class="removeEventListener">
+            <h2 class="removeEvLis">Remove EventListener</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/05_events_bubbling_capturing.js"></script>
+  </body>
+</html>

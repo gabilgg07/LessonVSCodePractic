@@ -5,6 +5,7 @@ function log(str) {
   console.log(" ");
 }
 function logHeaderBig(header) {
+  console.log(" ");
   console.log(`====== ${header} ======`);
   console.log(" ");
 }
@@ -22,4 +23,14 @@ function logCode(str, code) {
   console.log(`${str}:`);
   console.log(code);
   console.log(" ");
+}
+function createNewElement(elemName, selector = "") {
+  let elem = document.querySelector(`${selector}${elemName}`);
+  logNewItem(
+    `let ${elemName} = document.querySelector("${selector}${elemName}");`,
+    `${elemName}`,
+    elem
+  );
+
+  return elem;
 }
