@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  .logo {
+    p {
+      font-size: 2rem;
+      color: darkslategrey;
+      margin-bottom: 20px;
+    }
+  }
+  nav {
+    ul {
+      li {
+        margin-bottom: 10px;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 20px;
+          color: chocolate;
+          border: 2px solid brown;
+          transition: background-color 0.3s, color 0.3s;
+          padding: 10px 20px;
+          border-radius: 8px;
+          &:hover {
+            background-color: brown;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.drag_drop {
+  .drop_items,
+  .items,
+  .drop_boxs {
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+    .img_box,
+    .imgBox {
+      width: 150px;
+      height: 150px;
+      background-image: url(../images/angels.tulips.crying.png);
+      background-position: center;
+      background-size: contain;
+    }
+  }
+  .items {
+    .img_box {
+      background-image: url(../images/The_red_rose.png);
+    }
+  }
+  .drop_boxs {
+    .imgBox {
+      background-image: url(../images/mosaic_iron_painting.png);
+    }
+    &.active {
+      border: 2px dashed crimson;
+      box-shadow: none;
+      transform: scale(1.07);
+    }
+  }
+}

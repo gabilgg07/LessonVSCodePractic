@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+header .logo p {
+  font-size: 2rem;
+  color: darkslategrey;
+  margin-bottom: 20px;
+}
+header nav ul li {
+  margin-bottom: 10px;
+}
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: chocolate;
+  border: 2px solid brown;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+header nav ul li a:hover {
+  background-color: brown;
+  color: white;
+}
+
+.drag_drop .drop_items,
+.drag_drop .items,
+.drag_drop .drop_boxs {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.drag_drop .drop_items .img_box,
+.drag_drop .drop_items .imgBox,
+.drag_drop .items .img_box,
+.drag_drop .items .imgBox,
+.drag_drop .drop_boxs .img_box,
+.drag_drop .drop_boxs .imgBox {
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/angels.tulips.crying.png);
+  background-position: center;
+  background-size: contain;
+}
+.drag_drop .items .img_box {
+  background-image: url(../images/The_red_rose.png);
+}
+.drag_drop .drop_boxs .imgBox {
+  background-image: url(../images/mosaic_iron_painting.png);
+}
+.drag_drop .drop_boxs.active {
+  border: 2px dashed crimson;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}

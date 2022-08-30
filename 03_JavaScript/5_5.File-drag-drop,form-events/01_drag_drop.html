@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Drag-drop, Form Events</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Drag & Drop</p>
+      </div>
+      <nav>
+        <ul></ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="drag_drop">
+        <div class="container">
+          <h2>Drag Event</h2>
+          <div class="row justify-content-between mb-5 drag_event">
+            <div class="items">
+              <!-- elementin drag-drop olmasi ucun draggable="true" yazmaliyiq: -->
+              <div class="img_box" draggable="true"></div>
+            </div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+          </div>
+          <h2>Drop Event</h2>
+          <div class="row justify-content-between mb-5 drop_event">
+            <div class="drop_items">
+              <div class="img_box" draggable="true"></div>
+            </div>
+            <div class="drop_items"></div>
+            <div class="drop_items"></div>
+            <div class="drop_items"></div>
+          </div>
+          <h2>Drag Drop</h2>
+          <div class="row justify-content-between drag_drop">
+            <div class="drop_boxs">
+              <div class="imgBox" draggable="true"></div>
+            </div>
+            <div class="drop_boxs"></div>
+            <div class="drop_boxs"></div>
+            <div class="drop_boxs"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/01_drag_drop.js"></script>
+  </body>
+</html>
