@@ -85,3 +85,52 @@ header {
     }
   }
 }
+
+.file_drag_drop {
+  .drop_area {
+    border: 2px solid rgb(37, 5, 89);
+    &.active {
+      border: 2px dashed crimson;
+    }
+    border-radius: 5px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img_list {
+    display: flex;
+    flex-wrap: wrap;
+    .img_box {
+      width: 20%;
+      margin: 10px;
+      position: relative;
+      img {
+        max-width: 100%;
+      }
+      .icon_box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(160, 160, 160, 0.6);
+        opacity: 0;
+        transition: opacity 0.3s, box-shadow 0.3s;
+        i {
+          color: #fff;
+          text-shadow: 0 0 3px black;
+          cursor: pointer;
+          font-size: 20px;
+        }
+      }
+      &:hover .icon_box {
+        opacity: 1;
+        box-shadow: 0 0 8px 4px black;
+      }
+    }
+  }
+}

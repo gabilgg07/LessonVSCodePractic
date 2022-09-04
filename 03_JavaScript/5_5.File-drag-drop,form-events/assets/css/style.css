@@ -83,3 +83,69 @@ header nav ul li a:hover {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
 }
+
+.file_drag_drop .drop_area {
+  border: 2px solid rgb(37, 5, 89);
+  border-radius: 5px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.file_drag_drop .drop_area.active {
+  border: 2px dashed crimson;
+}
+.file_drag_drop .img_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.file_drag_drop .img_list .img_box {
+  width: 20%;
+  margin: 10px;
+  position: relative;
+}
+.file_drag_drop .img_list .img_box img {
+  max-width: 100%;
+}
+.file_drag_drop .img_list .img_box .icon_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(160, 160, 160, 0.6);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s, -webkit-box-shadow 0.3s;
+  transition: opacity 0.3s, -webkit-box-shadow 0.3s;
+  transition: opacity 0.3s, box-shadow 0.3s;
+  transition: opacity 0.3s, box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+.file_drag_drop .img_list .img_box .icon_box i {
+  color: #fff;
+  text-shadow: 0 0 3px black;
+  cursor: pointer;
+  font-size: 20px;
+}
+.file_drag_drop .img_list .img_box:hover .icon_box {
+  opacity: 1;
+  -webkit-box-shadow: 0 0 8px 4px black;
+          box-shadow: 0 0 8px 4px black;
+}
