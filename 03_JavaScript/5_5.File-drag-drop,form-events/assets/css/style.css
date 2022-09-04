@@ -57,6 +57,7 @@ header nav ul li a:hover {
           box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.5);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  margin-bottom: 10px;
 }
 .drag_drop .drop_items .img_box,
 .drag_drop .drop_items .imgBox,
@@ -148,4 +149,8 @@ header nav ul li a:hover {
   opacity: 1;
   -webkit-box-shadow: 0 0 8px 4px black;
           box-shadow: 0 0 8px 4px black;
+}
+
+.scrolling {
+  height: 1500px;
 }
