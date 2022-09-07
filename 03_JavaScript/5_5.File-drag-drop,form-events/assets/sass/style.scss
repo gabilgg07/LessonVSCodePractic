@@ -139,3 +139,14 @@ header {
 .scrolling {
   height: 1500px;
 }
+
+.form-events {
+  .error-message {
+    color: red;
+  }
+
+  #multy_select {
+    width: 200px;
+    height: 140px;
+  }
+}
