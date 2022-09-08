@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="logo">
-        <p>Keyboard Events</p>
+        <p>Form Events</p>
       </div>
       <nav>
         <ul>
@@ -37,29 +37,38 @@
       <div class="container">
         <div class="form-events">
           <form id="form_events">
+            <!-- focus, input, change, blur events -->
             <div class="form-row">
               <div class="form-group col-md-6">
-                <label for="firstname">Firstname</label>
-                <input type="text" class="form-control" id="firstname" />
+                <label for="firstname">Firstname:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstname"
+                  name="firstname"
+                />
                 <div class="error-message d-none">This field is required!</div>
               </div>
             </div>
+            <!-- focus and blur methods -->
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="for_focus_and_blur_methods"
-                  >For focus and blur methods</label
+                  >For focus and blur methods:</label
                 >
                 <input
                   type="text"
                   class="form-control"
                   id="for_focus_and_blur_methods"
+                  name="for_focus_and_blur_methods"
                 />
                 <div class="error-message d-none">This field is required!</div>
               </div>
             </div>
+            <!-- select element -->
             <div class="form-row">
               <div class="form-group col-md-6 d-flex justify-content-between">
-                <label for="select" class="mr-2">Select element</label>
+                <label for="select" class="mr-2">Select element:</label>
                 <select id="select">
                   <option value="apple">Apple</option>
                   <option value="pear">Pear</option>
@@ -67,10 +76,11 @@
                 </select>
               </div>
             </div>
+            <!-- multiple select element -->
             <div class="form-row">
               <div class="form-group col-md-6 d-flex justify-content-between">
                 <label for="multy_select" class="mr-2">
-                  Multy Select element</label
+                  Multy Select element:</label
                 >
                 <select id="multy_select" multiple>
                   <option value="monday">Monday</option>
@@ -83,8 +93,46 @@
                 </select>
               </div>
             </div>
+            <!-- cut event -->
             <div class="form-row">
               <div class="form-group col-md-6">
+                <label for="for_cut">For cut event:</label>
+                <input type="text" class="form-control" id="for_cut" />
+              </div>
+            </div>
+            <!-- copy event -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="for_copy">For copy event:</label>
+                <input type="text" class="form-control" id="for_copy" />
+              </div>
+            </div>
+            <!-- paste event -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="for_paste">For paste event:</label>
+                <input type="text" class="form-control" id="for_paste" />
+              </div>
+            </div>
+            <!-- button -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </div>
+          </form>
+          <form id="for_submit" class="mt-5">
+            <h2>For Submit Event</h2>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="submit_event">Submit event:</label>
+                <input type="text" class="form-control" id="submit_event" />
+              </div>
+            </div>
+            <!-- button -->
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <button type="reset" class="btn btn-primary">Reset</button>
                 <button type="submit" class="btn btn-primary">Send</button>
               </div>
             </div>

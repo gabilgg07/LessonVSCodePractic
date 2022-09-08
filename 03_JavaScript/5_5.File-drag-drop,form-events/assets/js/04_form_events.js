@@ -190,4 +190,59 @@ setTimeout(() => {
   let selected = options.filter((opt) => opt.selected).map((opt) => opt.value);
 
   logCode("selected", selected);
+
+  // Cut, Copy, Paste events
+
+  logHeaderSml("Cut, Copy, Paste events");
+
+  const for_cut = document.querySelector("#for_cut");
+  logCode("for_cut", for_cut);
+  const for_copy = document.querySelector("#for_copy");
+  logCode("for_copy", for_copy);
+  const for_paste = document.querySelector("#for_paste");
+  logCode("for_paste", for_paste);
+
+  for_cut.addEventListener("cut", function (e) {
+    console.log(e);
+    console.log("" + document.getSelection());
+    e.preventDefault();
+  });
+  for_copy.addEventListener("copy", function (e) {
+    console.log(e);
+    console.log("" + document.getSelection());
+    e.preventDefault();
+  });
+  for_paste.addEventListener("paste", function (e) {
+    console.log(e);
+    console.log(e.clipboardData.getData("text/plain"));
+    e.preventDefault();
+  });
+
+  // Submit event
+  logHeaderSml("Submit event");
+
+  const for_submit = document.querySelector("#for_submit");
+  logCode(`for_submit`, for_submit);
+  const submit_event = document.querySelector("#submit_event");
+  logCode(`submit_event`, submit_event);
+
+  // submit event
+  for_submit.addEventListener("submit", function (e) {
+    e.preventDefault();
+    console.log("Submited");
+    if (submit_event.value === "submit") {
+      console.log("Submit method will call after 3 second");
+      setTimeout(() => {
+        // submit method
+        this.submit();
+      }, 3000);
+    } else if (submit_event.value === "reset") {
+      console.log("Reset method called");
+      // reset method
+      this.reset();
+    }
+  });
+  for_submit.addEventListener("reset", function (e) {
+    console.log("Reseted");
+  });
 }, 100);
