@@ -209,4 +209,33 @@ setTimeout(() => {
   );
 
   logHeaderSml("Date Set Methods");
+
+  logCode("exampleDate", exampleDate);
+
+  logCode(
+    "exampleDate.setFullYear(2020,2,10)",
+    exampleDate.setFullYear(2020, 2, 10)
+  );
+  logCode("exampleDate", exampleDate);
+
+  logCode("exampleDate.setMonth(5)", exampleDate.setMonth(5));
+  logCode("exampleDate", exampleDate);
+
+  logCode("exampleDate.setDate(20)", exampleDate.setDate(20));
+  logCode("exampleDate", exampleDate);
+
+  logCode("exampleDate.setHours(22)", exampleDate.setHours(22));
+  logCode("exampleDate", exampleDate);
+
+  logCode("exampleDate.setMinutes(22)", exampleDate.setMinutes(22));
+  logCode("exampleDate", exampleDate);
+
+  logCode("exampleDate.setSeconds(44)", exampleDate.setSeconds(44));
+  logCode("exampleDate", exampleDate);
+
+  logCode("exampleDate.setMilliseconds(999)", exampleDate.setMilliseconds(999));
+  logCode("exampleDate.getMilliseconds()", exampleDate.getMilliseconds());
+
+  logCode("exampleDate.setTime(10000)", exampleDate.setTime(10000));
+  logCode("exampleDate", exampleDate);
 }, 100);
