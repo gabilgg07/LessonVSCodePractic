@@ -33,6 +33,35 @@
       </nav>
     </header>
 
+    <main>
+      <div class="container">
+        <div class="countdown">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <h1 class="text-center my-3">Countdown</h1>
+              <div class="info d-flex justify-content-between mt-4">
+                <h4><span class="timer-info"></span> day</h4>
+                <h5>-</h5>
+                <h4><span class="timer-info"></span> hour</h4>
+                <h5>:</h5>
+                <h4><span class="timer-info"></span> minute</h4>
+                <h5>:</h5>
+                <h4><span class="timer-info"></span>second</h4>
+              </div>
+
+              <input
+                class="mt-5"
+                type="datetime-local"
+                name="counttime"
+                id="counttime"
+              />
+              <label for="counttime" class="ml-3"> <- Set Countdown Time</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script src="./assets/js/common.js"></script>
     <script src="./assets/js/04_Timer.js"></script>
   </body>
