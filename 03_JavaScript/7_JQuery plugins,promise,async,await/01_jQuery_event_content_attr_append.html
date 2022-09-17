@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery plugins, promise, async, await</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Jquery, Events, Content, Attr. Add Elem</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./02_class_css.html">Class, Css</a>
+          </li>
+          <li>
+            <a href="./03_plugins.html">Plugins</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="jquery">
+          <h2 class="text-center">JQuery</h2>
+          <div class="row">
+            <div class="col-md-6 my-4">
+              <div class="item">
+                <p class="p">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
+                  officia ab voluptate magnam esse cum?
+                </p>
+                <h3 class="mt-md-4">For Code List:</h3>
+                <ul class="for-code-list">
+                  <h4 class="my-4">Events:</h4>
+                  <li class="for-on">For .on() like addEventListener</li>
+                  <li class="only-once">Only Once</li>
+
+                  <h4 class="my-4">Content:</h4>
+                  <li class="getHtml">Get HTML</li>
+                  <li class="setHtml">Set HTML</li>
+                  <li class="getText">Get Text</li>
+                  <li class="setText">Set Text</li>
+                  <li class="htmlCallback">Html Callback function</li>
+                  <li class="textCallback">Text Callback function</li>
+
+                  <h4 class="my-4">Input:</h4>
+                  <li class="getValue">
+                    <label for="forGetVal" class="mr-2">For Get Value:</label>
+                    <input
+                      type="text"
+                      id="forGetVal"
+                      name="forGetVal"
+                      value="Qabil"
+                      class="p-1 text-danger"
+                    />
+                  </li>
+                  <li class="setValue">
+                    <label for="forSetVal" class="mr-2">For Set Value:</label>
+                    <input
+                      type="text"
+                      id="forSetVal"
+                      name="forSetVal"
+                      value="Qabil"
+                      class="p-1 text-danger"
+                    />
+                  </li>
+
+                  <h4 class="my-4">Attributes:</h4>
+                  <li class="getAttr" title="Get Attribute">Get Attribute</li>
+                  <li class="setAttr" title="Set Attribute">Set Attribute</li>
+
+                  <h4 class="my-4">Add Html Content:</h4>
+                  <li class="append">Append</li>
+                  <li class="prepend">Prepend</li>
+                  <li class="before">Before</li>
+                  <li class="after">After</li>
+                  <li class="remove">Remove</li>
+                  <li class="empty">Empty</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/01_jQuery_event_content_attr_append.js"></script>
+  </body>
+</html>

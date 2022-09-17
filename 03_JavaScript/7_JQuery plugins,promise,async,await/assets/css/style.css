@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+header .logo p {
+  font-size: 2rem;
+  color: darkslategrey;
+  margin-bottom: 20px;
+}
+header nav ul li {
+  margin-bottom: 10px;
+}
+header nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color: chocolate;
+  border: 2px solid brown;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+header nav ul li a:hover {
+  background-color: brown;
+  color: white;
+}
+
+.for-code-list li {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.jquery-methods .for-code-list li span:first-child:not(.sub-child) {
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-right: 1px solid gray;
+  padding: 4px 8px;
+  border-radius: 4px;
+  -webkit-transition: border 0.5s, -webkit-box-shadow 0.5s;
+  transition: border 0.5s, -webkit-box-shadow 0.5s;
+  transition: border 0.5s, box-shadow 0.5s;
+  transition: border 0.5s, box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+.jquery-methods .for-code-list li span.for-dimensions {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background-color: #ddd;
+  border: 5px solid darkgoldenrod;
+  font-size: 20px;
+}
+.jquery-methods .for-code-list li:hover span:first-child:not(.sub-child) {
+  border: 1px solid rgb(99, 62, 62);
+  -webkit-box-shadow: 0 0 2px 1px gray;
+          box-shadow: 0 0 2px 1px gray;
+}
+.jquery-methods .for-code-list li.ancestors div, .jquery-methods .for-code-list li.descendants div {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: rgb(20, 16, 16);
+}
+.jquery-methods .for-code-list li.ancestors div:not(:last-child), .jquery-methods .for-code-list li.descendants div:not(:last-child) {
+  margin-bottom: 4px;
+}
+.jquery-methods .for-code-list li.siblings > div:not(:last-child), .jquery-methods .for-code-list li.filtering > div:not(:last-child) {
+  border-bottom: 1px dashed gray;
+  margin-bottom: 10px;
+}
+.jquery-methods .for-code-list li.siblings > div > div:not(:last-child), .jquery-methods .for-code-list li.filtering > div > div:not(:last-child) {
+  border-bottom: 0.5px dotted rgb(81, 120, 55);
+}
+.jquery-methods .for-code-list li.effects {
+  padding: 20px;
+  min-height: 400px;
+}
+.jquery-methods .for-code-list li.effects .box-wrapper {
+  margin-top: 20px;
+  height: 220px;
+}
+.jquery-methods .for-code-list li.effects .box {
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(27, 2, 45);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  background-color: rgb(239, 127, 178);
+  color: rgb(91, 5, 128);
+  position: relative;
+}
+
+.plugins .owl-carousel-plugin .item {
+  height: 110px;
+  background-color: #4ec6a0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.plugins .slick-plugin .center div {
+  margin: 0 2px;
+}
+.plugins .slick-plugin .center div img {
+  max-width: 100%;
+}
+.plugins .slick-plugin .center .slick-arrow::before {
+  color: #4ec6a0;
+}
+.plugins .select2-plugin .select2 {
+  width: 100% !important;
+  margin-bottom: 10px;
+}

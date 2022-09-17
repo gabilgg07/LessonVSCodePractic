@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery plugins, promise, async, await</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Jquery, Events, Content, Attr. Add Elem</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./01_jQuery_event_content_attr_append.html"
+              >Jquery, Events, Content, Attr. Add Elem</a
+            >
+          </li>
+          <li>
+            <a href="./02_class_dimensions_traversing_effects.html"
+              >Class, Dimensions, Traversing, Effects</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="plugins">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="owl-carousel-plugin">
+                <h2>Owl Carousel Plugin</h2>
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <img
+                      src="./assets/images/angels_tulips_crying.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/angels_tulips_crying_2.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/angels_tulips_crying_3.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/angels_tulips_crying_4.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/angels_tulips_crying_5.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/mosaic_iron_painting.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_1.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_2.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_3.png"
+                      alt="slider"
+                    />
+                  </div>
+                  <div class="item">
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_5.png"
+                      alt="slider"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="slick-plugin my-4">
+                <h2>Slick Carousel Plugin</h2>
+                <div class="center">
+                  <div>
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_5.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/angels_tulips_crying.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_3.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/angels_tulips_crying_2.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_2.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/angels_tulips_crying_3.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/rose_which_broke_the_middle_of_the_heart_1.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/angels_tulips_crying_4.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="./assets/images/mosaic_iron_painting.png"
+                      alt="slick-slider"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="select2-plugin my-5">
+                <h2>Select2 Plugin</h2>
+                <h3 class="text-info">Single select</h3>
+                <select class="js-example-basic-single" name="city">
+                  <option value="baki">Bakı</option>
+                  <option value="gence">Gəncə</option>
+                  <option value="naxcivan">Naxçıvan</option>
+                  <option value="xankendi">Xankəndi</option>
+                  <option value="lenkeran">Lənkəran</option>
+                  <option value="mingecevir">Mingəçevir</option>
+                  <option value="naftalan">Naftalan</option>
+                  <option value="sumqayit">Sumqayıt</option>
+                  <option value="seki">Şəki</option>
+                  <option value="sirvan">Şirvan</option>
+                  <option value="yevlax">Yevlax</option>
+                </select>
+
+                <h3 class="text-success">Multy select</h3>
+                <select
+                  class="js-example-basic-multiple"
+                  name="cities[]"
+                  multiple="multiple"
+                >
+                  <option value="baki">Bakı</option>
+                  <option value="gence">Gəncə</option>
+                  <option value="naxcivan">Naxçıvan</option>
+                  <option value="xankendi">Xankəndi</option>
+                  <option value="lenkeran">Lənkəran</option>
+                  <option value="mingecevir">Mingəçevir</option>
+                  <option value="naftalan">Naftalan</option>
+                  <option value="sumqayit">Sumqayıt</option>
+                  <option value="seki">Şəki</option>
+                  <option value="sirvan">Şirvan</option>
+                  <option value="yevlax">Yevlax</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/03_plugins.js"></script>
+  </body>
+</html>

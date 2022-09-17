@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery plugins, promise, async, await</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Class, Dimensions, Traversing, Effects</p>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./01_jQuery_event_content_attr_append.html"
+              >Jquery, Events, Content, Attr. Add Elem</a
+            >
+          </li>
+          <li>
+            <a href="./03_plugins.html">Plugins</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="jquery-methods">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="for-code-list">
+                <h3>Class:</h3>
+                <li class="add-class">
+                  <span class="mr-2">addClass:</span>
+                  <span class="for-addClass">For add class</span>
+                </li>
+                <li class="remove-class">
+                  <span class="mr-2">removeClass:</span>
+                  <span class="for-removeClass removeMe">For remove class</span>
+                </li>
+                <li class="toggle-class">
+                  <span class="mr-2">toggleClass:</span>
+                  <span class="for-toggleClass toggleMe">For toggle class</span>
+                </li>
+                <li class="css">
+                  <span class="mr-2">css:</span>
+                  <span class="for-css">For css</span>
+                </li>
+                <h3 class="mt-4">Dimensions:</h3>
+                <li class="dimensions">
+                  <span class="mr-2">dimensions:</span>
+                  <span class="for-dimensions">For dimensions</span>
+                </li>
+                <h3 class="mt-4">Traversing:</h3>
+                <li class="ancestors">
+                  <div class="for-parent">For Parent</div>
+                  <div class="for-parents">For Parents</div>
+                  <div class="for-parents-slctr">For Parents with Selector</div>
+                  <div class="for-parentsUntil">For Parents Until</div>
+                </li>
+                <li class="descendants">
+                  <div class="for-children">
+                    For Children:
+                    <p class="child1">
+                      Child of For-children 1
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                    <p class="child2">
+                      Child of For-children 2
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                    <p class="child3">
+                      Child of For-children 3
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                  </div>
+                  <div class="for-children-slctr">
+                    For children with Selector:
+                    <p class="child1">
+                      Child of For-children-with-Selector 1
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                    <p class="child2">
+                      Child of For-children-with-Selector 2
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                    <p class="child3">
+                      Child of For-children-with-Selector 3
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                  </div>
+                  <div class="for-find">
+                    For Find:
+                    <p class="child1">
+                      Child of For-find 1
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                    <p class="child2">
+                      Child of For-find 2
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                    <p class="child3">
+                      Child of For-find 3
+                      <span class="sub-child">Sub child <i>icon</i></span>
+                    </p>
+                  </div>
+                </li>
+                <li class="siblings">
+                  <div class="example1">Example-1</div>
+                  <div class="example2">Example-2</div>
+                  <div class="for-siblings">For Siblings</div>
+                  <div class="example3">Example-3</div>
+                  <div class="example4">Example-4</div>
+                  <div class="for-next">For next</div>
+                  <div class="example5">Example-5</div>
+                  <div class="example6">Example-6</div>
+                  <div class="for-nextAll">For next All</div>
+                  <div class="example7">Example-7</div>
+                  <div class="example8">Example-8</div>
+                  <div class="for-nextUntil">For next Until</div>
+                  <div class="example9">Example-9</div>
+                  <div class="example10">Example-10</div>
+                  <div class="for-prev">For prev</div>
+                  <div class="example11">Example-11</div>
+                  <div class="example12">Example-12</div>
+                  <div class="for-prevAll">For prev All</div>
+                  <div class="example13">Example-13</div>
+                  <div class="example14">Example-14</div>
+                  <div class="for-prevUntil">For prev Until</div>
+                  <div class="example15">Example-15</div>
+                  <div class="example16">Example-16</div>
+                </li>
+                <li class="filtering">
+                  <h4>For First</h4>
+                  <div class="for-first">
+                    <div class="example">Examlpe-1</div>
+                    <div class="example">Examlpe-2</div>
+                    <div class="example">
+                      <span class="sub-child">Examlpe-3</span>
+                    </div>
+                  </div>
+                  <h4>For Last</h4>
+                  <div class="for-last">
+                    <div class="example">Examlpe-1</div>
+                    <div class="example">Examlpe-2</div>
+                    <div class="example">
+                      <span class="sub-child">Examlpe-3</span>
+                    </div>
+                  </div>
+                  <h4>For Eq</h4>
+                  <div class="for-eq">
+                    <div class="example">Examlpe-1</div>
+                    <div class="example">Examlpe-2</div>
+                    <div class="example">
+                      <span class="sub-child">Examlpe-3</span>
+                    </div>
+                  </div>
+                  <h4>For Filter</h4>
+                  <div class="for-filter">
+                    <div class="example">Examlpe-1</div>
+                    <div class="example active">Examlpe-2</div>
+                    <div class="example">
+                      <span class="sub-child">Examlpe-3</span>
+                    </div>
+                  </div>
+                  <h4>For Not</h4>
+                  <div class="for-not">
+                    <div class="example">Examlpe-1</div>
+                    <div class="example">Examlpe-2</div>
+                    <div class="example">
+                      <span class="sub-child">Examlpe-3</span>
+                    </div>
+                    <div class="example">Examlpe-4</div>
+                    <div class="example not-me">Examlpe-5</div>
+                    <div class="example">Examlpe-6</div>
+                  </div>
+                </li>
+                <h3 class="mt-4">Effects:</h3>
+                <li class="effects">
+                  <div class="hide-show border-bottom">
+                    <h3>Hide Show</h3>
+                    <button id="btnHide" class="btn btn-danger">To Hide</button>
+                    <button id="btnShow" class="btn btn-success">
+                      To Show
+                    </button>
+                    <button id="btnToggle" class="btn btn-info">
+                      To Toggle
+                    </button>
+                    <br />
+                    <br />
+                    <button id="btnHideSlow" class="btn btn-warning">
+                      To Slow Hide
+                    </button>
+                    <button id="btnShowFast" class="btn btn-primary">
+                      To Fast Show
+                    </button>
+                    <button id="btnToggle2s" class="btn btn-secondary">
+                      To 2 second Toggle
+                    </button>
+                    <button id="btnToggleCallback" class="btn btn-dark mt-3">
+                      To Toggle with Callback function
+                    </button>
+                    <div class="box-wrapper">
+                      <div class="box for-show-hide">I am Box</div>
+                    </div>
+                  </div>
+                  <div class="fade-in-out mt-3 border-bottom">
+                    <h3>Fade In Out</h3>
+                    <button id="btnFadeIn" class="btn btn-danger">
+                      To Fade In
+                    </button>
+                    <button id="btnFadeOut" class="btn btn-success">
+                      To Fade Out
+                    </button>
+                    <button id="btnFadeToggle" class="btn btn-info">
+                      To Fade Toggle
+                    </button>
+                    <br />
+                    <br />
+                    <button id="btnFadeTo" class="btn btn-warning">
+                      To Fade To
+                    </button>
+                    <div class="box-wrapper">
+                      <div class="box for-fade">I am Box</div>
+                    </div>
+                  </div>
+                  <div class="slide mt-3 border-bottom">
+                    <h3>Slide Down Up</h3>
+                    <button id="btnSlideDown" class="btn btn-danger">
+                      To Slide Down
+                    </button>
+                    <button id="btnSlideUp" class="btn btn-success">
+                      To Slide Up
+                    </button>
+                    <button id="btnSlideToggle" class="btn btn-info">
+                      To Slide Toggle
+                    </button>
+                    <br />
+                    <div class="box-wrapper">
+                      <div class="box for-slide">I am Box</div>
+                    </div>
+                  </div>
+                  <div class="animate-stop-chaining mt-3">
+                    <h3>Animate / Stop / Chaining</h3>
+                    <button id="animate" class="btn btn-danger">
+                      To Animate
+                    </button>
+                    <button id="btnStop" class="btn btn-success">
+                      To Stop
+                    </button>
+                    <br />
+                    <div class="box-wrapper">
+                      <div class="box for-animate-stop">I am Box</div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/02_class_dimensions_traversing_effects.js"></script>
+  </body>
+</html>
