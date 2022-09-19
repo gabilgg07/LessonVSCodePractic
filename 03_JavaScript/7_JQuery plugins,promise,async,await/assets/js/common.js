@@ -73,3 +73,72 @@ function randomColor() {
 
   return color;
 }
+
+const monthsAZ = [
+  "Yanvar",
+  "Fevral",
+  "Mart",
+  "Aprel",
+  "May",
+  "Iyun",
+  "Iyul",
+  "Avqust",
+  "Sentyabr",
+  "Oktyabr",
+  "Noyabr",
+  "Dekabr",
+];
+const monthsShortAZ = [
+  "Yan",
+  "Fev",
+  "Mart",
+  "Apr",
+  "May",
+  "Iyun",
+  "Iyul",
+  "Avq",
+  "Sen",
+  "Okt",
+  "Noy",
+  "Dek",
+];
+const monthsSmlAZ = [
+  "yanvar",
+  "fevral",
+  "mart",
+  "aprel",
+  "may",
+  "iyun",
+  "iyul",
+  "avqust",
+  "sentyabr",
+  "oktyabr",
+  "noyabr",
+  "dekabr",
+];
+const monthsShortSmlAZ = [
+  "yan",
+  "fev",
+  "mart",
+  "apr",
+  "may",
+  "iyun",
+  "iyul",
+  "avq",
+  "sen",
+  "okt",
+  "noy",
+  "dek",
+];
+
+const weekDaysShortAZ = ["B", "B.e", "Ç.a", "Ç", "C.a", "C", "Ş"];
+const weekDaysShortSmlAZ = ["b", "b.e", "ç.a", "ç", "c.a", "c", "ş"];
+const weekDaysAZ = [
+  "Bazar",
+  "Bazar ertəsi",
+  "Çərşənbə axşamı",
+  "Çərşənbə",
+  "Cümə axşamı",
+  "Cümə",
+  "Şənbə",
+];

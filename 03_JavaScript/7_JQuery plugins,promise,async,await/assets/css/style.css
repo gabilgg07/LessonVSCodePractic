@@ -149,3 +149,7 @@ header nav ul li a:hover {
   width: 100% !important;
   margin-bottom: 10px;
 }
+
+.search .content {
+  height: 450px;
+}

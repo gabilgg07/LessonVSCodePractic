@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="logo">
-        <p>Promise, Async - await</p>
+        <p>Api ile fetch-de isleme</p>
       </div>
       <nav>
         <ul>
@@ -32,9 +32,7 @@
             <a href="./02_2_plugins.html">Plugins</a>
           </li>
           <li>
-            <a href="./04_api_ile_fetch_de_isleme.html"
-              >Api ile fetch-de isleme</a
-            >
+            <a href="./03_promise_async_await.html">Promise, Async - await</a>
           </li>
         </ul>
       </nav>
@@ -42,25 +40,41 @@
 
     <main>
       <div class="container">
-        <div class="promise">
-          <div class="row">
+        <div class="search">
+          <div class="row justify-content-center">
             <div class="col-md-8">
-              <table class="table table-sm table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Username</th>
-                    <th scope="col">Company name</th>
-                    <th scope="col">City</th>
-                  </tr>
-                </thead>
-                <tbody id="users"></tbody>
-              </table>
+              <form id="search">
+                <div class="row">
+                  <div class="col-9">
+                    <input
+                      type="text"
+                      name="search_user"
+                      id="search_user"
+                      class="form-control"
+                      placeholder="search user"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      class="btn btn-primary"
+                      value="Search"
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="com-md-8">
-              <div class="list-group todos"></div>
+          <div class="row mt-4">
+            <div class="col-md-12">
+              <div class="content d-flex justify-content-center">
+                <span class="text-secondary">Please search user ...</span>
+              </div>
+            </div>
+            <div class="col-md-12 mt-5">
+              <div
+                class="content-users d-flex flex-wrap justify-content-between"
+              ></div>
             </div>
           </div>
         </div>
@@ -69,6 +83,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./assets/js/common.js"></script>
-    <script src="./assets/js/03_promise_async_await.js"></script>
+    <script src="./assets/js/04_api_ile_fetch_de_isleme.js"></script>
   </body>
 </html>
