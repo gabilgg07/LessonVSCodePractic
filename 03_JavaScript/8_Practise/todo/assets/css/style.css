@@ -1,0 +1,245 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+body {
+  background-color: #181824;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.bg-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.bg-image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.todo-wrapper {
+  padding: 15px;
+}
+.todo-wrapper .todo-header {
+  margin-top: 95px;
+  font-size: 44px;
+  color: white;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.todo-wrapper .todo-header img {
+  min-width: 32px;
+  min-height: 32px;
+  width: 32px;
+  height: 32px;
+}
+.todo-wrapper .todo-form {
+  position: relative;
+}
+.todo-wrapper .todo-form #check {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.todo-wrapper .todo-form .todo-input {
+  width: 100%;
+  padding: 20px 80px;
+  background-color: #25283c;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  caret-color: hsl(220deg, 98%, 61%);
+  position: relative;
+  z-index: -2;
+  color: rgb(192, 189, 189);
+}
+.todo-wrapper .todo-form .todo-input:focus {
+  outline: none;
+}
+.todo-wrapper .todo-form .todo-input:-webkit-autofill, .todo-wrapper .todo-form .todo-input:-webkit-autofill:hover, .todo-wrapper .todo-form .todo-input:-webkit-autofill:focus, .todo-wrapper .todo-form .todo-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #25283c inset !important;
+          box-shadow: 0 0 0 30px #25283c inset !important;
+  -webkit-text-fill-color: rgb(192, 189, 189);
+  caret-color: hsl(220deg, 98%, 61%);
+}
+.todo-wrapper .check-box {
+  min-width: 25px;
+  width: 25px;
+  min-height: 25px;
+  height: 25px;
+  position: relative;
+  background-color: #25283c;
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 35px;
+}
+.todo-wrapper .check-box::after {
+  content: "";
+  position: absolute;
+  min-width: 26px;
+  width: 26px;
+  min-height: 26px;
+  height: 26px;
+  z-index: -1;
+  background-color: rgb(75, 75, 75);
+  border-radius: 50%;
+}
+.todo-wrapper .check-box.active {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(192deg, 100%, 67%)), to(hsl(280deg, 87%, 65%)));
+  background-image: linear-gradient(to right bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
+}
+.todo-wrapper .check-box.active::after {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(192deg, 100%, 67%)), to(hsl(280deg, 87%, 65%)));
+  background-image: linear-gradient(to right bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
+  background-color: none;
+}
+.todo-wrapper .check-box:hover::after {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(192deg, 100%, 67%)), to(hsl(280deg, 87%, 65%)));
+  background-image: linear-gradient(to right bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
+  background-color: none;
+}
+.todo-wrapper .icon-delete {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.todo-wrapper .icon-delete:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.todo-wrapper .todo-list {
+  margin-top: 25px;
+  min-height: 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5098039216);
+          box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5098039216);
+}
+.todo-wrapper .todo-list .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(192, 189, 189);
+  background-color: #25283c;
+  padding: 18px;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  z-index: -1;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.todo-wrapper .todo-list .list-item:not(:last-child) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+.todo-wrapper .todo-list .list-item.active {
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.35);
+}
+.todo-wrapper .todo-list .list-item:hover {
+  background-color: #1b1d2b;
+}
+.todo-wrapper .footer-text {
+  color: rgba(128, 128, 128, 0.58);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
