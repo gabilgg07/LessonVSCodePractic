@@ -70,6 +70,12 @@ todoForm.addEventListener("submit", function (e) {
 //   console.log(e.target);
 // });
 
-function checked() {}
+const mode = document.querySelector(".mode");
 
-const checkBoxes = document.querySelectorAll(".todo-list .check-box");
+mode.addEventListener("click", function (e) {
+  const bgImage = document.querySelector(".bg-image");
+  if (this.getAttribute("alt") === "icon-sun") {
+    bgImage.children[0].src = "./assets/images/bg-desktop-light.jpg";
+    bgImage.children[0].setAttribute("alt", "bg-desktop-light");
+  }
+});
