@@ -2,6 +2,8 @@ const check = document.querySelector("#check");
 const todoForm = document.querySelector(".todo-form");
 const todoInput = document.querySelector(".todo-input");
 const todoList = document.querySelector(".todo-list");
+const infoTodo = document.querySelector(".info-todo");
+const infoTodoMobile = document.querySelector(".info-todo-mobile");
 
 check.addEventListener("click", function (e) {
   this.classList.toggle("active");
@@ -50,6 +52,11 @@ todoForm.addEventListener("submit", function (e) {
 
   delBox.addEventListener("click", function (e) {
     this.parentElement.remove();
+
+    if (todoList.children.length === 0) {
+      infoTodo.style.borderTopLeftRadius = "5px";
+      infoTodo.style.borderTopRightRadius = "5px";
+    }
   });
 
   li.append(delBox);
@@ -66,33 +73,33 @@ todoForm.addEventListener("submit", function (e) {
   check.classList.remove("active");
   check.children[0].children[0].classList.add("d-none");
 
+  infoTodo.style.borderTopLeftRadius = "0px";
+  infoTodo.style.borderTopRightRadius = "0px";
+
   this.reset();
 });
-
-// todoList.addEventListener("click", function (e) {
-//   console.log(e.target);
-// });
 
 const mode = document.querySelector(".mode");
 
 mode.addEventListener("click", function (e) {
   const bgImage = document.querySelector(".bg-image");
-  const checkBoxes = document.querySelectorAll(".check-box");
   if (this.getAttribute("alt") === "icon-sun") {
-    bgImage.children[0].src = "./assets/images/bg-desktop-light.jpg";
-    bgImage.children[0].setAttribute("alt", "bg-desktop-light");
+    bgImage.style.backgroundImage = "./assets/images/bg-desktop-light.jpg";
     this.src = "./assets/icons/icon-moon.svg";
     this.setAttribute("alt", "icon-moon");
     document.body.style.backgroundColor = "#FAFAFA";
     todoForm.classList.add("light-mode");
     todoList.classList.add("light-mode");
+    infoTodo.classList.add("light-mode");
+    infoTodoMobile.classList.add("light-mode");
   } else {
-    bgImage.children[0].src = "./assets/images/bg-desktop-dark.jpg";
-    bgImage.children[0].setAttribute("alt", "bg-desktop-dark");
+    bgImage.style.backgroundImage = "./assets/images/bg-desktop-dark.jpg";
     this.src = "./assets/icons/icon-sun.svg";
     this.setAttribute("alt", "icon-sun");
     document.body.style.backgroundColor = "#181824";
     todoForm.classList.remove("light-mode");
     todoList.classList.remove("light-mode");
+    infoTodo.classList.remove("light-mode");
+    infoTodoMobile.classList.remove("light-mode");
   }
 });
