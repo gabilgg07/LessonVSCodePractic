@@ -61,10 +61,6 @@ a:hover {
   text-decoration: none;
 }
 
-.d-none {
-  display: none !important;
-}
-
 body {
   background-color: #181824;
   font-family: "Josefin Sans", sans-serif;
@@ -75,7 +71,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -1;
 }
 .bg-image img {
   max-width: 100%;
@@ -118,11 +114,9 @@ body {
   background-color: #25283c;
   border: none;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-family: "Josefin Sans", sans-serif;
   caret-color: hsl(220deg, 98%, 61%);
-  position: relative;
-  z-index: -2;
   color: rgb(192, 189, 189);
 }
 .todo-wrapper .todo-form .todo-input:focus {
@@ -134,13 +128,27 @@ body {
   -webkit-text-fill-color: rgb(192, 189, 189);
   caret-color: hsl(220deg, 98%, 61%);
 }
+.todo-wrapper .todo-form.light-mode .todo-input {
+  background-color: #fff;
+  color: #25283c;
+}
+.todo-wrapper .todo-form.light-mode .todo-input:-webkit-autofill, .todo-wrapper .todo-form.light-mode .todo-input:-webkit-autofill:hover, .todo-wrapper .todo-form.light-mode .todo-input:-webkit-autofill:focus, .todo-wrapper .todo-form.light-mode .todo-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+          box-shadow: 0 0 0 30px #fff inset !important;
+  -webkit-text-fill-color: #25283c;
+}
+.todo-wrapper .todo-form.light-mode .check-box {
+  background-color: hsl(233deg, 11%, 84%);
+}
+.todo-wrapper .todo-form.light-mode .check-box .inner-box {
+  background-color: #fff;
+}
 .todo-wrapper .check-box {
-  min-width: 25px;
-  width: 25px;
-  min-height: 25px;
-  height: 25px;
-  position: relative;
-  background-color: #25283c;
+  min-width: 27px;
+  width: 27px;
+  min-height: 27px;
+  height: 27px;
+  background-color: rgb(75, 75, 75);
   border-radius: 50%;
   cursor: pointer;
   display: -webkit-box;
@@ -154,30 +162,34 @@ body {
           align-items: center;
   margin-right: 35px;
 }
-.todo-wrapper .check-box::after {
-  content: "";
-  position: absolute;
-  min-width: 26px;
-  width: 26px;
-  min-height: 26px;
-  height: 26px;
-  z-index: -1;
-  background-color: rgb(75, 75, 75);
+.todo-wrapper .check-box:hover {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(192deg, 100%, 67%)), to(hsl(280deg, 87%, 65%)));
+  background-image: linear-gradient(to right bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
+}
+.todo-wrapper .check-box .inner-box {
+  background-color: #25283c;
+  min-width: 25px;
+  width: 25px;
+  min-height: 25px;
+  height: 25px;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .todo-wrapper .check-box.active {
   background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(192deg, 100%, 67%)), to(hsl(280deg, 87%, 65%)));
   background-image: linear-gradient(to right bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
 }
-.todo-wrapper .check-box.active::after {
+.todo-wrapper .check-box.active .inner-box {
   background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(192deg, 100%, 67%)), to(hsl(280deg, 87%, 65%)));
   background-image: linear-gradient(to right bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
-  background-color: none;
-}
-.todo-wrapper .check-box:hover::after {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(192deg, 100%, 67%)), to(hsl(280deg, 87%, 65%)));
-  background-image: linear-gradient(to right bottom, hsl(192deg, 100%, 67%), hsl(280deg, 87%, 65%));
-  background-color: none;
 }
 .todo-wrapper .icon-delete {
   position: absolute;
@@ -205,10 +217,9 @@ body {
 .todo-wrapper .todo-list {
   margin-top: 25px;
   min-height: 0px;
-  border-radius: 5px;
-  overflow: hidden;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5098039216);
           box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5098039216);
+  border-radius: 5px;
 }
 .todo-wrapper .todo-list .list-item {
   display: -webkit-box;
@@ -220,22 +231,107 @@ body {
   color: rgb(192, 189, 189);
   background-color: #25283c;
   padding: 18px;
-  font-size: 18px;
+  font-size: 1.2rem;
   cursor: pointer;
   position: relative;
-  z-index: -1;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.todo-wrapper .todo-list .list-item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.todo-wrapper .todo-list .list-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .todo-wrapper .todo-list .list-item:not(:last-child) {
   border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+}
+.todo-wrapper .todo-list .list-item:hover {
+  background-color: #1b1d2b;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 6px 3px #000;
+          box-shadow: 0 0 6px 3px #000;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  z-index: 1;
+  border-bottom: none;
 }
 .todo-wrapper .todo-list .list-item.active {
   text-decoration: line-through;
   color: rgba(128, 128, 128, 0.35);
 }
-.todo-wrapper .todo-list .list-item:hover {
-  background-color: #1b1d2b;
+.todo-wrapper .todo-list .list-item.info-todo {
+  color: rgba(128, 128, 128, 0.58);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1rem;
+}
+.todo-wrapper .todo-list .list-item.info-todo .info-list li:not(:first-child) {
+  margin-left: 20px;
+}
+.todo-wrapper .todo-list .list-item.info-todo .info-list li:hover {
+  color: rgb(192, 189, 189);
+}
+.todo-wrapper .todo-list .list-item.info-todo .info-list li.active {
+  color: hsl(220deg, 98%, 61%);
+}
+.todo-wrapper .todo-list .list-item.info-todo .clear-completed:hover {
+  color: rgb(192, 189, 189);
+}
+.todo-wrapper .todo-list.light-mode {
+  position: relative;
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.todo-wrapper .todo-list.light-mode .list-item {
+  background-color: #fff;
+  color: #25283c;
+  position: relative;
+}
+.todo-wrapper .todo-list.light-mode .list-item:hover {
+  background-color: none;
+  -webkit-box-shadow: 0 0 6px 3px gray;
+          box-shadow: 0 0 6px 3px gray;
+}
+.todo-wrapper .todo-list.light-mode .list-item.active {
+  color: rgba(128, 128, 128, 0.35);
+}
+.todo-wrapper .todo-list.light-mode .list-item .check-box {
+  background-color: hsl(233deg, 11%, 84%);
+}
+.todo-wrapper .todo-list.light-mode .list-item .check-box .inner-box {
+  background-color: #fff;
+}
+.todo-wrapper .info-todo-mobile {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #25283c;
+  padding: 18px;
+  font-size: 1rem;
+  color: rgba(128, 128, 128, 0.58);
+  border-radius: 5px;
+}
+.todo-wrapper .info-todo-mobile .info-list li:not(:first-child) {
+  margin-left: 30px;
+}
+.todo-wrapper .info-todo-mobile .info-list li:hover {
+  color: rgb(192, 189, 189);
+}
+.todo-wrapper .info-todo-mobile .info-list li.active {
+  color: hsl(220deg, 98%, 61%);
 }
 .todo-wrapper .footer-text {
   color: rgba(128, 128, 128, 0.58);

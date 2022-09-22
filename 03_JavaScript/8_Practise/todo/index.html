@@ -21,13 +21,13 @@
   <body>
     <header>
       <div class="bg-image">
-        <img src="./assets/images/bg-desktop-light.jpg" alt="bg-desktop-dark" />
+        <img src="./assets/images/bg-desktop-dark.jpg" alt="bg-desktop-dark" />
       </div>
     </header>
     <main>
       <div class="todo-wrapper">
         <div class="row justify-content-center">
-          <div class="col-lg-5 col-md-8 col-sm-10">
+          <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
             <div class="todo-container">
               <h2 class="todo-header">
                 T O D O
@@ -39,11 +39,13 @@
               </h2>
               <form class="todo-form">
                 <label id="check" class="check-box" for="addTodo">
-                  <img
-                    src="./assets/icons/icon-check.svg"
-                    alt="icon-check"
-                    class="d-none"
-                  />
+                  <div class="inner-box">
+                    <img
+                      src="./assets/icons/icon-check.svg"
+                      alt="icon-check"
+                      class="d-none"
+                    />
+                  </div>
                 </label>
                 <input
                   type="text"
@@ -54,42 +56,23 @@
                 />
               </form>
               <ul class="todo-list">
-                <li class="list-item active">
-                  <div class="check-box active">
-                    <img src="./assets/icons/icon-check.svg" alt="icon-check" />
-                  </div>
-                  Complete online JavaScript course
-                  <div class="icon-delete">
-                    <img src="./assets/icons/icon-cross.svg" alt="icon-cross" />
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="check-box">
-                    <img
-                      src="./assets/icons/icon-check.svg"
-                      alt="icon-check"
-                      class="d-none"
-                    />
-                  </div>
-                  Jog around the park 3x
-                  <div class="icon-delete">
-                    <img src="./assets/icons/icon-cross.svg" alt="icon-cross" />
-                  </div>
-                </li>
-                <li class="list-item">
-                  <div class="check-box">
-                    <img
-                      src="./assets/icons/icon-check.svg"
-                      alt="icon-check"
-                      class="d-none"
-                    />
-                  </div>
-                  Complete Todo App on Frontend Mentor
-                  <div class="icon-delete">
-                    <img src="./assets/icons/icon-cross.svg" alt="icon-cross" />
-                  </div>
+                <li class="list-item info-todo">
+                  <span class="lefted-count">0 items left</span>
+                  <ul class="info-list d-none d-lg-flex">
+                    <li class="all-list active">All</li>
+                    <li class="active-list">Active</li>
+                    <li class="completed-list">Completed</li>
+                  </ul>
+                  <span class="clear-completed">Clear Completed</span>
                 </li>
               </ul>
+              <div class="info-todo-mobile d-flex d-lg-none">
+                <ul class="info-list d-flex">
+                  <li class="all-list active">All</li>
+                  <li class="active-list">Active</li>
+                  <li class="completed-list">Completed</li>
+                </ul>
+              </div>
               <p class="footer-text">Drag and drop to reorder list</p>
             </div>
           </div>

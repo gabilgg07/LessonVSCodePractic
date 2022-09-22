@@ -5,7 +5,7 @@ const todoList = document.querySelector(".todo-list");
 
 check.addEventListener("click", function (e) {
   this.classList.toggle("active");
-  this.children[0].classList.toggle("d-none");
+  this.children[0].children[0].classList.toggle("d-none");
 });
 
 todoForm.addEventListener("submit", function (e) {
@@ -21,16 +21,19 @@ todoForm.addEventListener("submit", function (e) {
   li.className = `list-item${hasActive ? " active" : ""}`;
   const checkBox = document.createElement("div");
   checkBox.className = `check-box${hasActive ? " active" : ""}`;
+  const innerBox = document.createElement("div");
+  innerBox.className = "inner-box";
   const checkIcon = document.createElement("img");
   checkIcon.className = hasActive ? "" : "d-none";
   checkIcon.src = "./assets/icons/icon-check.svg";
   checkIcon.setAttribute("alt", "icon-check");
 
-  checkBox.append(checkIcon);
+  innerBox.append(checkIcon);
+  checkBox.append(innerBox);
 
   checkBox.addEventListener("click", function (e) {
     this.classList.toggle("active");
-    this.children[0].classList.toggle("d-none");
+    this.children[0].children[0].classList.toggle("d-none");
     this.parentElement.classList.toggle("active");
   });
   li.append(checkBox);
@@ -55,13 +58,13 @@ todoForm.addEventListener("submit", function (e) {
     if (e.target == this) {
       this.classList.toggle("active");
       this.children[0].classList.toggle("active");
-      this.children[0].children[0].classList.toggle("d-none");
+      this.children[0].children[0].children[0].classList.toggle("d-none");
     }
   });
 
   todoList.append(li);
   check.classList.remove("active");
-  check.children[0].classList.add("d-none");
+  check.children[0].children[0].classList.add("d-none");
 
   this.reset();
 });
@@ -74,8 +77,22 @@ const mode = document.querySelector(".mode");
 
 mode.addEventListener("click", function (e) {
   const bgImage = document.querySelector(".bg-image");
+  const checkBoxes = document.querySelectorAll(".check-box");
   if (this.getAttribute("alt") === "icon-sun") {
     bgImage.children[0].src = "./assets/images/bg-desktop-light.jpg";
     bgImage.children[0].setAttribute("alt", "bg-desktop-light");
+    this.src = "./assets/icons/icon-moon.svg";
+    this.setAttribute("alt", "icon-moon");
+    document.body.style.backgroundColor = "#FAFAFA";
+    todoForm.classList.add("light-mode");
+    todoList.classList.add("light-mode");
+  } else {
+    bgImage.children[0].src = "./assets/images/bg-desktop-dark.jpg";
+    bgImage.children[0].setAttribute("alt", "bg-desktop-dark");
+    this.src = "./assets/icons/icon-sun.svg";
+    this.setAttribute("alt", "icon-sun");
+    document.body.style.backgroundColor = "#181824";
+    todoForm.classList.remove("light-mode");
+    todoList.classList.remove("light-mode");
   }
 });

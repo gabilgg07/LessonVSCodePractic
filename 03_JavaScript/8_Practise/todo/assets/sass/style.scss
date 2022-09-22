@@ -11,7 +11,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -1;
   img {
     max-width: 100%;
     width: 100%;
@@ -48,15 +48,13 @@ body {
       background-color: #25283c;
       border: none;
       border-radius: 5px;
-      font-size: 18px;
+      font-size: 1.2rem;
       font-family: "Josefin Sans", sans-serif;
       caret-color: hsl(220, 98%, 61%);
-      position: relative;
-      z-index: -2;
+      color: rgb(192, 189, 189);
       &:focus {
         outline: none;
       }
-      color: rgb(192, 189, 189);
       &:-webkit-autofill,
       &:-webkit-autofill:hover,
       &:-webkit-autofill:focus,
@@ -66,55 +64,68 @@ body {
         caret-color: hsl(220, 98%, 61%);
       }
     }
+    &.light-mode {
+      .todo-input {
+        background-color: #fff;
+        color: #25283c;
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          box-shadow: 0 0 0 30px #fff inset !important;
+          -webkit-text-fill-color: #25283c;
+        }
+      }
+      .check-box {
+        background-color: hsl(233, 11%, 84%);
+        .inner-box {
+          background-color: #fff;
+        }
+      }
+    }
   }
   .check-box {
-    min-width: 25px;
-    width: 25px;
-    min-height: 25px;
-    height: 25px;
-    // border: 1px solid rgb(75, 75, 75);
-    position: relative;
-    background-color: #25283c;
-    &::after {
-      content: "";
-      position: absolute;
-      min-width: 26px;
-      width: 26px;
-      min-height: 26px;
-      height: 26px;
-      z-index: -1;
-      background-color: rgb(75, 75, 75);
-      border-radius: 50%;
-    }
+    min-width: 27px;
+    width: 27px;
+    min-height: 27px;
+    height: 27px;
+    background-color: rgb(75, 75, 75);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 35px;
+    &:hover {
+      background-image: linear-gradient(
+        to right bottom,
+        hsl(192, 100%, 67%),
+        hsl(280, 87%, 65%)
+      );
+    }
+    .inner-box {
+      background-color: #25283c;
+      min-width: 25px;
+      width: 25px;
+      min-height: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     &.active {
       background-image: linear-gradient(
         to right bottom,
         hsl(192, 100%, 67%),
         hsl(280, 87%, 65%)
       );
-      &::after {
+      .inner-box {
         background-image: linear-gradient(
           to right bottom,
           hsl(192, 100%, 67%),
           hsl(280, 87%, 65%)
         );
-        background-color: none;
-      }
-    }
-    &:hover {
-      &::after {
-        background-image: linear-gradient(
-          to right bottom,
-          hsl(192, 100%, 67%),
-          hsl(280, 87%, 65%)
-        );
-        background-color: none;
       }
     }
   }
@@ -135,29 +146,111 @@ body {
   .todo-list {
     margin-top: 25px;
     min-height: 0px;
-    border-radius: 5px;
-    overflow: hidden;
     box-shadow: 0px 20px 40px 0px #00000082;
+    border-radius: 5px;
     .list-item {
       display: flex;
       align-items: center;
       color: rgb(192, 189, 189);
       background-color: #25283c;
       padding: 18px;
-      font-size: 18px;
+      font-size: 1.2rem;
       cursor: pointer;
       position: relative;
-      z-index: -1;
-      transition: background-color 0.3s;
+      transition: transform 0.2s;
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      &:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
       &:not(:last-child) {
         border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+      }
+      &:hover {
+        background-color: #1b1d2b;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 3px #000;
+        transform: scale(1.02);
+        z-index: 1;
+        border-bottom: none;
       }
       &.active {
         text-decoration: line-through;
         color: rgba(128, 128, 128, 0.35);
       }
-      &:hover {
-        background-color: #1b1d2b;
+      &.info-todo {
+        color: rgba(128, 128, 128, 0.58);
+        justify-content: space-between;
+        font-size: 1rem;
+        .info-list {
+          li {
+            &:not(:first-child) {
+              margin-left: 20px;
+            }
+            &:hover {
+              color: rgb(192, 189, 189);
+            }
+            &.active {
+              color: hsl(220, 98%, 61%);
+            }
+          }
+        }
+        .clear-completed {
+          &:hover {
+            color: rgb(192, 189, 189);
+          }
+        }
+      }
+    }
+
+    &.light-mode {
+      position: relative;
+      box-shadow: 0px 20px 40px 0px rgb(0 0 0 / 10%);
+      .list-item {
+        background-color: #fff;
+        color: #25283c;
+        position: relative;
+        &:hover {
+          background-color: none;
+          box-shadow: 0 0 6px 3px gray;
+        }
+        &.active {
+          color: rgba(128, 128, 128, 0.35);
+        }
+        .check-box {
+          background-color: hsl(233, 11%, 84%);
+          .inner-box {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .info-todo-mobile {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25283c;
+    padding: 18px;
+    font-size: 1rem;
+    color: rgba(128, 128, 128, 0.58);
+    border-radius: 5px;
+    .info-list {
+      li {
+        &:not(:first-child) {
+          margin-left: 30px;
+        }
+        &:hover {
+          color: rgb(192, 189, 189);
+        }
+        &.active {
+          color: hsl(220, 98%, 61%);
+        }
       }
     }
   }
