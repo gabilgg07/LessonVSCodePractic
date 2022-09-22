@@ -230,6 +230,7 @@ body {
   color: rgb(192, 189, 189);
   background-color: #25283c;
   padding: 18px;
+  padding-right: 60px;
   font-size: 1.2rem;
   cursor: pointer;
   position: relative;
@@ -298,6 +299,12 @@ body {
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5098039216);
           box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.5098039216);
 }
+.info-todo .lefted-count {
+  cursor: default;
+}
+.info-todo .info-list li {
+  cursor: pointer;
+}
 .info-todo .info-list li:not(:first-child) {
   margin-left: 20px;
 }
@@ -307,6 +314,9 @@ body {
 .info-todo .info-list li.active {
   color: hsl(220deg, 98%, 61%);
 }
+.info-todo .clear-completed {
+  cursor: pointer;
+}
 .info-todo .clear-completed:hover {
   color: rgb(192, 189, 189);
 }
@@ -314,6 +324,15 @@ body {
   background-color: #fff;
   -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.info-todo.light-mode .info-list li:hover {
+  color: #25283c;
+}
+.info-todo.light-mode .info-list li.active {
+  color: hsl(220deg, 98%, 61%);
+}
+.info-todo.light-mode .clear-completed:hover {
+  color: #25283c;
 }
 
 .info-todo-mobile {
@@ -341,6 +360,11 @@ body {
 }
 .info-todo-mobile .info-list li.active {
   color: hsl(220deg, 98%, 61%);
+}
+.info-todo-mobile.light-mode {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
 }
 
 .footer-text {
