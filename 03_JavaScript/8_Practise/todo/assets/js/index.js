@@ -3,27 +3,40 @@ const todoForm = document.querySelector(".todo-form");
 const todoInput = document.querySelector(".todo-input");
 const todoList = document.querySelector(".todo-list");
 const infoTodo = document.querySelector(".info-todo");
+const leftedCounts = document.querySelector(".lefted-count");
+const infoTodoMobile = document.querySelector(".info-todo-mobile");
+
+// ========== to Resert Local Storage ==========
+// localStorage.dataId = 1;
+// localStorage.arrTodoes = JSON.stringify([]);
+// =============================================
+
+let dataId = localStorage.dataId;
 let leftedCount = 0;
-const leftedCounts = document.querySelectorAll(".lefted-count");
 
 let arrTodoes = JSON.parse(localStorage.arrTodoes);
-arrTodoes.forEach(todo => {
-  addTodo(todo.isCompleted, todo.text);
-});
+if (arrTodoes.length > 0) {
+  arrTodoes.forEach(todo => {
+    addTodo(todo.id, todo.isCompleted, todo.text);
+  });
+}
 
 arrTodoes.forEach(todo => {
   if (todo.isCompleted === true) {
     leftedCount++;
   }
 });
-changingLefted(leftedCount);
 
-const infoTodoMobile = document.querySelector(".info-todo-mobile");
+setLefted(leftedCount);
+
+// --------- Check Click---------
 
 check.addEventListener("click", function (e) {
   this.classList.toggle("active");
   this.children[0].children[0].classList.toggle("d-none");
 });
+
+// --------- Form Submit ---------
 
 todoForm.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -34,17 +47,21 @@ todoForm.addEventListener("submit", function (e) {
 
   const isCompleted = check.classList.contains("active");
 
-  addTodo(isCompleted, todoInput.value);
+  addTodo(dataId, isCompleted, todoInput.value);
 
   if (isCompleted) {
     leftedCount++;
-    changingLefted(leftedCount);
+    setLefted(leftedCount);
   }
 
   let newTodoObj = {
+    id: dataId,
     text: todoInput.value,
     isCompleted: isCompleted,
   };
+
+  dataId++;
+  localStorage.dataId = dataId;
 
   arrTodoes.push(newTodoObj);
   localStorage.arrTodoes = JSON.stringify(arrTodoes);
@@ -52,12 +69,16 @@ todoForm.addEventListener("submit", function (e) {
   this.reset();
 });
 
+// -------------------------------
+
 const mode = document.querySelector(".mode");
+
+// --------- Mode Click ---------
 
 mode.addEventListener("click", function (e) {
   const bgImage = document.querySelector(".bg-image");
   if (this.getAttribute("alt") === "icon-sun") {
-    bgImage.style.backgroundImage = "./assets/images/bg-desktop-light.jpg";
+    bgImage.style.backgroundImage = "url(./assets/images/bg-desktop-light.jpg)";
     this.src = "./assets/icons/icon-moon.svg";
     this.setAttribute("alt", "icon-moon");
     document.body.style.backgroundColor = "#FAFAFA";
@@ -66,7 +87,7 @@ mode.addEventListener("click", function (e) {
     infoTodo.classList.add("light-mode");
     infoTodoMobile.classList.add("light-mode");
   } else {
-    bgImage.style.backgroundImage = "./assets/images/bg-desktop-dark.jpg";
+    bgImage.style.backgroundImage = "url(./assets/images/bg-desktop-dark.jpg)";
     this.src = "./assets/icons/icon-sun.svg";
     this.setAttribute("alt", "icon-sun");
     document.body.style.backgroundColor = "#181824";
@@ -77,40 +98,146 @@ mode.addEventListener("click", function (e) {
   }
 });
 
-function addTodo(isCompleted, text) {
+// ------------------------------
+
+const infoLists = document.querySelectorAll(".info-list li");
+
+// --------- Info List Click ---------
+
+infoLists.forEach(li => {
+  li.addEventListener("click", function (e) {
+    infoLists.forEach(li => li.classList.remove("active"));
+
+    const sameLists = document.querySelectorAll("." + this.className);
+
+    sameLists.forEach(li => li.classList.add("active"));
+
+    if (this.classList.contains("all-list")) {
+      if (arrTodoes.length > 0) {
+        todoList.innerHTML = "";
+        arrTodoes.forEach(todo => {
+          addTodo(todo.id, todo.isCompleted, todo.text);
+        });
+      }
+    } else if (this.classList.contains("active-list")) {
+      if (arrTodoes.length > 0) {
+        let actives = arrTodoes.filter(todo => !todo.isCompleted);
+        todoList.innerHTML = "";
+        if (actives.length > 0) {
+          actives.forEach(todo => {
+            addTodo(todo.id, todo.isCompleted, todo.text);
+          });
+        } else {
+          infoTodo.style.borderTopLeftRadius = "5px";
+          infoTodo.style.borderTopRightRadius = "5px";
+        }
+      }
+    } else if (this.classList.contains("completed-list")) {
+      if (arrTodoes.length > 0) {
+        let completes = arrTodoes.filter(todo => todo.isCompleted);
+        todoList.innerHTML = "";
+        if (completes.length > 0) {
+          completes.forEach(todo => {
+            addTodo(todo.id, todo.isCompleted, todo.text);
+          });
+        } else {
+          infoTodo.style.borderTopLeftRadius = "5px";
+          infoTodo.style.borderTopRightRadius = "5px";
+        }
+      }
+    }
+  });
+});
+
+// infoLists.forEach(infiList => {
+//   const lists = Array.from(infiList.children);
+//   lists.forEach(li => {
+//     li.addEventListener("click", function (e) {
+//       lists.forEach(li => li.classList.remove("active"));
+//       const sameLists = document.querySelectorAll("." + this.className);
+//       sameLists.forEach(li => li.classList.add("active"));
+//     });
+//   });
+// });
+
+// -----------------------------------
+
+const clearCompleted = document.querySelector(".clear-completed");
+
+// --------- Clear Completed Click ---------
+
+clearCompleted.addEventListener("click", function (e) {
+  if (arrTodoes.length > 0) {
+    let arrIds = [];
+    arrTodoes.forEach(todo => {
+      if (todo.isCompleted) {
+        arrIds.push(todo.id);
+      }
+    });
+    if (arrIds.length > 0) {
+      arrIds.forEach(id => {
+        removeTodo(id);
+        leftedCount--;
+      });
+    }
+    setLefted(leftedCount);
+  }
+  todoList.innerHTML = "";
+  arrTodoes.forEach(todo => {
+    addTodo(todo.id, todo.isCompleted, todo.text);
+  });
+});
+
+// -----------------------------------
+
+// ========= Functions =========
+
+// --------- Add Todo ---------
+
+function addTodo(id, isCompleted, text) {
   const li = document.createElement("li");
   li.className = `list-item${isCompleted ? " active" : ""}`;
+  li.setAttribute("data-id", id);
+
   const checkBox = document.createElement("div");
   checkBox.className = `check-box${isCompleted ? " active" : ""}`;
+
   const innerBox = document.createElement("div");
   innerBox.className = "inner-box";
+
   const checkIcon = document.createElement("img");
   checkIcon.className = isCompleted ? "" : "d-none";
   checkIcon.src = "./assets/icons/icon-check.svg";
   checkIcon.setAttribute("alt", "icon-check");
 
   innerBox.append(checkIcon);
+
   checkBox.append(innerBox);
 
   checkBox.addEventListener("click", function (e) {
     this.classList.toggle("active");
     this.children[0].children[0].classList.toggle("d-none");
     this.parentElement.classList.toggle("active");
-    let txt = this.parentElement.innerText;
-    changeStatus(txt, this.classList.contains("active"));
+
+    let id = +this.parentElement.getAttribute("data-id");
+
+    changeStatus(id, this.classList.contains("active"));
+
     if (this.classList.contains("active")) {
       leftedCount++;
     } else if (leftedCount > 0) {
       leftedCount--;
     }
-    changingLefted(leftedCount);
+    setLefted(leftedCount);
   });
+
   li.append(checkBox);
 
   li.append(text);
 
   const delBox = document.createElement("div");
   delBox.className = "icon-delete";
+
   const delIcon = document.createElement("img");
   delIcon.src = "./assets/icons/icon-cross.svg";
   delIcon.setAttribute("alt", "icon-cross");
@@ -118,20 +245,20 @@ function addTodo(isCompleted, text) {
   delBox.append(delIcon);
 
   delBox.addEventListener("click", function (e) {
+    if (this.parentElement.classList.contains("active")) {
+      leftedCount--;
+      setLefted(leftedCount);
+    }
+
+    let id = +this.parentElement.getAttribute("data-id");
+
+    removeTodo(id);
+
+    this.parentElement.remove();
     if (todoList.children.length === 0) {
       infoTodo.style.borderTopLeftRadius = "5px";
       infoTodo.style.borderTopRightRadius = "5px";
     }
-
-    if (this.parentElement.classList.contains("active")) {
-      leftedCount--;
-      changingLefted(leftedCount);
-    }
-
-    let txt = this.parentElement.innerText;
-    removeTodo(txt);
-
-    this.parentElement.remove();
   });
 
   li.append(delBox);
@@ -142,13 +269,21 @@ function addTodo(isCompleted, text) {
       this.children[0].classList.toggle("active");
       this.children[0].children[0].children[0].classList.toggle("d-none");
 
-      let txt = this.innerText;
+      let id = +this.getAttribute("data-id");
 
-      changeStatus(text, this.classList.contains("active"));
+      changeStatus(id, this.classList.contains("active"));
+
+      if (this.classList.contains("active")) {
+        leftedCount++;
+      } else if (leftedCount > 0) {
+        leftedCount--;
+      }
+      setLefted(leftedCount);
     }
   });
 
   todoList.append(li);
+
   check.classList.remove("active");
   check.children[0].children[0].classList.add("d-none");
 
@@ -156,20 +291,24 @@ function addTodo(isCompleted, text) {
   infoTodo.style.borderTopRightRadius = "0px";
 }
 
-function changeStatus(text, isCompleted) {
+// --------- Change Status ---------
+
+function changeStatus(id, isComp) {
   arrTodoes.forEach((todo, i) => {
-    if (todo.text === text) {
-      arrTodoes[i].isCompleted = isCompleted;
+    if (todo.id == id) {
+      arrTodoes[i].isCompleted = isComp;
     }
   });
 
   localStorage.arrTodoes = JSON.stringify(arrTodoes);
 }
 
-function removeTodo(text) {
+// --------- Remove Todo ---------
+
+function removeTodo(id) {
   let index = -1;
   arrTodoes.forEach((todo, i) => {
-    if (todo.text === text) {
+    if (todo.id == id) {
       index = i;
     }
   });
@@ -180,6 +319,8 @@ function removeTodo(text) {
   localStorage.arrTodoes = JSON.stringify(arrTodoes);
 }
 
-function changingLefted(count) {
-  leftedCounts.forEach(lC => (lC.innerHTML = `${count} items left`));
+// --------- Set Lefted Count ---------
+
+function setLefted(count) {
+  leftedCounts.innerHTML = `${count} items left`;
 }
