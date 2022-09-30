@@ -1,0 +1,41 @@
+i {
+  cursor: pointer;
+}
+
+.my-list li {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my-list li div {
+  padding: 0.75rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.my-list li div.text-box {
+  width: 100%;
+}
+.my-list li div.delete-box {
+  padding: 16px 20px;
+}
+.my-list li div i {
+  text-decoration: none;
+}
+
+.finished div.text-box {
+  text-decoration: line-through;
+}

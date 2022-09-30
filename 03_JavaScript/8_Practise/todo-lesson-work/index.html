@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <title>Todo ClassWork</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-4 offset-md-4">
+          <form id="todo">
+            <div class="form-group">
+              <input type="text" class="form-control" name="item" id="item" />
+              <input
+                type="sub mit"
+                class="btn btn-primary mt-2 btn-block"
+                value="Add Task"
+              />
+            </div>
+          </form>
+          <div class="list">
+            <ul class="list-group my-list">
+              <li class="list-group-item">
+                <div class="text-box">Item</div>
+                <div class="delete-box"><i class="fa-solid fa-trash"></i></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

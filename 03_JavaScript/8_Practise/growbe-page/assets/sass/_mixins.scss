@@ -1,0 +1,20 @@
+@mixin btn-default($bg-clr: $primary-clr, $clr: #fff) {
+  background-color: $bg-clr;
+  color: $clr;
+  border-radius: 24px;
+  padding: 12px 27px;
+}
+
+@mixin mquery($width, $ratio: false) {
+  @if ($ratio) {
+    @media only screen and (max-width: $width) and (min--moz-device-pixel-ratio: $ratio),
+      only screen and (max-width: $width) and (-webkit-min-device-pixel-ratio: $ratio),
+      only screen and (max-width: $width) and (min-device-pixel-ratio: $ratio) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: $width) {
+      @content;
+    }
+  }
+}

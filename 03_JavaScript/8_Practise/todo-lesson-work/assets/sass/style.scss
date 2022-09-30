@@ -1,0 +1,35 @@
+i {
+  cursor: pointer;
+}
+
+.my-list {
+  li {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &.text-box {
+        width: 100%;
+      }
+      &.delete-box {
+        padding: 16px 20px;
+      }
+      i {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.finished {
+  div {
+    &.text-box {
+      text-decoration: line-through;
+    }
+  }
+}
