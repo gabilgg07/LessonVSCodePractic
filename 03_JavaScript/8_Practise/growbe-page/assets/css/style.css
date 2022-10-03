@@ -239,3 +239,32 @@ main #project .project-info .btn-more {
   border-radius: 24px;
   padding: 12px 27px;
 }
+main #thumbnails .thumbnail-item {
+  padding: 40px 30px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+main #thumbnails .thumbnail-item img {
+  width: 80px;
+}
+main #thumbnails .thumbnail-item h5 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 25px 0 20px;
+}
+main #thumbnails .thumbnail-item p {
+  font-size: 15px;
+  line-height: 150%;
+  color: #666665;
+}
+main #thumbnails .thumbnail-item .more {
+  font-size: 11px;
+  line-height: 150%;
+  color: #000;
+}
+main #thumbnails .thumbnail-item:hover {
+  -webkit-box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+          box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}

@@ -183,4 +183,33 @@ main {
       }
     }
   }
+
+  #thumbnails {
+    .thumbnail-item {
+      padding: 40px 30px;
+      transition: box-shadow 0.3s;
+      img {
+        width: 80px;
+      }
+      h5 {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 25px 0 20px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 150%;
+        color: #666665;
+      }
+      .more {
+        font-size: 11px;
+        line-height: 150%;
+        color: #000;
+      }
+
+      &:hover {
+        box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
 }
