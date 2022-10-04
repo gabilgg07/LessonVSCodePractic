@@ -188,6 +188,14 @@ main {
     .thumbnail-item {
       padding: 40px 30px;
       transition: box-shadow 0.3s;
+      @include mquery(768px) {
+        text-align: center;
+      }
+
+      @include mquery(576px) {
+        margin-bottom: 20px;
+      }
+
       img {
         width: 80px;
       }
@@ -199,7 +207,7 @@ main {
       p {
         font-size: 15px;
         line-height: 150%;
-        color: #666665;
+        color: #666;
       }
       .more {
         font-size: 11px;
@@ -209,6 +217,50 @@ main {
 
       &:hover {
         box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+
+  #choice {
+    .title {
+      font-size: 45px;
+      line-height: 56px;
+    }
+    .desc {
+      font-size: 16px;
+      line-height: 150%;
+      color: #666;
+    }
+    .choice-item {
+      text-align: center;
+      padding: 30px;
+      transition: box-shadow 0.3s;
+      @include mquery(576px) {
+        margin-bottom: 20px;
+      }
+      img {
+        object-fit: contain;
+        height: 200px;
+        margin-bottom: 20px;
+      }
+      .choice-info {
+        h5 {
+          font-size: 24px;
+          line-height: 30px;
+        }
+        p {
+          color: #aaa;
+          font-size: 15px;
+          line-height: 150%;
+          margin: 25px 0 40px;
+        }
+        a {
+          @include btn-default;
+        }
+      }
+
+      &:hover {
+        box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
       }
     }
   }

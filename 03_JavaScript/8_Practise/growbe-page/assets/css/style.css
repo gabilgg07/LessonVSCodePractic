@@ -246,6 +246,16 @@ main #thumbnails .thumbnail-item {
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
 }
+@media only screen and (max-width: 768px) {
+  main #thumbnails .thumbnail-item {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main #thumbnails .thumbnail-item {
+    margin-bottom: 20px;
+  }
+}
 main #thumbnails .thumbnail-item img {
   width: 80px;
 }
@@ -257,7 +267,7 @@ main #thumbnails .thumbnail-item h5 {
 main #thumbnails .thumbnail-item p {
   font-size: 15px;
   line-height: 150%;
-  color: #666665;
+  color: #666;
 }
 main #thumbnails .thumbnail-item .more {
   font-size: 11px;
@@ -267,4 +277,52 @@ main #thumbnails .thumbnail-item .more {
 main #thumbnails .thumbnail-item:hover {
   -webkit-box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
           box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+main #choice .title {
+  font-size: 45px;
+  line-height: 56px;
+}
+main #choice .desc {
+  font-size: 16px;
+  line-height: 150%;
+  color: #666;
+}
+main #choice .choice-item {
+  text-align: center;
+  padding: 30px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+@media only screen and (max-width: 576px) {
+  main #choice .choice-item {
+    margin-bottom: 20px;
+  }
+}
+main #choice .choice-item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 200px;
+  margin-bottom: 20px;
+}
+main #choice .choice-item .choice-info h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+main #choice .choice-item .choice-info p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 150%;
+  margin: 25px 0 40px;
+}
+main #choice .choice-item .choice-info a {
+  background-color: #f25822;
+  color: #fff;
+  border-radius: 24px;
+  padding: 12px 27px;
+}
+main #choice .choice-item:hover {
+  -webkit-box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+          box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
 }
