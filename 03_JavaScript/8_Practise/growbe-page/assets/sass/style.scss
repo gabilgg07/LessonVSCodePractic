@@ -264,4 +264,41 @@ main {
       }
     }
   }
+
+  #seo {
+    background-image: url("../images/seo-bg.png");
+    background-repeat: no-repeat;
+    background-position: 16%;
+    .seo-item {
+      h3 {
+        font-size: 45px;
+        line-height: 53px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 150%;
+        color: #aaa;
+      }
+      .description {
+        display: flex;
+        margin: 50px 0;
+        img {
+          width: 90px;
+          margin-right: 30px;
+        }
+        .desc-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h4 {
+            font-size: 20px;
+            line-height: 25px;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
