@@ -1,8 +1,11 @@
 "use strict";
 
 const timers = document.querySelectorAll(".timer-info");
+let beginCountdown = setInterval(() => {
+  console.log("beginCountdown started");
+}, 1000);
 
-function setCountdown(deadline = new Date(2022, 8, 15, 18)) {
+function setCountdown(deadline = new Date(2021, 12, 15, 18)) {
   const currentDate = new Date();
 
   const diff = deadline - currentDate;
@@ -14,7 +17,12 @@ function setCountdown(deadline = new Date(2022, 8, 15, 18)) {
     // h4Sec.innerText = 0;
 
     // return; => bu da isleyir
+
+    timers.forEach((h4) => {
+      h4.innerHTML = "00";
+    });
     clearInterval(beginCountdown);
+    return;
   }
 
   const msOnDay = 1000 * 60 * 60 * 24;
@@ -34,7 +42,7 @@ function setCountdown(deadline = new Date(2022, 8, 15, 18)) {
   });
 }
 setCountdown();
-let beginCountdown = setInterval(() => {
+beginCountdown = setInterval(() => {
   setCountdown();
 }, 1000);
 
@@ -45,7 +53,6 @@ counttime.addEventListener("change", function (e) {
   const now = new Date();
   const diffTime = newSetDate - now;
 
-  console.log();
   if (diffTime < 0) {
     alert("Please, take future time.");
   } else {
