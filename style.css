@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mt_40 {
+  margin-top: 40px !important;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.lesson_list li {
+  margin-bottom: 10px;
+}
+
+.lesson_list li a {
+  padding: 10px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #605f5e;
+  color: white;
+}
+
+.lesson_list li a:hover {
+  background-color: #fb3640;
+}
+
+.lesson_list li a.dropdown {
+  background-color: #1f487e;
+  color: white;
+}
+
+.lesson_list li a.dropdown:hover {
+  background-color: #247ba0;
+  border-color: #247ba0;
+}
+
+.lesson_list li a + ul {
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.lesson_list li a + ul li a + ul li a {
+  background-color: #acad94;
+}
+.lesson_list li a + ul li a + ul li a:hover {
+  background-color: #384d48;
+}

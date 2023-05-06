@@ -1,0 +1,18 @@
+#back_btn {
+  position: fixed;
+  bottom: 50%;
+  right: 50px;
+}
+.back_btn {
+  padding: 10px 15px;
+  border: 2px solid #1312128c;
+  border-radius: 5px;
+  background-color: #deb8876f;
+  text-decoration: none;
+  color: #131212;
+  box-shadow: inset 0px 0px 6px 1px white;
+}
+.back_btn:hover {
+  background-color: #8765386f;
+  border-color: #8765386f;
+}
